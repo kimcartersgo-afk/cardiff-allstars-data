@@ -57,10 +57,16 @@ COMPETITIONS = [
 
 def parse_table(page) -> list:
     """Extract league table rows from the current page."""
+    # Print page info for debugging
+    print(f"  URL  : {page.url}")
+    print(f"  Title: {page.title()}")
+
     try:
-        page.wait_for_selector("table", timeout=20000)
+        page.wait_for_selector("table", timeout=30000)
     except PlaywrightTimeoutError:
-        print("  ERROR: Timed out waiting for table.", file=sys.stderr)
+        # Print first 800 chars of page to help diagnose
+        snippet = page.content()[:800].replace("\n", " ")
+        print(f"  ERROR: No table found. Page snippet: {snippet}", file=sys.stderr)
         return []
 
     rows = []
@@ -70,7 +76,6 @@ def parse_table(page) -> list:
             continue
         texts = [c.inner_text().strip() for c in cells]
 
-        # Detect offset (some tables have a leading checkbox/icon column)
         offset = 0
         try:
             int(texts[0])
@@ -133,7 +138,7 @@ def main():
             for comp in COMPETITIONS:
                 print(f"\n[{comp['name']}] {comp['url']}")
                 try:
-                    page.goto(comp["url"], wait_until="networkidle", timeout=30000)
+                    page.goto(comp["url"], wait_until="domcontentloaded", timeout=30000)
 
                     if "login" in page.url or "auth" in page.url:
                         print("  ERROR: Session expired — re-run setup_session.py.", file=sys.stderr)
