@@ -1,1 +1,116 @@
-{ "updated": "2026-03-19T14:02:00Z", "division": "Cardiff & District Division 25/26", "team": "Cardiff Allstars FC", "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95408917", "table": [] }
+{
+  "updated": "2026-03-19T17:51:48Z",
+  "division": "Cardiff & District Division 25/26",
+  "team": "Cardiff Allstars FC",
+  "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95408917",
+  "table": [
+    {
+      "pos": 1,
+      "team": "Splott Albion Mens 1st",
+      "mp": 12,
+      "w": 9,
+      "d": 2,
+      "l": 1,
+      "gf": 45,
+      "ga": 22,
+      "gd": 23,
+      "pts": 29
+    },
+    {
+      "pos": 2,
+      "team": "Cardiff Bay FC",
+      "mp": 10,
+      "w": 7,
+      "d": 1,
+      "l": 2,
+      "gf": 35,
+      "ga": 14,
+      "gd": 21,
+      "pts": 22
+    },
+    {
+      "pos": 3,
+      "team": "Cwrt Y Vil FC",
+      "mp": 12,
+      "w": 6,
+      "d": 2,
+      "l": 4,
+      "gf": 30,
+      "ga": 35,
+      "gd": -5,
+      "pts": 20
+    },
+    {
+      "pos": 4,
+      "team": "St Mellons FC",
+      "mp": 8,
+      "w": 4,
+      "d": 2,
+      "l": 2,
+      "gf": 33,
+      "ga": 22,
+      "gd": 11,
+      "pts": 14
+    },
+    {
+      "pos": 5,
+      "team": "Clwb Sparta FC",
+      "mp": 13,
+      "w": 4,
+      "d": 2,
+      "l": 7,
+      "gf": 30,
+      "ga": 32,
+      "gd": -2,
+      "pts": 14
+    },
+    {
+      "pos": 6,
+      "team": "Canton Rangers FC",
+      "mp": 13,
+      "w": 4,
+      "d": 2,
+      "l": 7,
+      "gf": 25,
+      "ga": 28,
+      "gd": -3,
+      "pts": 14
+    },
+    {
+      "pos": 7,
+      "team": "AFC Whitchurch",
+      "mp": 11,
+      "w": 3,
+      "d": 2,
+      "l": 6,
+      "gf": 29,
+      "ga": 27,
+      "gd": 2,
+      "pts": 11
+    },
+    {
+      "pos": 8,
+      "team": "Cardiff Allstars FC",
+      "mp": 6,
+      "w": 3,
+      "d": 0,
+      "l": 3,
+      "gf": 13,
+      "ga": 14,
+      "gd": -1,
+      "pts": 9
+    },
+    {
+      "pos": 9,
+      "team": "St Albans AFC",
+      "mp": 9,
+      "w": 0,
+      "d": 1,
+      "l": 8,
+      "gf": 7,
+      "ga": 53,
+      "gd": -46,
+      "pts": 1
+    }
+  ]
+}

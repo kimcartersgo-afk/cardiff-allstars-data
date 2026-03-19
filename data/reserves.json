@@ -1,1 +1,116 @@
-{ "updated": "2026-03-19T14:02:00Z", "division": "Cardiff & District Reserves Division 25/26", "team": "Cardiff Allstars FC Reserves", "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95410077", "table": [] }
+{
+  "updated": "2026-03-19T17:51:53Z",
+  "division": "Cardiff & District Reserves Division 25/26",
+  "team": "Cardiff Allstars FC Reserves",
+  "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95410077",
+  "table": [
+    {
+      "pos": 1,
+      "team": "Cardiff Hibernian FC 2nds",
+      "mp": 10,
+      "w": 8,
+      "d": 1,
+      "l": 1,
+      "gf": 44,
+      "ga": 11,
+      "gd": 33,
+      "pts": 25
+    },
+    {
+      "pos": 2,
+      "team": "Llanrumney Athletic",
+      "mp": 8,
+      "w": 6,
+      "d": 1,
+      "l": 1,
+      "gf": 43,
+      "ga": 14,
+      "gd": 29,
+      "pts": 19
+    },
+    {
+      "pos": 3,
+      "team": "Grangetown Cath OB Reserves",
+      "mp": 9,
+      "w": 5,
+      "d": 0,
+      "l": 4,
+      "gf": 33,
+      "ga": 25,
+      "gd": 8,
+      "pts": 15
+    },
+    {
+      "pos": 4,
+      "team": "Ely Rangers FC Reserves C&D",
+      "mp": 9,
+      "w": 4,
+      "d": 0,
+      "l": 5,
+      "gf": 29,
+      "ga": 27,
+      "gd": 2,
+      "pts": 12
+    },
+    {
+      "pos": 5,
+      "team": "Cardiff Allstars FC Reserves",
+      "mp": 8,
+      "w": 4,
+      "d": 0,
+      "l": 4,
+      "gf": 15,
+      "ga": 29,
+      "gd": -14,
+      "pts": 12
+    },
+    {
+      "pos": 6,
+      "team": "Clwb Sparta FC Reserves",
+      "mp": 10,
+      "w": 3,
+      "d": 3,
+      "l": 4,
+      "gf": 24,
+      "ga": 39,
+      "gd": -15,
+      "pts": 12
+    },
+    {
+      "pos": 7,
+      "team": "Pentwyn Dynamos Reserves",
+      "mp": 6,
+      "w": 3,
+      "d": 1,
+      "l": 2,
+      "gf": 11,
+      "ga": 11,
+      "gd": 0,
+      "pts": 10
+    },
+    {
+      "pos": 8,
+      "team": "Fairwater FC Reserves",
+      "mp": 7,
+      "w": 1,
+      "d": 0,
+      "l": 6,
+      "gf": 13,
+      "ga": 24,
+      "gd": -11,
+      "pts": 3
+    },
+    {
+      "pos": 9,
+      "team": "Llanrumney Athletic Development",
+      "mp": 7,
+      "w": 0,
+      "d": 0,
+      "l": 7,
+      "gf": 7,
+      "ga": 39,
+      "gd": -32,
+      "pts": 0
+    }
+  ]
+}

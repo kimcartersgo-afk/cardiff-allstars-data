@@ -1,1 +1,140 @@
-{ "updated": "2026-03-19T14:02:00Z", "division": "Cardiff & District Youth Division 25/26", "team": "Cardiff Allstars FC Youth", "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526", "table": [] }
+{
+  "updated": "2026-03-19T17:51:42Z",
+  "division": "Cardiff & District Youth Division 25/26",
+  "team": "Cardiff Allstars FC Youth",
+  "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
+  "table": [
+    {
+      "pos": 1,
+      "team": "Sully Sports FC Youth - Blacks",
+      "mp": 8,
+      "w": 7,
+      "d": 0,
+      "l": 1,
+      "gf": 40,
+      "ga": 9,
+      "gd": 31,
+      "pts": 21
+    },
+    {
+      "pos": 2,
+      "team": "Barry Athletic Youth",
+      "mp": 8,
+      "w": 6,
+      "d": 2,
+      "l": 0,
+      "gf": 36,
+      "ga": 12,
+      "gd": 24,
+      "pts": 20
+    },
+    {
+      "pos": 3,
+      "team": "Ely Rangers FC Youth",
+      "mp": 7,
+      "w": 5,
+      "d": 2,
+      "l": 0,
+      "gf": 42,
+      "ga": 8,
+      "gd": 34,
+      "pts": 17
+    },
+    {
+      "pos": 4,
+      "team": "Heath Park Rangers FC - YOUTH Green",
+      "mp": 12,
+      "w": 5,
+      "d": 2,
+      "l": 5,
+      "gf": 33,
+      "ga": 30,
+      "gd": 3,
+      "pts": 17
+    },
+    {
+      "pos": 5,
+      "team": "St Albans AFC Youth Gold",
+      "mp": 9,
+      "w": 5,
+      "d": 1,
+      "l": 3,
+      "gf": 32,
+      "ga": 17,
+      "gd": 15,
+      "pts": 16
+    },
+    {
+      "pos": 6,
+      "team": "Cogan Coronation AFC Youth U17",
+      "mp": 7,
+      "w": 4,
+      "d": 2,
+      "l": 1,
+      "gf": 21,
+      "ga": 13,
+      "gd": 8,
+      "pts": 14
+    },
+    {
+      "pos": 7,
+      "team": "AFC Whitchurch Youth Blue",
+      "mp": 9,
+      "w": 3,
+      "d": 1,
+      "l": 5,
+      "gf": 17,
+      "ga": 29,
+      "gd": -12,
+      "pts": 10
+    },
+    {
+      "pos": 8,
+      "team": "Canton Rangers FC Youth",
+      "mp": 7,
+      "w": 2,
+      "d": 0,
+      "l": 5,
+      "gf": 15,
+      "ga": 20,
+      "gd": -5,
+      "pts": 6
+    },
+    {
+      "pos": 9,
+      "team": "Splott Albion Youth",
+      "mp": 9,
+      "w": 2,
+      "d": 0,
+      "l": 7,
+      "gf": 15,
+      "ga": 46,
+      "gd": -31,
+      "pts": 6
+    },
+    {
+      "pos": 10,
+      "team": "Llanrumney United Youth Blue",
+      "mp": 8,
+      "w": 2,
+      "d": 0,
+      "l": 6,
+      "gf": 11,
+      "ga": 45,
+      "gd": -34,
+      "pts": 6
+    },
+    {
+      "pos": 11,
+      "team": "Cardiff Allstars FC Youth",
+      "mp": 8,
+      "w": 0,
+      "d": 0,
+      "l": 8,
+      "gf": 10,
+      "ga": 43,
+      "gd": -33,
+      "pts": 0
+    }
+  ]
+}

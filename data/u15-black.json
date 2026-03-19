@@ -1,1 +1,116 @@
-{ "updated": "2026-03-19T14:02:00Z", "division": "Cardiff & District U15 Division 25/26", "team": "Cardiff Allstars Under 15s Black", "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758731", "table": [] }
+{
+  "updated": "2026-03-19T17:51:37Z",
+  "division": "Cardiff & District U15 Division 25/26",
+  "team": "Cardiff Allstars Under 15s Black",
+  "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758731",
+  "table": [
+    {
+      "pos": 1,
+      "team": "AFC Llanedeyrn - U15s",
+      "mp": 9,
+      "w": 6,
+      "d": 3,
+      "l": 0,
+      "gf": 43,
+      "ga": 24,
+      "gd": 19,
+      "pts": 21
+    },
+    {
+      "pos": 2,
+      "team": "Pentrebane Lions FC u15 REDS",
+      "mp": 8,
+      "w": 6,
+      "d": 1,
+      "l": 1,
+      "gf": 53,
+      "ga": 25,
+      "gd": 28,
+      "pts": 19
+    },
+    {
+      "pos": 3,
+      "team": "St Albans AFC U15",
+      "mp": 9,
+      "w": 5,
+      "d": 1,
+      "l": 3,
+      "gf": 40,
+      "ga": 27,
+      "gd": 13,
+      "pts": 16
+    },
+    {
+      "pos": 4,
+      "team": "Pentrebane Lions FC U15 YELLOW",
+      "mp": 10,
+      "w": 4,
+      "d": 1,
+      "l": 5,
+      "gf": 27,
+      "ga": 30,
+      "gd": -3,
+      "pts": 13
+    },
+    {
+      "pos": 5,
+      "team": "Lisvane Panthers U15",
+      "mp": 5,
+      "w": 1,
+      "d": 4,
+      "l": 0,
+      "gf": 14,
+      "ga": 11,
+      "gd": 3,
+      "pts": 7
+    },
+    {
+      "pos": 6,
+      "team": "Marshfield Junior FC u15 Navy",
+      "mp": 6,
+      "w": 2,
+      "d": 1,
+      "l": 3,
+      "gf": 18,
+      "ga": 19,
+      "gd": -1,
+      "pts": 7
+    },
+    {
+      "pos": 7,
+      "team": "CF Dragons FC U15",
+      "mp": 6,
+      "w": 2,
+      "d": 1,
+      "l": 3,
+      "gf": 17,
+      "ga": 25,
+      "gd": -8,
+      "pts": 7
+    },
+    {
+      "pos": 8,
+      "team": "Clwb Cymric D15 Gwyrdd",
+      "mp": 8,
+      "w": 2,
+      "d": 0,
+      "l": 6,
+      "gf": 26,
+      "ga": 40,
+      "gd": -14,
+      "pts": 6
+    },
+    {
+      "pos": 9,
+      "team": "Cardiff Allstars FC U15 Black",
+      "mp": 9,
+      "w": 1,
+      "d": 0,
+      "l": 8,
+      "gf": 9,
+      "ga": 46,
+      "gd": -37,
+      "pts": 3
+    }
+  ]
+}
