@@ -64,9 +64,14 @@ def parse_table(page) -> list:
     try:
         page.wait_for_selector("table", timeout=30000)
     except PlaywrightTimeoutError:
-        # Print first 800 chars of page to help diagnose
-        snippet = page.content()[:800].replace("\n", " ")
-        print(f"  ERROR: No table found. Page snippet: {snippet}", file=sys.stderr)
+        # Save full page HTML for debugging
+        full_html = page.content()
+        debug_path = os.path.join(BASE_DIR, "data", "debug.html")
+        with open(debug_path, "w", encoding="utf-8") as f:
+            f.write(full_html)
+        snippet = full_html[:800].replace("\n", " ")
+        print(f"  ERROR: No table found. Debug HTML saved to data/debug.html", file=sys.stderr)
+        print(f"  Snippet: {snippet}", file=sys.stderr)
         return []
 
     rows = []
