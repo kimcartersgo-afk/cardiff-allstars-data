@@ -56,50 +56,51 @@ COMPETITIONS = [
 
 
 def parse_table(page) -> list:
-    """Extract league table rows from the current page."""
-    # Print page info for debugging
+    """Extract league table rows from the current page.
+
+    The competition table has class 'a-competition-table' (clcTbl).
+    Each data row has 12 cells:
+      [0] checkbox  [1] pos  [2] club  [3] MP  [4] W  [5] D  [6] L
+      [7] GF  [8] GA  [9] GD  [10] Pts  [11] actions
+    """
     print(f"  URL  : {page.url}")
     print(f"  Title: {page.title()}")
 
+    # Wait for the specific competition table rows (not just any table)
+    SELECTOR = ".a-competition-table tbody tr"
     try:
-        page.wait_for_selector("table", timeout=30000)
+        page.wait_for_selector(SELECTOR, timeout=30000)
     except PlaywrightTimeoutError:
         # Save full page HTML for debugging
         full_html = page.content()
         debug_path = os.path.join(BASE_DIR, "data", "debug.html")
+        os.makedirs(os.path.dirname(os.path.abspath(debug_path)), exist_ok=True)
         with open(debug_path, "w", encoding="utf-8") as f:
             f.write(full_html)
-        snippet = full_html[:800].replace("\n", " ")
-        print(f"  ERROR: No table found. Debug HTML saved to data/debug.html", file=sys.stderr)
-        print(f"  Snippet: {snippet}", file=sys.stderr)
+        print(f"  ERROR: Competition table rows not found. Debug HTML saved to data/debug.html", file=sys.stderr)
         return []
 
     rows = []
-    for row in page.query_selector_all("table tr"):
+    for row in page.query_selector_all(SELECTOR):
         cells = row.query_selector_all("td")
-        if len(cells) < 9:
+        # Need at least 11 cells (checkbox + pos + club + 6 stats + GD + Pts)
+        if len(cells) < 11:
             continue
         texts = [c.inner_text().strip() for c in cells]
-
-        offset = 0
+        # cells[0] is a checkbox — empty text, so pos is at index 1
         try:
-            int(texts[0])
-        except (ValueError, IndexError):
-            offset = 1
-
-        try:
-            gd_raw = texts[offset + 8].replace("+", "").replace("−", "-").replace("–", "-")
+            gd_raw = texts[9].replace("+", "").replace("−", "-").replace("–", "-")
             rows.append({
-                "pos":  int(texts[offset]),
-                "team": texts[offset + 1],
-                "mp":   int(texts[offset + 2]),
-                "w":    int(texts[offset + 3]),
-                "d":    int(texts[offset + 4]),
-                "l":    int(texts[offset + 5]),
-                "gf":   int(texts[offset + 6]),
-                "ga":   int(texts[offset + 7]),
+                "pos":  int(texts[1]),
+                "team": texts[2],
+                "mp":   int(texts[3]),
+                "w":    int(texts[4]),
+                "d":    int(texts[5]),
+                "l":    int(texts[6]),
+                "gf":   int(texts[7]),
+                "ga":   int(texts[8]),
                 "gd":   int(gd_raw),
-                "pts":  int(texts[offset + 9]),
+                "pts":  int(texts[10]),
             })
         except (ValueError, IndexError) as e:
             print(f"  Skipping row: {texts} — {e}")
@@ -159,7 +160,9 @@ def main():
                     try:
                         table_tab = page.locator('a[href$=":tableTab"]')
                         table_tab.click(timeout=10000)
-                        print("  Clicked Table tab, waiting for data...")
+                        print("  Clicked Table tab, waiting for AJAX...")
+                        # Give PrimeFaces a moment to fire the XHR before we start polling
+                        page.wait_for_timeout(2000)
                     except Exception as e:
                         print(f"  WARNING: Could not click Table tab: {e}", file=sys.stderr)
 
