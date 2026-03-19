@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardiff Allstars FC — League Tables</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: transparent; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spinner {
+    display: inline-block; width: 24px; height: 24px;
+    border: 3px solid #ddd; border-top-color: #ff6a00;
+    border-radius: 50%; animation: spin 0.8s linear infinite;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+
+<div id="ca" style="font-family:'Segoe UI',Arial,sans-serif;max-width:720px;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.2);">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#111 0%,#2a2a2a 60%,#ff6a00 100%);padding:16px 20px 0 20px;text-align:center;">
+    <div style="color:#ff9c40;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Cardiff Allstars FC &bull; League Tables 2025/26</div>
+    <div style="color:#fff;font-size:20px;font-weight:800;letter-spacing:0.5px;">Cardiff Allstars FC</div>
+    <div id="tabs" style="display:flex;gap:4px;justify-content:center;flex-wrap:wrap;margin-top:14px;"></div>
+  </div>
+
+  <div id="panels"></div>
+
+  <div style="background:#111;padding:7px 16px;text-align:center;font-size:10px;color:#999;">
+    Source: <a href="https://comet.faw.cymru" target="_blank" style="color:#ff9c40;text-decoration:none;">FAW Comet</a> &bull; Cardiff Allstars FC
+  </div>
+
+</div>
+
+<script>
+(function () {
+
+  // Data files are relative — works automatically on GitHub Pages
+  var BASE = './data/';
+
+  var TEAMS = [
+    { key: 'u15-orange', label: 'U15 Orange', file: BASE + 'league-table.json',
+      fallback: [
+        { pos:1, team:'Cardiff Allstars FC U15 Orange', mp:8,  w:8, d:0, l:0, gf:49, ga:7,  gd:42,  pts:24 },
+        { pos:2, team:'Caerau Ely C FC U15 Red',        mp:7,  w:6, d:0, l:1, gf:41, ga:27, gd:14,  pts:18 },
+        { pos:3, team:'Tiger Bay FC U15s',              mp:5,  w:5, d:0, l:0, gf:37, ga:8,  gd:29,  pts:15 },
+        { pos:4, team:'AFC Whitchurch U15 Blue',        mp:7,  w:3, d:0, l:4, gf:13, ga:26, gd:-13, pts:9  },
+        { pos:5, team:'Ely Rangers FC U15',             mp:7,  w:2, d:2, l:3, gf:11, ga:18, gd:-7,  pts:8  },
+        { pos:6, team:'Llanishen FC U15',               mp:11, w:2, d:2, l:7, gf:20, ga:42, gd:-22, pts:8  },
+        { pos:7, team:'Ty Celyn Junior FC U15',         mp:6,  w:0, d:1, l:5, gf:18, ga:32, gd:-14, pts:1  },
+        { pos:8, team:'Pentyrch Rangers U15',           mp:7,  w:0, d:1, l:6, gf:8,  ga:37, gd:-29, pts:1  }
+      ], fallbackDate: '2026-03-19T12:34:00Z'
+    },
+    { key: 'u15-black',  label: 'U15 Black',  file: BASE + 'u15-black.json',  fallback: [], fallbackDate: null },
+    { key: 'youth',      label: 'Youth',      file: BASE + 'youth.json',       fallback: [], fallbackDate: null },
+    { key: 'first-team', label: 'First Team', file: BASE + 'first-team.json', fallback: [], fallbackDate: null },
+    { key: 'reserves',   label: 'Reserves',   file: BASE + 'reserves.json',   fallback: [], fallbackDate: null }
+  ];
+
+  var active = TEAMS[0].key;
+  var tabsEl = document.getElementById('tabs');
+  var panelsEl = document.getElementById('panels');
+
+  TEAMS.forEach(function (t, i) {
+    var btn = document.createElement('button');
+    btn.id = 'tab-' + t.key;
+    btn.textContent = t.label;
+    btn.style.cssText = 'border:none;padding:7px 13px;border-radius:6px 6px 0 0;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;'
+      + (i === 0 ? 'background:#ff6a00;color:#fff;' : 'background:#333;color:#aaa;');
+    btn.onclick = function () { caSwitch(t.key); };
+    tabsEl.appendChild(btn);
+
+    var panel = document.createElement('div');
+    panel.id = 'panel-' + t.key;
+    panel.style.display = i === 0 ? 'block' : 'none';
+    panelsEl.appendChild(panel);
+  });
+
+  function timeAgo(iso) {
+    if (!iso) return 'Data pending first scrape';
+    var s = Math.floor((Date.now() - new Date(iso).getTime()) / 1000);
+    if (s < 60)   return 'Updated just now';
+    if (s < 120)  return 'Updated 1 min ago';
+    if (s < 3600) return 'Updated ' + Math.floor(s/60) + ' mins ago';
+    if (s < 7200) return 'Updated 1 hour ago';
+    return 'Updated ' + Math.floor(s/3600) + ' hours ago';
+  }
+
+  function gdFmt(v) {
+    return { t: v > 0 ? '+'+v : ''+v, c: v > 0 ? '#1a7a1a' : v < 0 ? '#c0392b' : '#555' };
+  }
+
+  function buildPanel(cfg, data, isFallback) {
+    var rows    = data ? data.table : cfg.fallback;
+    var updated = data ? data.updated : cfg.fallbackDate;
+    var division= (data && data.division) ? data.division : '';
+
+    var html = '<div style="background:#1a1a1a;padding:10px 16px;text-align:center;">'
+      + (division ? '<div style="color:#ff9c40;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;">' + division + '</div>' : '')
+      + '<div style="color:#bbb;font-size:10px;margin-top:3px;">' + timeAgo(updated) + '</div>'
+      + '</div>';
+
+    if (isFallback && rows.length > 0) {
+      html += '<div style="background:#fff8e8;padding:6px 16px;text-align:center;font-size:11px;color:#a05700;border-bottom:1px solid #f0d89a;">&#9432; Showing cached data &mdash; live update pending</div>';
+    }
+
+    if (!rows || rows.length === 0) {
+      html += '<div style="background:#fff;padding:36px;text-align:center;color:#888;font-size:13px;">Data will appear after the first automated scrape.</div>';
+    } else {
+      html += '<div style="background:#fff;overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:13px;">'
+        + '<thead><tr style="background:#111;color:#fff;">'
+        + '<th style="padding:9px 8px;text-align:center;width:36px;color:#fff;">Pos</th>'
+        + '<th style="padding:9px 12px;text-align:left;color:#fff;">Club</th>'
+        + '<th style="padding:9px 7px;text-align:center;color:#fff;">MP</th>'
+        + '<th style="padding:9px 7px;text-align:center;color:#fff;">W</th>'
+        + '<th style="padding:9px 7px;text-align:center;color:#fff;">D</th>'
+        + '<th style="padding:9px 7px;text-align:center;color:#fff;">L</th>'
+        + '<th style="padding:9px 7px;text-align:center;color:#fff;">GF</th>'
+        + '<th style="padding:9px 7px;text-align:center;color:#fff;">GA</th>'
+        + '<th style="padding:9px 7px;text-align:center;color:#fff;">GD</th>'
+        + '<th style="padding:9px 10px;text-align:center;color:#fff;font-weight:800;">Pts</th>'
+        + '</tr></thead><tbody>';
+
+      rows.forEach(function (r, i) {
+        var us = r.team.toLowerCase().indexOf('cardiff allstars') !== -1;
+        var g  = gdFmt(r.gd);
+        var p  = us ? '11' : '10';
+        var wc = r.w >= 4 ? '#1a7a1a' : r.w === 0 ? '#c0392b' : '#333';
+        var bg = us
+          ? 'background:linear-gradient(90deg,#fff8ee,#fff3d6);border-left:4px solid #ff6a00;'
+          : (i%2===0?'background:#f8f8f8;':'background:#fff;') + 'border-left:4px solid transparent;';
+        html += '<tr style="' + bg + '">'
+          + '<td style="padding:'+p+'px 8px;text-align:center;color:'+(us?'#ff6a00':'#555')+';font-size:'+(us?15:13)+'px;font-weight:'+(us?800:700)+';">'+ r.pos +'</td>'
+          + '<td style="padding:'+p+'px 12px;color:'+(us?'#111':'#333')+';font-weight:'+(us?800:400)+';">'+(us?'&#11088; ':'')+r.team+'</td>'
+          + '<td style="padding:'+p+'px 7px;text-align:center;color:#333;font-weight:'+(us?600:400)+';">'+ r.mp +'</td>'
+          + '<td style="padding:'+p+'px 7px;text-align:center;color:'+wc+';font-weight:'+(us?700:600)+';">'+ r.w +'</td>'
+          + '<td style="padding:'+p+'px 7px;text-align:center;color:#333;">'+ r.d +'</td>'
+          + '<td style="padding:'+p+'px 7px;text-align:center;color:#333;">'+ r.l +'</td>'
+          + '<td style="padding:'+p+'px 7px;text-align:center;color:#333;">'+ r.gf +'</td>'
+          + '<td style="padding:'+p+'px 7px;text-align:center;color:#333;">'+ r.ga +'</td>'
+          + '<td style="padding:'+p+'px 7px;text-align:center;font-weight:700;color:'+g.c+';">'+ g.t +'</td>'
+          + '<td style="padding:'+p+'px 10px;text-align:center;color:'+(us?'#111':'#333')+';font-weight:'+(us?800:700)+';font-size:'+(us?15:13)+'px;">'+ r.pts +'</td>'
+          + '</tr>';
+      });
+
+      html += '</tbody></table></div>'
+        + '<div style="background:#f5f5f5;padding:8px 16px;display:flex;flex-wrap:wrap;gap:12px;font-size:11px;color:#666;border-top:1px solid #ddd;">'
+        + '<span><b>MP</b> Played</span><span><b>W</b> Won</span><span><b>D</b> Drawn</span>'
+        + '<span><b>L</b> Lost</span><span><b>GF</b> Goals For</span><span><b>GA</b> Goals Against</span>'
+        + '<span><b>GD</b> Goal Diff</span><span><b>Pts</b> Points</span>'
+        + '</div>';
+    }
+
+    document.getElementById('panel-' + cfg.key).innerHTML = html;
+  }
+
+  function loadTeam(cfg) {
+    var panel = document.getElementById('panel-' + cfg.key);
+    panel.innerHTML = '<div style="background:#fff;padding:36px;text-align:center;color:#888;font-size:13px;">'
+      + '<div class="spinner"></div><div>Loading...</div></div>';
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', cfg.file + '?t=' + Date.now(), true);
+    xhr.onload = function () {
+      try   { buildPanel(cfg, JSON.parse(xhr.responseText), false); }
+      catch  (e) { buildPanel(cfg, null, true); }
+    };
+    xhr.onerror = function () { buildPanel(cfg, null, true); };
+    xhr.send();
+  }
+
+  function caSwitch(key) {
+    TEAMS.forEach(function (t) {
+      document.getElementById('tab-' + t.key).style.background = t.key === key ? '#ff6a00' : '#333';
+      document.getElementById('tab-' + t.key).style.color      = t.key === key ? '#fff'    : '#aaa';
+      document.getElementById('panel-' + t.key).style.display  = t.key === key ? 'block'   : 'none';
+    });
+    active = key;
+    loadTeam(TEAMS.find(function (t) { return t.key === key; }));
+  }
+
+  caSwitch(TEAMS[0].key);
+  setInterval(function () {
+    loadTeam(TEAMS.find(function (t) { return t.key === active; }));
+  }, 5 * 60 * 1000);
+
+})();
+</script>
+</body>
+</html>
