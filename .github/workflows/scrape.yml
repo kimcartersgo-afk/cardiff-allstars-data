@@ -29,6 +29,7 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Run scraper
+        continue-on-error: true
         env:
           COMET_SESSION: ${{ secrets.COMET_SESSION }}
         run: python scraper/scrape.py
