@@ -139,6 +139,12 @@ def main():
                 print(f"\n[{comp['name']}] {comp['url']}")
                 try:
                     page.goto(comp["url"], wait_until="domcontentloaded", timeout=30000)
+                    # Wait for AJAX table data to load (JSF/PrimeFaces lazy-loads via XHR)
+                    try:
+                        page.wait_for_load_state("networkidle", timeout=10000)
+                    except Exception:
+                        pass  # Continue — table may still be present
+
 
                     if "login" in page.url or "auth" in page.url:
                         print("  ERROR: Session expired — re-run setup_session.py.", file=sys.stderr)
