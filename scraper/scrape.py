@@ -150,11 +150,18 @@ def main():
                     except Exception:
                         pass  # Continue — table may still be present
 
-
                     if "login" in page.url or "auth" in page.url:
                         print("  ERROR: Session expired — re-run setup_session.py.", file=sys.stderr)
                         errors.append(comp["name"])
                         continue
+
+                    # Click the "Table" tab — the table is lazy-loaded via AJAX on click
+                    try:
+                        table_tab = page.locator('a[href$=":tableTab"]')
+                        table_tab.click(timeout=10000)
+                        print("  Clicked Table tab, waiting for data...")
+                    except Exception as e:
+                        print(f"  WARNING: Could not click Table tab: {e}", file=sys.stderr)
 
                     table = parse_table(page)
                     if not table:
