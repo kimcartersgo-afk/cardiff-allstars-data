@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-21T20:55:42Z",
+  "updated": "2026-03-22T20:58:16Z",
   "division": "Cardiff & District Division 25/26",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95408917",
@@ -42,6 +42,18 @@
     },
     {
       "pos": 4,
+      "team": "Canton Rangers FC",
+      "mp": 14,
+      "w": 5,
+      "d": 2,
+      "l": 7,
+      "gf": 29,
+      "ga": 28,
+      "gd": 1,
+      "pts": 17
+    },
+    {
+      "pos": 5,
       "team": "St Mellons FC",
       "mp": 9,
       "w": 4,
@@ -53,7 +65,7 @@
       "pts": 15
     },
     {
-      "pos": 5,
+      "pos": 6,
       "team": "Clwb Sparta FC",
       "mp": 14,
       "w": 4,
@@ -63,18 +75,6 @@
       "ga": 33,
       "gd": -2,
       "pts": 15
-    },
-    {
-      "pos": 6,
-      "team": "Canton Rangers FC",
-      "mp": 13,
-      "w": 4,
-      "d": 2,
-      "l": 7,
-      "gf": 25,
-      "ga": 28,
-      "gd": -3,
-      "pts": 14
     },
     {
       "pos": 7,
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "St Albans AFC",
-      "mp": 9,
+      "mp": 10,
       "w": 0,
       "d": 1,
-      "l": 8,
+      "l": 9,
       "gf": 7,
-      "ga": 53,
-      "gd": -46,
+      "ga": 57,
+      "gd": -50,
       "pts": 1
     }
   ]
