@@ -110,7 +110,7 @@
     if (!rows || rows.length === 0) {
       html += '<div style="background:#fff;padding:36px;text-align:center;color:#888;font-size:13px;">Data will appear after the first automated scrape.</div>';
     } else {
-      html += '<div style="background:#fff;overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:13px;">'
+      html += '<div style="background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch;"><table style="width:100%;min-width:480px;border-collapse:collapse;font-size:13px;">'
         + '<thead><tr style="background:#111;color:#fff;">'
         + '<th style="padding:9px 8px;text-align:center;width:36px;color:#fff;">Pos</th>'
         + '<th style="padding:9px 12px;text-align:left;color:#fff;">Club</th>'
