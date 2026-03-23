@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-22T21:00:42Z",
+  "updated": "2026-03-23T21:55:12Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
@@ -91,14 +91,14 @@
     {
       "pos": 8,
       "team": "Canton Rangers FC Youth",
-      "mp": 7,
-      "w": 2,
+      "mp": 8,
+      "w": 3,
       "d": 0,
       "l": 5,
-      "gf": 15,
+      "gf": 23,
       "ga": 20,
-      "gd": -5,
-      "pts": 6
+      "gd": 3,
+      "pts": 9
     },
     {
       "pos": 9,
@@ -115,13 +115,13 @@
     {
       "pos": 10,
       "team": "Llanrumney United Youth Blue",
-      "mp": 8,
+      "mp": 9,
       "w": 2,
       "d": 0,
-      "l": 6,
+      "l": 7,
       "gf": 11,
-      "ga": 45,
-      "gd": -34,
+      "ga": 53,
+      "gd": -42,
       "pts": 6
     },
     {
