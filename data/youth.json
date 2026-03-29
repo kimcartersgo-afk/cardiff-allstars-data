@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-28T21:02:40Z",
+  "updated": "2026-03-29T21:04:19Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
@@ -7,14 +7,14 @@
     {
       "pos": 1,
       "team": "Barry Athletic Youth",
-      "mp": 9,
-      "w": 7,
+      "mp": 10,
+      "w": 8,
       "d": 2,
       "l": 0,
-      "gf": 37,
-      "ga": 12,
-      "gd": 25,
-      "pts": 23
+      "gf": 43,
+      "ga": 13,
+      "gd": 30,
+      "pts": 26
     },
     {
       "pos": 2,
@@ -79,37 +79,37 @@
     {
       "pos": 7,
       "team": "AFC Whitchurch Youth Blue",
-      "mp": 10,
-      "w": 3,
+      "mp": 11,
+      "w": 4,
       "d": 1,
       "l": 6,
-      "gf": 17,
-      "ga": 30,
-      "gd": -13,
-      "pts": 10
+      "gf": 20,
+      "ga": 32,
+      "gd": -12,
+      "pts": 13
     },
     {
       "pos": 8,
       "team": "Canton Rangers FC Youth",
-      "mp": 8,
+      "mp": 9,
       "w": 3,
       "d": 0,
-      "l": 5,
-      "gf": 23,
-      "ga": 20,
-      "gd": 3,
+      "l": 6,
+      "gf": 24,
+      "ga": 26,
+      "gd": -2,
       "pts": 9
     },
     {
       "pos": 9,
       "team": "Splott Albion Youth",
-      "mp": 10,
+      "mp": 11,
       "w": 2,
       "d": 0,
-      "l": 8,
-      "gf": 16,
-      "ga": 50,
-      "gd": -34,
+      "l": 9,
+      "gf": 18,
+      "ga": 53,
+      "gd": -35,
       "pts": 6
     },
     {
