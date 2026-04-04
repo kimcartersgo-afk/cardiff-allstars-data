@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-03T21:51:55Z",
+  "updated": "2026-04-04T16:48:30Z",
   "division": "Cardiff & District Division 25/26",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95408917",
@@ -7,14 +7,14 @@
     {
       "pos": 1,
       "team": "Splott Albion Mens 1st",
-      "mp": 14,
-      "w": 10,
+      "mp": 15,
+      "w": 11,
       "d": 3,
       "l": 1,
-      "gf": 54,
+      "gf": 60,
       "ga": 25,
-      "gd": 29,
-      "pts": 33
+      "gd": 35,
+      "pts": 36
     },
     {
       "pos": 2,
@@ -54,6 +54,18 @@
     },
     {
       "pos": 5,
+      "team": "AFC Whitchurch",
+      "mp": 13,
+      "w": 5,
+      "d": 2,
+      "l": 6,
+      "gf": 36,
+      "ga": 29,
+      "gd": 7,
+      "pts": 17
+    },
+    {
+      "pos": 6,
       "team": "Canton Rangers FC",
       "mp": 14,
       "w": 5,
@@ -65,7 +77,7 @@
       "pts": 17
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "St Mellons FC",
       "mp": 10,
       "w": 4,
@@ -77,39 +89,27 @@
       "pts": 15
     },
     {
-      "pos": 7,
-      "team": "AFC Whitchurch",
-      "mp": 12,
-      "w": 4,
-      "d": 2,
-      "l": 6,
-      "gf": 33,
-      "ga": 28,
-      "gd": 5,
-      "pts": 14
-    },
-    {
       "pos": 8,
       "team": "Cardiff Allstars FC",
-      "mp": 8,
+      "mp": 9,
       "w": 3,
       "d": 0,
-      "l": 5,
-      "gf": 16,
-      "ga": 26,
-      "gd": -10,
+      "l": 6,
+      "gf": 17,
+      "ga": 29,
+      "gd": -12,
       "pts": 9
     },
     {
       "pos": 9,
       "team": "St Albans AFC",
-      "mp": 11,
+      "mp": 12,
       "w": 0,
       "d": 1,
-      "l": 10,
+      "l": 11,
       "gf": 8,
-      "ga": 60,
-      "gd": -52,
+      "ga": 66,
+      "gd": -58,
       "pts": 1
     }
   ]

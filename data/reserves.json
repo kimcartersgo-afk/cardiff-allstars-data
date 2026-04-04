@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-03T21:52:01Z",
+  "updated": "2026-04-04T16:48:36Z",
   "division": "Cardiff & District Reserves Division 25/26",
   "team": "Cardiff Allstars FC Reserves",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95410077",
@@ -54,6 +54,18 @@
     },
     {
       "pos": 5,
+      "team": "Pentwyn Dynamos Reserves",
+      "mp": 9,
+      "w": 4,
+      "d": 1,
+      "l": 4,
+      "gf": 21,
+      "ga": 22,
+      "gd": -1,
+      "pts": 13
+    },
+    {
+      "pos": 6,
       "team": "Ely Rangers FC Reserves C&D",
       "mp": 11,
       "w": 4,
@@ -65,28 +77,16 @@
       "pts": 12
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "Cardiff Allstars FC Reserves",
-      "mp": 10,
+      "mp": 11,
       "w": 4,
       "d": 0,
-      "l": 6,
-      "gf": 16,
-      "ga": 53,
-      "gd": -37,
+      "l": 7,
+      "gf": 17,
+      "ga": 61,
+      "gd": -44,
       "pts": 12
-    },
-    {
-      "pos": 7,
-      "team": "Pentwyn Dynamos Reserves",
-      "mp": 8,
-      "w": 3,
-      "d": 1,
-      "l": 4,
-      "gf": 13,
-      "ga": 21,
-      "gd": -8,
-      "pts": 10
     },
     {
       "pos": 8,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-03T21:51:39Z",
+  "updated": "2026-04-04T16:48:13Z",
   "division": "Cardiff & District U15 Division C 25/26",
   "team": "Cardiff Allstars Under 15s Orange",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758708",
@@ -7,25 +7,25 @@
     {
       "pos": 1,
       "team": "Cardiff Allstars FC U15 Orange",
-      "mp": 10,
-      "w": 9,
+      "mp": 11,
+      "w": 10,
       "d": 0,
       "l": 1,
-      "gf": 55,
-      "ga": 10,
-      "gd": 45,
-      "pts": 27
+      "gf": 58,
+      "ga": 11,
+      "gd": 47,
+      "pts": 30
     },
     {
       "pos": 2,
       "team": "Caerau Ely C FC U15 Red",
-      "mp": 8,
+      "mp": 9,
       "w": 7,
       "d": 0,
-      "l": 1,
-      "gf": 43,
-      "ga": 28,
-      "gd": 15,
+      "l": 2,
+      "gf": 44,
+      "ga": 31,
+      "gd": 13,
       "pts": 21
     },
     {
