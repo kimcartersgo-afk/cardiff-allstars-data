@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-09T19:29:00Z",
+  "updated": "2026-04-09T22:03:17Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
@@ -7,14 +7,14 @@
     {
       "pos": 1,
       "team": "Sully Sports FC Youth - Blacks",
-      "mp": 11,
-      "w": 9,
+      "mp": 12,
+      "w": 10,
       "d": 1,
       "l": 1,
-      "gf": 51,
+      "gf": 53,
       "ga": 12,
-      "gd": 39,
-      "pts": 28
+      "gd": 41,
+      "pts": 31
     },
     {
       "pos": 2,
@@ -31,25 +31,25 @@
     {
       "pos": 3,
       "team": "St Albans AFC Youth Gold",
-      "mp": 11,
+      "mp": 12,
       "w": 7,
-      "d": 1,
+      "d": 2,
       "l": 3,
-      "gf": 39,
-      "ga": 18,
+      "gf": 40,
+      "ga": 19,
       "gd": 21,
-      "pts": 22
+      "pts": 23
     },
     {
       "pos": 4,
       "team": "Ely Rangers FC Youth",
-      "mp": 9,
+      "mp": 10,
       "w": 6,
       "d": 3,
-      "l": 0,
+      "l": 1,
       "gf": 54,
-      "ga": 12,
-      "gd": 42,
+      "ga": 14,
+      "gd": 40,
       "pts": 21
     },
     {
@@ -91,14 +91,14 @@
     {
       "pos": 8,
       "team": "Canton Rangers FC Youth",
-      "mp": 9,
+      "mp": 10,
       "w": 3,
-      "d": 0,
+      "d": 1,
       "l": 6,
-      "gf": 24,
-      "ga": 26,
+      "gf": 25,
+      "ga": 27,
       "gd": -2,
-      "pts": 9
+      "pts": 10
     },
     {
       "pos": 9,
