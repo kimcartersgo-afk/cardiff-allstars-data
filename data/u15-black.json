@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-07T22:09:42Z",
+  "updated": "2026-04-09T19:28:55Z",
   "division": "Cardiff & District U15 Division 25/26",
   "team": "Cardiff Allstars Under 15s Black",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758731",
@@ -43,14 +43,14 @@
     {
       "pos": 4,
       "team": "Pentrebane Lions FC U15 YELLOW",
-      "mp": 10,
-      "w": 4,
+      "mp": 11,
+      "w": 5,
       "d": 1,
       "l": 5,
-      "gf": 27,
-      "ga": 30,
-      "gd": -3,
-      "pts": 13
+      "gf": 30,
+      "ga": 31,
+      "gd": -1,
+      "pts": 16
     },
     {
       "pos": 5,
@@ -67,13 +67,13 @@
     {
       "pos": 6,
       "team": "CF Dragons FC U15",
-      "mp": 7,
+      "mp": 8,
       "w": 3,
       "d": 1,
-      "l": 3,
-      "gf": 22,
-      "ga": 29,
-      "gd": -7,
+      "l": 4,
+      "gf": 23,
+      "ga": 32,
+      "gd": -9,
       "pts": 10
     },
     {

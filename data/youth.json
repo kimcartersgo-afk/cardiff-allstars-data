@@ -1,11 +1,23 @@
 {
-  "updated": "2026-04-07T22:09:47Z",
+  "updated": "2026-04-09T19:29:00Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
   "table": [
     {
       "pos": 1,
+      "team": "Sully Sports FC Youth - Blacks",
+      "mp": 11,
+      "w": 9,
+      "d": 1,
+      "l": 1,
+      "gf": 51,
+      "ga": 12,
+      "gd": 39,
+      "pts": 28
+    },
+    {
+      "pos": 2,
       "team": "Barry Athletic Youth",
       "mp": 10,
       "w": 8,
@@ -17,51 +29,39 @@
       "pts": 26
     },
     {
-      "pos": 2,
-      "team": "Sully Sports FC Youth - Blacks",
-      "mp": 10,
-      "w": 8,
-      "d": 1,
-      "l": 1,
-      "gf": 45,
-      "ga": 12,
-      "gd": 33,
-      "pts": 25
-    },
-    {
       "pos": 3,
       "team": "St Albans AFC Youth Gold",
-      "mp": 10,
-      "w": 6,
+      "mp": 11,
+      "w": 7,
       "d": 1,
       "l": 3,
-      "gf": 36,
+      "gf": 39,
       "ga": 18,
-      "gd": 18,
-      "pts": 19
+      "gd": 21,
+      "pts": 22
     },
     {
       "pos": 4,
       "team": "Ely Rangers FC Youth",
-      "mp": 8,
-      "w": 5,
+      "mp": 9,
+      "w": 6,
       "d": 3,
       "l": 0,
-      "gf": 44,
-      "ga": 10,
-      "gd": 34,
-      "pts": 18
+      "gf": 54,
+      "ga": 12,
+      "gd": 42,
+      "pts": 21
     },
     {
       "pos": 5,
       "team": "Heath Park Rangers FC - YOUTH Green",
-      "mp": 12,
+      "mp": 13,
       "w": 5,
       "d": 2,
-      "l": 5,
+      "l": 6,
       "gf": 33,
-      "ga": 30,
-      "gd": 3,
+      "ga": 33,
+      "gd": 0,
       "pts": 17
     },
     {
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "Llanrumney United Youth Blue",
-      "mp": 11,
+      "mp": 12,
       "w": 3,
       "d": 0,
-      "l": 8,
-      "gf": 20,
-      "ga": 63,
-      "gd": -43,
+      "l": 9,
+      "gf": 22,
+      "ga": 73,
+      "gd": -51,
       "pts": 9
     },
     {
@@ -127,13 +127,13 @@
     {
       "pos": 11,
       "team": "Cardiff Allstars FC Youth",
-      "mp": 9,
+      "mp": 10,
       "w": 0,
       "d": 0,
-      "l": 9,
+      "l": 10,
       "gf": 14,
-      "ga": 52,
-      "gd": -38,
+      "ga": 58,
+      "gd": -44,
       "pts": 0
     }
   ]
