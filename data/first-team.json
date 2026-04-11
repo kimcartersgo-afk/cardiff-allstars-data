@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-10T21:57:19Z",
+  "updated": "2026-04-11T21:05:30Z",
   "division": "Cardiff & District Division 25/26",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95408917",
@@ -30,18 +30,30 @@
     },
     {
       "pos": 3,
-      "team": "Cwrt Y Vil FC",
-      "mp": 14,
+      "team": "Clwb Sparta FC",
+      "mp": 16,
       "w": 6,
       "d": 3,
-      "l": 5,
-      "gf": 32,
-      "ga": 40,
-      "gd": -8,
+      "l": 7,
+      "gf": 44,
+      "ga": 37,
+      "gd": 7,
       "pts": 21
     },
     {
       "pos": 4,
+      "team": "Cwrt Y Vil FC",
+      "mp": 15,
+      "w": 6,
+      "d": 3,
+      "l": 6,
+      "gf": 32,
+      "ga": 41,
+      "gd": -9,
+      "pts": 21
+    },
+    {
+      "pos": 5,
       "team": "Canton Rangers FC",
       "mp": 15,
       "w": 6,
@@ -53,63 +65,51 @@
       "pts": 20
     },
     {
-      "pos": 5,
-      "team": "Clwb Sparta FC",
-      "mp": 15,
-      "w": 5,
-      "d": 3,
-      "l": 7,
-      "gf": 38,
-      "ga": 36,
-      "gd": 2,
-      "pts": 18
-    },
-    {
       "pos": 6,
       "team": "AFC Whitchurch",
-      "mp": 13,
+      "mp": 14,
       "w": 5,
-      "d": 2,
+      "d": 3,
       "l": 6,
-      "gf": 36,
-      "ga": 29,
+      "gf": 39,
+      "ga": 32,
       "gd": 7,
-      "pts": 17
+      "pts": 18
     },
     {
       "pos": 7,
       "team": "St Mellons FC",
-      "mp": 10,
+      "mp": 11,
       "w": 4,
-      "d": 3,
+      "d": 4,
       "l": 3,
-      "gf": 39,
-      "ga": 32,
+      "gf": 42,
+      "ga": 35,
       "gd": 7,
-      "pts": 15
+      "pts": 16
     },
     {
       "pos": 8,
       "team": "Cardiff Allstars FC",
-      "mp": 10,
-      "w": 3,
+      "mp": 11,
+      "w": 4,
       "d": 0,
       "l": 7,
-      "gf": 19,
+      "gf": 20,
       "ga": 32,
-      "gd": -13,
-      "pts": 9
+      "gd": -12,
+      "pts": 12
     },
     {
       "pos": 9,
       "team": "St Albans AFC",
-      "mp": 12,
+      "mp": 13,
       "w": 0,
       "d": 1,
-      "l": 11,
-      "gf": 8,
-      "ga": 66,
-      "gd": -58,
+      "l": 12,
+      "gf": 9,
+      "ga": 72,
+      "gd": -63,
       "pts": 1
     }
   ]
