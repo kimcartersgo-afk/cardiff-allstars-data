@@ -1,11 +1,23 @@
 {
-  "updated": "2026-04-11T21:05:35Z",
+  "updated": "2026-04-12T21:53:04Z",
   "division": "Cardiff & District Reserves Division 25/26",
   "team": "Cardiff Allstars FC Reserves",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95410077",
   "table": [
     {
       "pos": 1,
+      "team": "Llanrumney Athletic",
+      "mp": 11,
+      "w": 9,
+      "d": 1,
+      "l": 1,
+      "gf": 65,
+      "ga": 13,
+      "gd": 52,
+      "pts": 28
+    },
+    {
+      "pos": 2,
       "team": "Cardiff Hibernian FC 2nds",
       "mp": 10,
       "w": 8,
@@ -13,18 +25,6 @@
       "l": 1,
       "gf": 61,
       "ga": 14,
-      "gd": 47,
-      "pts": 25
-    },
-    {
-      "pos": 2,
-      "team": "Llanrumney Athletic",
-      "mp": 10,
-      "w": 8,
-      "d": 1,
-      "l": 1,
-      "gf": 59,
-      "ga": 12,
       "gd": 47,
       "pts": 25
     },
@@ -55,13 +55,13 @@
     {
       "pos": 5,
       "team": "Ely Rangers FC Reserves C&D",
-      "mp": 12,
+      "mp": 13,
       "w": 4,
       "d": 0,
-      "l": 8,
-      "gf": 33,
-      "ga": 41,
-      "gd": -8,
+      "l": 9,
+      "gf": 34,
+      "ga": 47,
+      "gd": -13,
       "pts": 12
     },
     {

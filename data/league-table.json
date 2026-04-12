@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-11T21:05:12Z",
+  "updated": "2026-04-12T21:52:43Z",
   "division": "Cardiff & District U15 Division C 25/26",
   "team": "Cardiff Allstars Under 15s Orange",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758708",
@@ -7,14 +7,14 @@
     {
       "pos": 1,
       "team": "Cardiff Allstars FC U15 Orange",
-      "mp": 11,
-      "w": 10,
+      "mp": 12,
+      "w": 11,
       "d": 0,
       "l": 1,
-      "gf": 58,
+      "gf": 61,
       "ga": 11,
-      "gd": 47,
-      "pts": 30
+      "gd": 50,
+      "pts": 33
     },
     {
       "pos": 2,
@@ -31,29 +31,17 @@
     {
       "pos": 3,
       "team": "Tiger Bay FC U15s",
-      "mp": 5,
-      "w": 5,
+      "mp": 6,
+      "w": 6,
       "d": 0,
       "l": 0,
-      "gf": 37,
-      "ga": 8,
-      "gd": 29,
-      "pts": 15
+      "gf": 42,
+      "ga": 9,
+      "gd": 33,
+      "pts": 18
     },
     {
       "pos": 4,
-      "team": "AFC Whitchurch U15 Blue",
-      "mp": 9,
-      "w": 3,
-      "d": 0,
-      "l": 6,
-      "gf": 17,
-      "ga": 38,
-      "gd": -21,
-      "pts": 9
-    },
-    {
-      "pos": 5,
       "team": "Llanishen FC U15",
       "mp": 12,
       "w": 2,
@@ -62,6 +50,18 @@
       "gf": 23,
       "ga": 45,
       "gd": -22,
+      "pts": 9
+    },
+    {
+      "pos": 5,
+      "team": "AFC Whitchurch U15 Blue",
+      "mp": 10,
+      "w": 3,
+      "d": 0,
+      "l": 7,
+      "gf": 18,
+      "ga": 43,
+      "gd": -25,
       "pts": 9
     },
     {
@@ -91,13 +91,13 @@
     {
       "pos": 8,
       "team": "Ty Celyn Junior FC U15",
-      "mp": 7,
+      "mp": 8,
       "w": 0,
       "d": 2,
-      "l": 5,
+      "l": 6,
       "gf": 21,
-      "ga": 35,
-      "gd": -14,
+      "ga": 38,
+      "gd": -17,
       "pts": 2
     }
   ]
