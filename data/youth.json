@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-12T21:52:54Z",
+  "updated": "2026-04-13T22:41:31Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
@@ -7,13 +7,13 @@
     {
       "pos": 1,
       "team": "Sully Sports FC Youth - Blacks",
-      "mp": 12,
+      "mp": 13,
       "w": 10,
       "d": 1,
-      "l": 1,
+      "l": 2,
       "gf": 53,
-      "ga": 12,
-      "gd": 41,
+      "ga": 13,
+      "gd": 40,
       "pts": 31
     },
     {
@@ -31,41 +31,53 @@
     {
       "pos": 3,
       "team": "St Albans AFC Youth Gold",
-      "mp": 12,
+      "mp": 13,
       "w": 7,
       "d": 2,
-      "l": 3,
+      "l": 4,
       "gf": 40,
-      "ga": 19,
-      "gd": 21,
+      "ga": 21,
+      "gd": 19,
       "pts": 23
     },
     {
       "pos": 4,
       "team": "Ely Rangers FC Youth",
-      "mp": 10,
+      "mp": 11,
       "w": 6,
-      "d": 3,
+      "d": 4,
       "l": 1,
-      "gf": 54,
-      "ga": 14,
+      "gf": 56,
+      "ga": 16,
       "gd": 40,
-      "pts": 21
+      "pts": 22
     },
     {
       "pos": 5,
       "team": "Heath Park Rangers FC - YOUTH Green",
-      "mp": 13,
-      "w": 5,
+      "mp": 14,
+      "w": 6,
       "d": 2,
       "l": 6,
-      "gf": 33,
+      "gf": 34,
       "ga": 33,
-      "gd": 0,
-      "pts": 17
+      "gd": 1,
+      "pts": 20
     },
     {
       "pos": 6,
+      "team": "Cogan Coronation AFC Youth U17",
+      "mp": 9,
+      "w": 5,
+      "d": 2,
+      "l": 2,
+      "gf": 24,
+      "ga": 16,
+      "gd": 8,
+      "pts": 17
+    },
+    {
+      "pos": 7,
       "team": "AFC Whitchurch Youth Blue",
       "mp": 12,
       "w": 5,
@@ -77,28 +89,16 @@
       "pts": 16
     },
     {
-      "pos": 7,
-      "team": "Cogan Coronation AFC Youth U17",
-      "mp": 8,
-      "w": 4,
-      "d": 2,
-      "l": 2,
-      "gf": 22,
-      "ga": 16,
-      "gd": 6,
-      "pts": 14
-    },
-    {
       "pos": 8,
       "team": "Canton Rangers FC Youth",
-      "mp": 10,
+      "mp": 11,
       "w": 3,
-      "d": 1,
+      "d": 2,
       "l": 6,
-      "gf": 25,
-      "ga": 27,
+      "gf": 27,
+      "ga": 29,
       "gd": -2,
-      "pts": 10
+      "pts": 11
     },
     {
       "pos": 9,
