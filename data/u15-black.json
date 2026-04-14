@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-13T22:41:26Z",
+  "updated": "2026-04-14T22:33:04Z",
   "division": "Cardiff & District U15 Division 25/26",
   "team": "Cardiff Allstars Under 15s Black",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758731",
@@ -79,26 +79,26 @@
     {
       "pos": 7,
       "team": "Clwb Cymric D15 Gwyrdd",
-      "mp": 11,
+      "mp": 12,
       "w": 3,
-      "d": 0,
+      "d": 1,
       "l": 8,
-      "gf": 36,
-      "ga": 49,
+      "gf": 40,
+      "ga": 53,
       "gd": -13,
-      "pts": 9
+      "pts": 10
     },
     {
       "pos": 8,
       "team": "Marshfield Junior FC u15 Navy",
-      "mp": 9,
+      "mp": 10,
       "w": 2,
-      "d": 1,
+      "d": 2,
       "l": 6,
-      "gf": 23,
-      "ga": 39,
+      "gf": 27,
+      "ga": 43,
       "gd": -16,
-      "pts": 7
+      "pts": 8
     },
     {
       "pos": 9,
