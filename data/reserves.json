@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-14T22:33:21Z",
+  "updated": "2026-04-15T22:28:39Z",
   "division": "Cardiff & District Reserves Division 25/26",
   "team": "Cardiff Allstars FC Reserves",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95410077",
@@ -19,25 +19,25 @@
     {
       "pos": 2,
       "team": "Cardiff Hibernian FC 2nds",
-      "mp": 10,
-      "w": 8,
+      "mp": 11,
+      "w": 9,
       "d": 1,
       "l": 1,
-      "gf": 61,
-      "ga": 14,
-      "gd": 47,
-      "pts": 25
+      "gf": 66,
+      "ga": 18,
+      "gd": 48,
+      "pts": 28
     },
     {
       "pos": 3,
       "team": "Grangetown Cath OB Reserves",
-      "mp": 11,
+      "mp": 12,
       "w": 7,
       "d": 0,
-      "l": 4,
-      "gf": 41,
-      "ga": 27,
-      "gd": 14,
+      "l": 5,
+      "gf": 45,
+      "ga": 32,
+      "gd": 13,
       "pts": 21
     },
     {
