@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-15T22:28:29Z",
+  "updated": "2026-04-16T22:09:14Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
@@ -7,14 +7,14 @@
     {
       "pos": 1,
       "team": "Sully Sports FC Youth - Blacks",
-      "mp": 13,
-      "w": 10,
+      "mp": 14,
+      "w": 11,
       "d": 1,
       "l": 2,
-      "gf": 53,
-      "ga": 13,
-      "gd": 40,
-      "pts": 31
+      "gf": 58,
+      "ga": 14,
+      "gd": 44,
+      "pts": 34
     },
     {
       "pos": 2,
@@ -31,13 +31,13 @@
     {
       "pos": 3,
       "team": "St Albans AFC Youth Gold",
-      "mp": 13,
+      "mp": 14,
       "w": 7,
       "d": 2,
-      "l": 4,
-      "gf": 40,
-      "ga": 21,
-      "gd": 19,
+      "l": 5,
+      "gf": 41,
+      "ga": 26,
+      "gd": 15,
       "pts": 23
     },
     {
@@ -66,27 +66,27 @@
     },
     {
       "pos": 6,
-      "team": "Cogan Coronation AFC Youth U17",
-      "mp": 9,
-      "w": 5,
-      "d": 2,
-      "l": 2,
-      "gf": 24,
-      "ga": 16,
-      "gd": 8,
-      "pts": 17
+      "team": "AFC Whitchurch Youth Blue",
+      "mp": 13,
+      "w": 6,
+      "d": 1,
+      "l": 6,
+      "gf": 30,
+      "ga": 33,
+      "gd": -3,
+      "pts": 19
     },
     {
       "pos": 7,
-      "team": "AFC Whitchurch Youth Blue",
-      "mp": 12,
+      "team": "Cogan Coronation AFC Youth U17",
+      "mp": 10,
       "w": 5,
-      "d": 1,
-      "l": 6,
-      "gf": 26,
-      "ga": 32,
-      "gd": -6,
-      "pts": 16
+      "d": 2,
+      "l": 3,
+      "gf": 25,
+      "ga": 20,
+      "gd": 5,
+      "pts": 17
     },
     {
       "pos": 8,
