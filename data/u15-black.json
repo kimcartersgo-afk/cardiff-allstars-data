@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-16T22:09:08Z",
+  "updated": "2026-04-17T22:06:08Z",
   "division": "Cardiff & District U15 Division 25/26",
   "team": "Cardiff Allstars Under 15s Black",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758731",
@@ -55,14 +55,14 @@
     {
       "pos": 5,
       "team": "Lisvane Panthers U15",
-      "mp": 7,
+      "mp": 8,
       "w": 3,
-      "d": 4,
+      "d": 5,
       "l": 0,
-      "gf": 23,
-      "ga": 14,
+      "gf": 27,
+      "ga": 18,
       "gd": 9,
-      "pts": 13
+      "pts": 14
     },
     {
       "pos": 6,
@@ -103,14 +103,14 @@
     {
       "pos": 9,
       "team": "Cardiff Allstars FC U15 Black",
-      "mp": 11,
+      "mp": 12,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 10,
-      "gf": 10,
-      "ga": 62,
+      "gf": 14,
+      "ga": 66,
       "gd": -52,
-      "pts": 3
+      "pts": 4
     }
   ]
 }
