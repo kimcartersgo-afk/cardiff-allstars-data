@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-17T22:06:08Z",
+  "updated": "2026-04-18T20:39:04Z",
   "division": "Cardiff & District U15 Division 25/26",
   "team": "Cardiff Allstars Under 15s Black",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758731",
@@ -19,14 +19,14 @@
     {
       "pos": 2,
       "team": "Pentrebane Lions FC u15 REDS",
-      "mp": 11,
+      "mp": 12,
       "w": 7,
-      "d": 1,
+      "d": 2,
       "l": 3,
       "gf": 67,
       "ga": 34,
       "gd": 33,
-      "pts": 22
+      "pts": 23
     },
     {
       "pos": 3,
@@ -43,26 +43,26 @@
     {
       "pos": 4,
       "team": "Pentrebane Lions FC U15 YELLOW",
-      "mp": 12,
+      "mp": 13,
       "w": 6,
       "d": 1,
-      "l": 5,
+      "l": 6,
       "gf": 38,
-      "ga": 32,
-      "gd": 6,
+      "ga": 38,
+      "gd": 0,
       "pts": 19
     },
     {
       "pos": 5,
       "team": "Lisvane Panthers U15",
-      "mp": 8,
-      "w": 3,
+      "mp": 9,
+      "w": 4,
       "d": 5,
       "l": 0,
-      "gf": 27,
+      "gf": 33,
       "ga": 18,
-      "gd": 9,
-      "pts": 14
+      "gd": 15,
+      "pts": 17
     },
     {
       "pos": 6,
@@ -79,38 +79,38 @@
     {
       "pos": 7,
       "team": "Clwb Cymric D15 Gwyrdd",
-      "mp": 12,
+      "mp": 13,
       "w": 3,
-      "d": 1,
+      "d": 2,
       "l": 8,
       "gf": 40,
       "ga": 53,
       "gd": -13,
-      "pts": 10
+      "pts": 11
     },
     {
       "pos": 8,
       "team": "Marshfield Junior FC u15 Navy",
-      "mp": 10,
+      "mp": 11,
       "w": 2,
       "d": 2,
-      "l": 6,
-      "gf": 27,
-      "ga": 43,
-      "gd": -16,
+      "l": 7,
+      "gf": 29,
+      "ga": 48,
+      "gd": -19,
       "pts": 8
     },
     {
       "pos": 9,
       "team": "Cardiff Allstars FC U15 Black",
-      "mp": 12,
-      "w": 1,
+      "mp": 13,
+      "w": 2,
       "d": 1,
       "l": 10,
-      "gf": 14,
-      "ga": 66,
-      "gd": -52,
-      "pts": 4
+      "gf": 19,
+      "ga": 68,
+      "gd": -49,
+      "pts": 7
     }
   ]
 }

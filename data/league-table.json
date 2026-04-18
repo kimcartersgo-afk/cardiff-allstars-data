@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-17T22:06:02Z",
+  "updated": "2026-04-18T20:38:59Z",
   "division": "Cardiff & District U15 Division C 25/26",
   "team": "Cardiff Allstars Under 15s Orange",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758708",
@@ -19,13 +19,13 @@
     {
       "pos": 2,
       "team": "Caerau Ely C FC U15 Red",
-      "mp": 11,
+      "mp": 12,
       "w": 9,
       "d": 0,
-      "l": 2,
-      "gf": 59,
-      "ga": 37,
-      "gd": 22,
+      "l": 3,
+      "gf": 63,
+      "ga": 44,
+      "gd": 19,
       "pts": 27
     },
     {
@@ -42,63 +42,63 @@
     },
     {
       "pos": 4,
-      "team": "Llanishen FC U15",
-      "mp": 12,
-      "w": 2,
-      "d": 3,
-      "l": 7,
-      "gf": 23,
-      "ga": 45,
-      "gd": -22,
-      "pts": 9
+      "team": "Ely Rangers FC U15",
+      "mp": 9,
+      "w": 3,
+      "d": 2,
+      "l": 4,
+      "gf": 21,
+      "ga": 30,
+      "gd": -9,
+      "pts": 11
     },
     {
       "pos": 5,
-      "team": "AFC Whitchurch U15 Blue",
-      "mp": 10,
-      "w": 3,
-      "d": 0,
+      "team": "Llanishen FC U15",
+      "mp": 13,
+      "w": 2,
+      "d": 4,
       "l": 7,
-      "gf": 18,
-      "ga": 43,
-      "gd": -25,
-      "pts": 9
+      "gf": 25,
+      "ga": 47,
+      "gd": -22,
+      "pts": 10
     },
     {
       "pos": 6,
-      "team": "Ely Rangers FC U15",
-      "mp": 8,
-      "w": 2,
-      "d": 2,
-      "l": 4,
-      "gf": 14,
-      "ga": 26,
-      "gd": -12,
-      "pts": 8
+      "team": "AFC Whitchurch U15 Blue",
+      "mp": 11,
+      "w": 3,
+      "d": 0,
+      "l": 8,
+      "gf": 19,
+      "ga": 45,
+      "gd": -26,
+      "pts": 9
     },
     {
       "pos": 7,
       "team": "Pentyrch Rangers U15",
-      "mp": 9,
-      "w": 0,
+      "mp": 10,
+      "w": 1,
       "d": 3,
       "l": 6,
-      "gf": 14,
-      "ga": 43,
-      "gd": -29,
-      "pts": 3
+      "gf": 16,
+      "ga": 44,
+      "gd": -28,
+      "pts": 6
     },
     {
       "pos": 8,
       "team": "Ty Celyn Junior FC U15",
-      "mp": 8,
+      "mp": 9,
       "w": 0,
-      "d": 2,
+      "d": 3,
       "l": 6,
-      "gf": 21,
-      "ga": 38,
+      "gf": 23,
+      "ga": 40,
       "gd": -17,
-      "pts": 2
+      "pts": 3
     }
   ]
 }

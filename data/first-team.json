@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-17T22:06:19Z",
+  "updated": "2026-04-18T20:39:16Z",
   "division": "Cardiff & District Division 25/26",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95408917",
@@ -7,25 +7,25 @@
     {
       "pos": 1,
       "team": "Splott Albion Mens 1st",
-      "mp": 15,
-      "w": 11,
+      "mp": 16,
+      "w": 12,
       "d": 3,
       "l": 1,
-      "gf": 60,
-      "ga": 25,
-      "gd": 35,
-      "pts": 36
+      "gf": 63,
+      "ga": 26,
+      "gd": 37,
+      "pts": 39
     },
     {
       "pos": 2,
       "team": "Cardiff Bay FC",
-      "mp": 13,
+      "mp": 14,
       "w": 9,
       "d": 1,
-      "l": 3,
-      "gf": 46,
-      "ga": 21,
-      "gd": 25,
+      "l": 4,
+      "gf": 47,
+      "ga": 24,
+      "gd": 23,
       "pts": 28
     },
     {
@@ -79,25 +79,25 @@
     {
       "pos": 7,
       "team": "St Mellons FC",
-      "mp": 11,
-      "w": 4,
+      "mp": 12,
+      "w": 5,
       "d": 4,
       "l": 3,
-      "gf": 42,
-      "ga": 35,
-      "gd": 7,
-      "pts": 16
+      "gf": 47,
+      "ga": 37,
+      "gd": 10,
+      "pts": 19
     },
     {
       "pos": 8,
       "team": "Cardiff Allstars FC",
-      "mp": 12,
+      "mp": 13,
       "w": 4,
       "d": 0,
-      "l": 8,
-      "gf": 21,
-      "ga": 34,
-      "gd": -13,
+      "l": 9,
+      "gf": 23,
+      "ga": 39,
+      "gd": -16,
       "pts": 12
     },
     {
