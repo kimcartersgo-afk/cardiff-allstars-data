@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-21T20:55:21Z",
+  "updated": "2026-04-22T20:57:06Z",
   "division": "Cardiff & District Division 25/26",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95408917",
@@ -19,14 +19,14 @@
     {
       "pos": 2,
       "team": "Cardiff Bay FC",
-      "mp": 14,
-      "w": 9,
+      "mp": 15,
+      "w": 10,
       "d": 1,
       "l": 4,
-      "gf": 47,
-      "ga": 24,
-      "gd": 23,
-      "pts": 28
+      "gf": 51,
+      "ga": 27,
+      "gd": 24,
+      "pts": 31
     },
     {
       "pos": 3,
@@ -43,13 +43,13 @@
     {
       "pos": 4,
       "team": "AFC Whitchurch",
-      "mp": 15,
+      "mp": 16,
       "w": 6,
       "d": 3,
-      "l": 6,
-      "gf": 42,
-      "ga": 34,
-      "gd": 8,
+      "l": 7,
+      "gf": 45,
+      "ga": 38,
+      "gd": 7,
       "pts": 21
     },
     {
