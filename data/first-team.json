@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T20:57:06Z",
+  "updated": "2026-04-23T20:54:52Z",
   "division": "Cardiff & District Division 25/26",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95408917",
@@ -91,25 +91,25 @@
     {
       "pos": 8,
       "team": "Cardiff Allstars FC",
-      "mp": 13,
-      "w": 4,
+      "mp": 14,
+      "w": 5,
       "d": 0,
       "l": 9,
-      "gf": 23,
-      "ga": 39,
-      "gd": -16,
-      "pts": 12
+      "gf": 28,
+      "ga": 40,
+      "gd": -12,
+      "pts": 15
     },
     {
       "pos": 9,
       "team": "St Albans AFC",
-      "mp": 13,
+      "mp": 14,
       "w": 0,
       "d": 1,
-      "l": 12,
-      "gf": 9,
-      "ga": 72,
-      "gd": -63,
+      "l": 13,
+      "gf": 10,
+      "ga": 77,
+      "gd": -67,
       "pts": 1
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-22T20:57:01Z",
+  "updated": "2026-04-23T20:54:47Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
@@ -42,6 +42,18 @@
     },
     {
       "pos": 4,
+      "team": "Cogan Coronation AFC Youth U17",
+      "mp": 12,
+      "w": 7,
+      "d": 2,
+      "l": 3,
+      "gf": 36,
+      "ga": 22,
+      "gd": 14,
+      "pts": 23
+    },
+    {
+      "pos": 5,
       "team": "Ely Rangers FC Youth",
       "mp": 11,
       "w": 6,
@@ -51,18 +63,6 @@
       "ga": 16,
       "gd": 40,
       "pts": 22
-    },
-    {
-      "pos": 5,
-      "team": "Cogan Coronation AFC Youth U17",
-      "mp": 11,
-      "w": 6,
-      "d": 2,
-      "l": 3,
-      "gf": 28,
-      "ga": 22,
-      "gd": 6,
-      "pts": 20
     },
     {
       "pos": 6,
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "Llanrumney United Youth Blue",
-      "mp": 12,
+      "mp": 13,
       "w": 3,
       "d": 0,
-      "l": 9,
+      "l": 10,
       "gf": 22,
-      "ga": 73,
-      "gd": -51,
+      "ga": 81,
+      "gd": -59,
       "pts": 9
     },
     {
