@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-23T20:54:41Z",
+  "updated": "2026-04-24T20:51:26Z",
   "division": "Cardiff & District U15 Division 25/26",
   "team": "Cardiff Allstars Under 15s Black",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758731",
@@ -19,17 +19,29 @@
     {
       "pos": 2,
       "team": "Pentrebane Lions FC u15 REDS",
-      "mp": 12,
+      "mp": 13,
       "w": 7,
       "d": 2,
-      "l": 3,
-      "gf": 67,
-      "ga": 34,
-      "gd": 33,
+      "l": 4,
+      "gf": 68,
+      "ga": 38,
+      "gd": 30,
       "pts": 23
     },
     {
       "pos": 3,
+      "team": "Lisvane Panthers U15",
+      "mp": 10,
+      "w": 5,
+      "d": 5,
+      "l": 0,
+      "gf": 37,
+      "ga": 19,
+      "gd": 18,
+      "pts": 20
+    },
+    {
+      "pos": 4,
       "team": "St Albans AFC U15",
       "mp": 12,
       "w": 6,
@@ -41,7 +53,7 @@
       "pts": 19
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Pentrebane Lions FC U15 YELLOW",
       "mp": 13,
       "w": 6,
@@ -53,28 +65,16 @@
       "pts": 19
     },
     {
-      "pos": 5,
-      "team": "Lisvane Panthers U15",
-      "mp": 9,
-      "w": 4,
-      "d": 5,
-      "l": 0,
-      "gf": 33,
-      "ga": 18,
-      "gd": 15,
-      "pts": 17
-    },
-    {
       "pos": 6,
       "team": "CF Dragons FC U15",
-      "mp": 9,
-      "w": 4,
+      "mp": 10,
+      "w": 5,
       "d": 1,
       "l": 4,
-      "gf": 28,
-      "ga": 32,
-      "gd": -4,
-      "pts": 13
+      "gf": 33,
+      "ga": 34,
+      "gd": -1,
+      "pts": 16
     },
     {
       "pos": 7,
@@ -91,13 +91,13 @@
     {
       "pos": 8,
       "team": "Marshfield Junior FC u15 Navy",
-      "mp": 11,
+      "mp": 12,
       "w": 2,
       "d": 2,
-      "l": 7,
-      "gf": 29,
-      "ga": 48,
-      "gd": -19,
+      "l": 8,
+      "gf": 31,
+      "ga": 53,
+      "gd": -22,
       "pts": 8
     },
     {
