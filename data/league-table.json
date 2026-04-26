@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-25T20:40:33Z",
+  "updated": "2026-04-26T20:40:20Z",
   "division": "Cardiff & District U15 Division C 25/26",
   "team": "Cardiff Allstars Under 15s Orange",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95758708",
@@ -43,13 +43,13 @@
     {
       "pos": 4,
       "team": "Ely Rangers FC U15",
-      "mp": 10,
+      "mp": 11,
       "w": 3,
       "d": 3,
-      "l": 4,
+      "l": 5,
       "gf": 22,
-      "ga": 31,
-      "gd": -9,
+      "ga": 32,
+      "gd": -10,
       "pts": 12
     },
     {
@@ -91,14 +91,14 @@
     {
       "pos": 8,
       "team": "Ty Celyn Junior FC U15",
-      "mp": 9,
-      "w": 0,
+      "mp": 10,
+      "w": 1,
       "d": 3,
       "l": 6,
-      "gf": 23,
+      "gf": 24,
       "ga": 40,
-      "gd": -17,
-      "pts": 3
+      "gd": -16,
+      "pts": 6
     }
   ]
 }
