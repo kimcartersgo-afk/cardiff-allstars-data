@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-27T21:04:19Z",
+  "updated": "2026-04-28T21:08:16Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
@@ -7,25 +7,25 @@
     {
       "pos": 1,
       "team": "Sully Sports FC Youth - Blacks",
-      "mp": 14,
-      "w": 11,
+      "mp": 15,
+      "w": 12,
       "d": 1,
       "l": 2,
-      "gf": 58,
+      "gf": 61,
       "ga": 14,
-      "gd": 44,
-      "pts": 34
+      "gd": 47,
+      "pts": 37
     },
     {
       "pos": 2,
       "team": "Barry Athletic Youth",
-      "mp": 12,
+      "mp": 13,
       "w": 9,
       "d": 2,
-      "l": 1,
+      "l": 2,
       "gf": 49,
-      "ga": 18,
-      "gd": 31,
+      "ga": 21,
+      "gd": 28,
       "pts": 29
     },
     {
