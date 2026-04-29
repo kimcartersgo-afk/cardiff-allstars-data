@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-28T21:08:16Z",
+  "updated": "2026-04-29T21:07:33Z",
   "division": "Cardiff & District Youth Division 25/26",
   "team": "Cardiff Allstars FC Youth",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=95057526",
@@ -30,6 +30,18 @@
     },
     {
       "pos": 3,
+      "team": "AFC Whitchurch Youth Blue",
+      "mp": 16,
+      "w": 8,
+      "d": 1,
+      "l": 7,
+      "gf": 37,
+      "ga": 39,
+      "gd": -2,
+      "pts": 25
+    },
+    {
+      "pos": 4,
       "team": "St Albans AFC Youth Gold",
       "mp": 15,
       "w": 7,
@@ -41,7 +53,7 @@
       "pts": 23
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Cogan Coronation AFC Youth U17",
       "mp": 12,
       "w": 7,
@@ -53,7 +65,7 @@
       "pts": 23
     },
     {
-      "pos": 5,
+      "pos": 6,
       "team": "Ely Rangers FC Youth",
       "mp": 11,
       "w": 6,
@@ -62,18 +74,6 @@
       "gf": 56,
       "ga": 16,
       "gd": 40,
-      "pts": 22
-    },
-    {
-      "pos": 6,
-      "team": "AFC Whitchurch Youth Blue",
-      "mp": 15,
-      "w": 7,
-      "d": 1,
-      "l": 7,
-      "gf": 34,
-      "ga": 38,
-      "gd": -4,
       "pts": 22
     },
     {
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "Llanrumney United Youth Blue",
-      "mp": 14,
+      "mp": 15,
       "w": 3,
       "d": 0,
-      "l": 11,
-      "gf": 22,
-      "ga": 92,
-      "gd": -70,
+      "l": 12,
+      "gf": 23,
+      "ga": 95,
+      "gd": -72,
       "pts": 9
     },
     {
