@@ -1,0 +1,24 @@
+{
+  "updated": "2026-08-26T11:43:08Z",
+  "team": "Cardiff Allstars Under 9s",
+  "division": "SWWGL U9 Cardiff Division 26/27",
+  "live": null,
+  "next_match": null,
+  "last_result": {
+    "date": "10.05.2026 10:30",
+    "home": "Cardiff",
+    "away": "St Mellons",
+    "home_score": 10,
+    "away_score": 30,
+    "goals": [
+      {
+        "player": "st Half-Time :",
+        "minute": 1
+      },
+      {
+        "player": "nd Half-Time :",
+        "minute": 2
+      }
+    ]
+  }
+}

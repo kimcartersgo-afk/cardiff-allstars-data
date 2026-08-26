@@ -1,0 +1,29 @@
+{
+  "updated": "2026-08-26T11:46:25Z",
+  "team": "Cardiff Allstars FC Reserves",
+  "division": "Cardiff & District Div 2 26/27",
+  "live": null,
+  "next_match": {
+    "date": "",
+    "time": "",
+    "home": "Cardiff Allstars FC Reserves",
+    "away": ""
+  },
+  "last_result": {
+    "date": "05.09.2026 14:00",
+    "home": "Cardiff",
+    "away": "Cardiff West Community HS Grass",
+    "home_score": 14,
+    "away_score": 0,
+    "goals": [
+      {
+        "player": "st Half-Time :",
+        "minute": 1
+      },
+      {
+        "player": "nd Half-Time :",
+        "minute": 2
+      }
+    ]
+  }
+}
