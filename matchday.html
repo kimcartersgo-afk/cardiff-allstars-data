@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardiff Allstars FC - Matchday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+    }
+
+    .widget {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.2rem;
+    }
+    .header-title { font-size: 1.1rem; font-weight: 700; }
+    .header-sub   { font-size: 0.75rem; color: #888; margin-top: 2px; }
+    .refresh-info { font-size: 0.68rem; color: #444; text-align: right; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 1.2rem;
+    }
+    .tab-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1.5px solid #333;
+      background: transparent;
+      color: #aaa;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover  { border-color: #ff6b00; color: #ff6b00; }
+    .tab-btn.active { background: #ff6b00; border-color: #ff6b00; color: #fff; }
+
+    /* Cards */
+    .card {
+      background: #141414;
+      border: 1px solid #222;
+      border-radius: 12px;
+      padding: 1.1rem 1.2rem;
+      margin-bottom: 0.85rem;
+    }
+    .card-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Live card */
+    .card.live {
+      border-color: #ff3333;
+      background: linear-gradient(135deg, #1a0a0a, #141414);
+    }
+    .card.live .card-label { color: #ff3333; }
+    .live-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #ff3333;
+      animation: pulse 1.2s infinite;
+      display: inline-block;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.7); }
+    }
+
+    /* Score display */
+    .score-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+    .team-name {
+      flex: 1;
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .team-name.home { text-align: right; }
+    .team-name.away { text-align: left; }
+    .team-name.our-team { color: #ff6b00; }
+    .score-box {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-shrink: 0;
+    }
+    .score-num {
+      font-size: 1.8rem;
+      font-weight: 900;
+      line-height: 1;
+      min-width: 32px;
+      text-align: center;
+    }
+    .score-sep { color: #444; font-size: 1.4rem; font-weight: 300; }
+    .match-date { font-size: 0.72rem; color: #666; }
+
+    /* Minute badge */
+    .minute-badge {
+      display: inline-block;
+      background: #ff3333;
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+
+    /* Goals list */
+    .goals-list {
+      margin-top: 0.6rem;
+      border-top: 1px solid #1e1e1e;
+      padding-top: 0.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .goal-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: #bbb;
+    }
+    .goal-icon { font-size: 0.8rem; }
+    .goal-minute {
+      font-size: 0.68rem;
+      color: #666;
+      min-width: 28px;
+    }
+    .goal-player { flex: 1; }
+    .goal-team-tag {
+      font-size: 0.65rem;
+      color: #555;
+      font-style: italic;
+    }
+
+    /* Next match card */
+    .next-fixture {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .fixture-teams {
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .fixture-vs {
+      color: #555;
+      font-weight: 400;
+      font-size: 0.8rem;
+      margin: 0 6px;
+    }
+    .fixture-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 0.75rem;
+      color: #777;
+      flex-wrap: wrap;
+    }
+    .fixture-meta span { display: flex; align-items: center; gap: 4px; }
+    .countdown {
+      display: inline-block;
+      background: #1e1e1e;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 0.72rem;
+      color: #ff6b00;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    /* Empty states */
+    .empty {
+      font-size: 0.8rem;
+      color: #444;
+      text-align: center;
+      padding: 1.2rem 0;
+    }
+    .loading, .error {
+      text-align: center;
+      padding: 2.5rem 0;
+      color: #444;
+      font-size: 0.85rem;
+    }
+    .error { color: #f44336; }
+
+    .updated {
+      font-size: 0.65rem;
+      color: #333;
+      text-align: right;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+<div class="widget">
+
+  <div class="header">
+    <div>
+      <div class="header-title">Cardiff Allstars FC</div>
+      <div class="header-sub">Matchday Centre &mdash; Live &amp; Upcoming</div>
+    </div>
+    <div class="refresh-info" id="refresh-info">Auto-refreshes every 5 mins</div>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+  <div id="content"><div class="loading">Loading match data&hellip;</div></div>
+
+</div>
+
+<script>
+  const COMPETITIONS = [
+    { key: "matches-under-9s",   label: "Under 9s",   team: "Cardiff Allstars Under 9s" },
+    { key: "matches-under-12s",  label: "Under 12s",  team: "Cardiff Allstars Under 12s" },
+    { key: "matches-under-16s",  label: "Under 16s",  team: "Cardiff Allstars Under 16s" },
+    { key: "matches-first-team", label: "First Team", team: "Cardiff Allstars FC" },
+    { key: "matches-reserves",   label: "Reserves",   team: "Cardiff Allstars FC Reserves" },
+  ];
+
+  let activeIndex = 0;
+
+  function isOurTeam(name) {
+    return name && name.toLowerCase().includes("allstars");
+  }
+
+  function teamClass(name) {
+    return isOurTeam(name) ? "our-team" : "";
+  }
+
+  function goalIcon(team) {
+    return isOurTeam(team) ? "⚽" : "⚽";
+  }
+
+  function formatDate(dateStr) {
+    if (!dateStr) return "";
+    try {
+      const d = new Date(dateStr);
+      if (!isNaN(d)) return d.toLocaleDateString("en-GB", { weekday:"short", day:"numeric", month:"short", year:"numeric" });
+    } catch(e) {}
+    return dateStr;
+  }
+
+  function countdown(dateStr) {
+    if (!dateStr) return "";
+    try {
+      const match = new Date(dateStr);
+      const now = new Date();
+      const diff = match - now;
+      if (diff < 0) return "";
+      const days = Math.floor(diff / 86400000);
+      const hrs  = Math.floor((diff % 86400000) / 3600000);
+      if (days > 1)  return `${days} days to go`;
+      if (days === 1) return `Tomorrow`;
+      if (hrs > 0)   return `${hrs}h to go`;
+      return "Today!";
+    } catch(e) { return ""; }
+  }
+
+  function renderGoals(goals) {
+    if (!goals || goals.length === 0) return "";
+    const rows = goals.map(g => `
+      <div class="goal-row">
+        <span class="goal-icon">⚽</span>
+        <span class="goal-minute">${g.minute ? g.minute + "'" : ""}</span>
+        <span class="goal-player">${g.player || "Unknown"}</span>
+        ${g.team ? `<span class="goal-team-tag">${g.team}</span>` : ""}
+      </div>`).join("");
+    return `<div class="goals-list">${rows}</div>`;
+  }
+
+  function renderLive(live) {
+    if (!live) return "";
+    const homeClass = teamClass(live.home);
+    const awayClass = teamClass(live.away);
+    return `
+      <div class="card live">
+        <div class="card-label"><span class="live-dot"></span> LIVE NOW</div>
+        <div class="score-row">
+          <div class="team-name home ${homeClass}">${live.home || ""}</div>
+          <div class="score-box">
+            <div class="score-num">${live.home_score ?? "–"}</div>
+            <div class="score-sep">:</div>
+            <div class="score-num">${live.away_score ?? "–"}</div>
+            ${live.minute ? `<span class="minute-badge">${live.minute}'</span>` : ""}
+          </div>
+          <div class="team-name away ${awayClass}">${live.away || ""}</div>
+        </div>
+        ${renderGoals(live.goals)}
+      </div>`;
+  }
+
+  function renderNextMatch(next) {
+    if (!next) return `<div class="card"><div class="card-label">⏭ NEXT MATCH</div><div class="empty">No upcoming fixture found</div></div>`;
+    const cd = countdown(next.date);
+    return `
+      <div class="card">
+        <div class="card-label">⏭ NEXT MATCH</div>
+        <div class="next-fixture">
+          <div class="fixture-teams">
+            <span class="${teamClass(next.home)}">${next.home || "TBC"}</span>
+            <span class="fixture-vs">vs</span>
+            <span class="${teamClass(next.away)}">${next.away || "TBC"}</span>
+          </div>
+          <div class="fixture-meta">
+            ${next.date ? `<span>📅 ${formatDate(next.date)}</span>` : ""}
+            ${next.time ? `<span>⏰ ${next.time}</span>` : ""}
+            ${next.venue ? `<span>📍 ${next.venue}</span>` : ""}
+          </div>
+          ${cd ? `<div><span class="countdown">⏱ ${cd}</span></div>` : ""}
+        </div>
+      </div>`;
+  }
+
+  function renderLastResult(last) {
+    if (!last) return `<div class="card"><div class="card-label">📊 LAST RESULT</div><div class="empty">No recent result found</div></div>`;
+    const homeClass = teamClass(last.home);
+    const awayClass = teamClass(last.away);
+    return `
+      <div class="card">
+        <div class="card-label">📊 LAST RESULT</div>
+        <div class="match-date">${formatDate(last.date)}</div>
+        <div class="score-row" style="margin-top:0.5rem">
+          <div class="team-name home ${homeClass}">${last.home || ""}</div>
+          <div class="score-box">
+            <div class="score-num">${last.home_score ?? "–"}</div>
+            <div class="score-sep">:</div>
+            <div class="score-num">${last.away_score ?? "–"}</div>
+          </div>
+          <div class="team-name away ${awayClass}">${last.away || ""}</div>
+        </div>
+        ${renderGoals(last.goals)}
+      </div>`;
+  }
+
+  function renderData(data) {
+    return `
+      ${renderLive(data.live)}
+      ${renderNextMatch(data.next_match)}
+      ${renderLastResult(data.last_result)}
+      <div class="updated">Data updated: ${new Date(data.updated).toLocaleString("en-GB")}</div>`;
+  }
+
+  async function loadTab(index, force = false) {
+    activeIndex = index;
+    document.querySelectorAll(".tab-btn").forEach((b, i) => b.classList.toggle("active", i === index));
+    const comp = COMPETITIONS[index];
+    const content = document.getElementById("content");
+    content.innerHTML = '<div class="loading">Loading&hellip;</div>';
+    try {
+      const r = await fetch(`data/${comp.key}.json?t=${Date.now()}`);
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const data = await r.json();
+      content.innerHTML = renderData(data);
+    } catch(e) {
+      content.innerHTML = `<div class="error">⚠ Could not load data.<br><small>${e.message}</small></div>`;
+    }
+  }
+
+  // Build tabs
+  const tabBar = document.getElementById("tabs");
+  COMPETITIONS.forEach((c, i) => {
+    const btn = document.createElement("button");
+    btn.className = "tab-btn" + (i === 0 ? " active" : "");
+    btn.textContent = c.label;
+    btn.onclick = () => loadTab(i);
+    tabBar.appendChild(btn);
+  });
+
+  loadTab(0);
+
+  // Auto-refresh every 5 minutes
+  let countdown_secs = 300;
+  setInterval(() => {
+    countdown_secs -= 1;
+    if (countdown_secs <= 0) {
+      countdown_secs = 300;
+      loadTab(activeIndex, true);
+    }
+    const mins = Math.floor(countdown_secs / 60);
+    const secs = countdown_secs % 60;
+    document.getElementById("refresh-info").textContent =
+      `Refreshes in ${mins}:${String(secs).padStart(2,"0")}`;
+  }, 1000);
+</script>
+</body>
+</html>
