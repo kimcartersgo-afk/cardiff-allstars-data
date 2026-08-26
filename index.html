@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardiff Allstars FC - League Tables</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+    }
+
+    .widget {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .header {
+      margin-bottom: 1.2rem;
+    }
+    .header-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .header-sub {
+      font-size: 0.75rem;
+      color: #888;
+      margin-top: 2px;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .tab-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1.5px solid #333;
+      background: transparent;
+      color: #aaa;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s;
+    }
+    .tab-btn:hover { border-color: #ff6b00; color: #ff6b00; }
+    .tab-btn.active {
+      background: #ff6b00;
+      border-color: #ff6b00;
+      color: #fff;
+    }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    thead tr {
+      background: #1a1a1a;
+      color: #888;
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      letter-spacing: 0.05em;
+    }
+    th, td {
+      padding: 9px 10px;
+      text-align: center;
+      border-bottom: 1px solid #1e1e1e;
+      white-space: nowrap;
+    }
+    td:nth-child(2), th:nth-child(2) { text-align: left; min-width: 130px; }
+    tbody tr { transition: background 0.15s; }
+    tbody tr:hover { background: #1a1a1a; }
+
+    /* Highlight Cardiff Allstars rows */
+    tbody tr.highlight {
+      background: rgba(255, 107, 0, 0.12);
+      border-left: 3px solid #ff6b00;
+    }
+    tbody tr.highlight td { font-weight: 600; }
+
+    /* Position badge */
+    .pos {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.78rem;
+    }
+    .pos-1 { background: #ffd700; color: #000; }
+    .pos-2 { background: #c0c0c0; color: #000; }
+    .pos-3 { background: #cd7f32; color: #000; }
+    .pos-other { background: #222; color: #aaa; }
+
+    /* Goal difference colours */
+    .gd-pos { color: #4caf50; }
+    .gd-neg { color: #f44336; }
+    .gd-zero { color: #888; }
+
+    .updated {
+      font-size: 0.68rem;
+      color: #555;
+      text-align: right;
+      margin-top: 0.6rem;
+    }
+
+    .loading, .error {
+      text-align: center;
+      padding: 2rem;
+      color: #555;
+      font-size: 0.85rem;
+    }
+    .error { color: #f44336; }
+  </style>
+</head>
+<body>
+<div class="widget">
+
+  <div class="header">
+    <div class="header-title">Cardiff Allstars FC</div>
+    <div class="header-sub">Live League Tables &mdash; FAW Comet</div>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+  <div id="content"><div class="loading">Loading tables&hellip;</div></div>
+
+</div>
+
+<script>
+  const COMPETITIONS = [
+    { key: "league-table", label: "U15 Orange", team: "Cardiff Allstars Under 15s Orange" },
+    { key: "u15-black",    label: "U15 Black",  team: "Cardiff Allstars Under 15s Black" },
+    { key: "youth",        label: "Youth",       team: "Cardiff Allstars FC Youth" },
+    { key: "first-team",   label: "First Team",  team: "Cardiff Allstars FC" },
+    { key: "reserves",     label: "Reserves",    team: "Cardiff Allstars FC Reserves" },
+  ];
+
+  let cache = {};
+
+  function posClass(p) {
+    return p === 1 ? "pos-1" : p === 2 ? "pos-2" : p === 3 ? "pos-3" : "pos-other";
+  }
+  function gdClass(v) { return v > 0 ? "gd-pos" : v < 0 ? "gd-neg" : "gd-zero"; }
+  function gdText(v)  { return v > 0 ? "+" + v : "" + v; }
+
+  function renderTable(data) {
+    const rows = data.table.map(r => {
+      const hi = r.team.toLowerCase().includes("allstars") ? "highlight" : "";
+      return `<tr class="${hi}">
+        <td><span class="pos ${posClass(r.pos)}">${r.pos}</span></td>
+        <td>${r.team}</td>
+        <td>${r.mp}</td>
+        <td>${r.w}</td>
+        <td>${r.d}</td>
+        <td>${r.l}</td>
+        <td>${r.gf}</td>
+        <td>${r.ga}</td>
+        <td class="${gdClass(r.gd)}">${gdText(r.gd)}</td>
+        <td><strong>${r.pts}</strong></td>
+      </tr>`;
+    }).join("");
+
+    return `
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th>#</th><th>Club</th><th>MP</th><th>W</th><th>D</th><th>L</th>
+            <th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <div class="updated">Updated: ${new Date(data.updated).toLocaleString("en-GB")}</div>`;
+  }
+
+  async function loadTab(index) {
+    document.querySelectorAll(".tab-btn").forEach((b, i) => {
+      b.classList.toggle("active", i === index);
+    });
+
+    const comp = COMPETITIONS[index];
+    const content = document.getElementById("content");
+
+    if (cache[comp.key]) {
+      content.innerHTML = renderTable(cache[comp.key]);
+      return;
+    }
+
+    content.innerHTML = '<div class="loading">Loading&hellip;</div>';
+    try {
+      const r = await fetch("data/" + comp.key + ".json?t=" + Date.now());
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const data = await r.json();
+      cache[comp.key] = data;
+      content.innerHTML = renderTable(data);
+    } catch (e) {
+      content.innerHTML = `<div class="error">&#9888; Could not load data.<br><small>${e.message}</small></div>`;
+    }
+  }
+
+  // Build tab buttons
+  const tabBar = document.getElementById("tabs");
+  COMPETITIONS.forEach((c, i) => {
+    const btn = document.createElement("button");
+    btn.className = "tab-btn" + (i === 0 ? " active" : "");
+    btn.textContent = c.label;
+    btn.onclick = () => loadTab(i);
+    tabBar.appendChild(btn);
+  });
+
+  loadTab(0);
+</script>
+</body>
+</html>
