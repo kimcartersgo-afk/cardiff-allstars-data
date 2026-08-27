@@ -26,63 +26,54 @@ COMPETITIONS = [
     {"name": "Reserves",   "key": "reserves",   "team": "Cardiff Allstars FC Reserves",    "division": "Cardiff & District Div 2 26/27",         "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=107459589"},
 ]
 
-IS_TIME  = re.compile(r'^\d{1,2}:\d{2}$')
-IS_SCORE = re.compile(r'^(\d{1,3})\s*[:\-]\s*(\d{1,3})$')
-IS_DATE  = re.compile(r'\d{1,2}[./]\d{1,2}[./]\d{2,4}')
-
-
-def is_allstars(text):
-    return "allstars" in text.lower()
-
-
-def parse_row(cells):
-    texts = [c.inner_text().strip() for c in cells]
-    if len(texts) < 3:
+def parse_row(texts):
+    """Parse using exact FAW Comet column indices."""
+    if len(texts) < 13:
         return None
 
-    time_str = date_str = ""
-    score = None
-    teams = []
+    raw_id    = texts[0].replace("ID", "").strip()
+    match_url = (f"{BASE_URL}/resources/jsf/match/index.xhtml?id={raw_id}"
+                 if raw_id.isdigit() else None)
 
-    for t in texts:
-        if IS_TIME.match(t):
-            time_str = t
-            continue
-        dm = IS_DATE.search(t)
-        if dm and not date_str:
-            date_str = dm.group(0)
-            continue
-        sm = IS_SCORE.match(t)
-        if sm and score is None:
-            h, a = int(sm.group(1)), int(sm.group(2))
-            if not (a in (0, 15, 30, 45) and h < 24):
-                score = (h, a)
-            continue
-        if (len(t) > 3 and not re.match(r'^\d+$', t)
-                and t.lower() not in ("home","away","vs","v","live","ft","aet")):
-            teams.append(t)
+    dt_parts = texts[1].split(" ")
+    date_str = dt_parts[0] if dt_parts else ""
+    time_str = dt_parts[1] if len(dt_parts) > 1 else ""
 
-    if not teams:
+    venue       = texts[7] if len(texts) > 7 else ""
+    match_str   = texts[9] if len(texts) > 9 else ""
+    score_str   = texts[11] if len(texts) > 11 else ""
+    status      = texts[12].upper().strip() if len(texts) > 12 else ""
+
+    home = away = our_team = ""
+    if " - " in match_str:
+        parts    = match_str.split(" - ", 1)
+        home     = parts[0].strip()
+        away     = parts[1].strip()
+        our_team = home if is_allstars(home) else away
+
+    home_score = away_score = None
+    has_score  = False
+    if score_str and score_str != "-:-":
+        sm = re.match(r"^(\d+)\s*[:\-]\s*(\d+)$", score_str)
+        if sm:
+            home_score = int(sm.group(1))
+            away_score = int(sm.group(2))
+            has_score  = True
+
+    is_live      = status in ("LIVE", "IN PROGRESS", "PLAYING", "IN_PROGRESS")
+    is_postponed = status in ("POSTPONED", "CANCELLED", "ABANDONED")
+
+    if not home:
         return None
-
-    full = " ".join(texts).lower()
-    is_live = any(w in full for w in ("live", "playing", "in progress"))
-    link = None
-    for cell in cells:
-        a = cell.query_selector("a[href*='match']")
-        if a:
-            href = a.get_attribute("href") or ""
-            link = (BASE_URL + href) if href.startswith("/") else href
-            break
 
     return {
         "date": date_str, "time": time_str,
-        "home": teams[0] if teams else "",
-        "away": teams[1] if len(teams) > 1 else "",
-        "home_score": score[0] if score else None,
-        "away_score": score[1] if score else None,
-        "has_score": score is not None, "is_live": is_live,
-        "match_url": link,
+        "home": home, "away": away, "our_team": our_team,
+        "venue": venue,
+        "home_score": home_score, "away_score": away_score,
+        "has_score": has_score, "is_live": is_live,
+        "is_postponed": is_postponed, "status": status,
+        "match_url": match_url,
     }
 
 
