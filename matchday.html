@@ -399,18 +399,40 @@
 
   loadTab(0);
 
-  // Auto-refresh every 5 minutes
-  let countdown_secs = 300;
+  // Adaptive refresh: 10s when live, 5 mins otherwise
+  let isLiveMode   = false;
+  let countdown    = 300;
+  let currentData  = null;
+
+  async function checkAndRefresh() {
+    // Peek at the current tab's data to see if there's a live match
+    const comp = COMPETITIONS[activeIndex];
+    try {
+      const r = await fetch(`data/${comp.key}.json?t=${Date.now()}`);
+      if (r.ok) {
+        const d = await r.json();
+        currentData = d;
+        const wasLive = isLiveMode;
+        isLiveMode = !!d.live;
+        // Re-render if data changed or live status toggled
+        document.getElementById('content').innerHTML = renderData(d);
+        if (isLiveMode !== wasLive) {
+          countdown = isLiveMode ? 10 : 300;
+        }
+      }
+    } catch(e) {}
+  }
+
   setInterval(() => {
-    countdown_secs -= 1;
-    if (countdown_secs <= 0) {
-      countdown_secs = 300;
-      loadTab(activeIndex, true);
+    countdown -= 1;
+    if (countdown <= 0) {
+      countdown = isLiveMode ? 10 : 300;
+      checkAndRefresh();
     }
-    const mins = Math.floor(countdown_secs / 60);
-    const secs = countdown_secs % 60;
-    document.getElementById("refresh-info").textContent =
-      `Refreshes in ${mins}:${String(secs).padStart(2,"0")}`;
+    const label = isLiveMode
+      ? `🔴 LIVE — refreshing in ${countdown}s`
+      : `Refreshes in ${Math.floor(countdown/60)}:${String(countdown%60).padStart(2,'0')}`;
+    document.getElementById('refresh-info').textContent = label;
   }, 1000);
 </script>
 </body>

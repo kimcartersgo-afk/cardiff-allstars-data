@@ -1,15 +1,21 @@
 name: 🔴 LIVE Match Mode (10-second updates)
 
-# Auto-runs every Saturday at 8am BST (7am UTC)
-# Can also be triggered manually any time from the Actions tab.
+# Saturdays: 3 x 3-hour slots covering 8am–5pm BST
+# Slot 1: 07:00 UTC = 08:00 BST → runs until 11:00 BST
+# Slot 2: 10:00 UTC = 11:00 BST → runs until 14:00 BST
+# Slot 3: 13:00 UTC = 14:00 BST → runs until 17:00 BST
+# Also manually triggerable any day of the week.
+
 on:
   schedule:
-    - cron: '0 7 * * 6'   # Every Saturday 07:00 UTC = 08:00 BST
+    - cron: '0 7  * * 6'   # Slot 1: 08:00 BST
+    - cron: '0 10 * * 6'   # Slot 2: 11:00 BST
+    - cron: '0 13 * * 6'   # Slot 3: 14:00 BST
   workflow_dispatch:
     inputs:
       duration_minutes:
-        description: 'How long to run (minutes, max 110)'
-        required: true
+        description: 'How long to run (minutes, max 175)'
+        required: false
         default: '90'
 
 permissions:
@@ -18,7 +24,7 @@ permissions:
 jobs:
   live-scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 115
+    timeout-minutes: 200   # hard cap slightly over 3 hours to allow cleanup
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -39,11 +45,13 @@ jobs:
       - name: 🔴 Live match loop (10-second updates)
         env:
           COMET_SESSION: ${{ secrets.COMET_SESSION }}
-          DURATION_MINUTES: ${{ github.event.inputs.duration_minutes }}
-        run: |
-          python scraper/scrape_live.py
+          # Scheduled runs default to 175 mins (leaves 25 min buffer before timeout)
+          # Manual runs use the input value, falling back to 90 mins
+          DURATION_MINUTES: ${{ github.event.inputs.duration_minutes || '175' }}
+        run: python scraper/scrape_live.py
 
       - name: Final commit
+        if: always()
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
