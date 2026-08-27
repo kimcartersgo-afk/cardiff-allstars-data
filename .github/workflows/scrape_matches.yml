@@ -2,7 +2,8 @@ name: Scrape FAW Comet Match Data
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # Every 5 minutes for live score updates
+    - cron: '*/30 * * * *'  # Every 30 mins — fixtures/results don't change often
+                              # Live scores are handled by live_match.yml (10s updates)
   workflow_dispatch:          # Manual trigger from Actions tab
 
 permissions:
@@ -11,6 +12,7 @@ permissions:
 jobs:
   scrape-matches:
     runs-on: ubuntu-latest
+    timeout-minutes: 25      # Hard stop — prevents overlap with next 30-min run
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
