@@ -21,6 +21,12 @@ on:
 permissions:
   contents: write
 
+# Only allow ONE live match job at a time.
+# If triggered again while already running, the new run is cancelled.
+concurrency:
+  group: live-match-mode
+  cancel-in-progress: false
+
 jobs:
   live-scrape:
     runs-on: ubuntu-latest
