@@ -156,6 +156,7 @@ def git_push(message):
     diff = subprocess.run(["git", "diff", "--staged", "--quiet"], cwd=BASE_DIR)
     if diff.returncode != 0:
         subprocess.run(["git", "commit", "-m", message], cwd=BASE_DIR)
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=BASE_DIR)
         subprocess.run(["git", "push"], cwd=BASE_DIR)
         return True
     return False
