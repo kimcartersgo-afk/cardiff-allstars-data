@@ -1,0 +1,52 @@
+name: 🔴 LIVE Match Mode (10-second updates)
+
+# Auto-runs every Saturday at 8am BST (7am UTC)
+# Can also be triggered manually any time from the Actions tab.
+on:
+  schedule:
+    - cron: '0 7 * * 6'   # Every Saturday 07:00 UTC = 08:00 BST
+  workflow_dispatch:
+    inputs:
+      duration_minutes:
+        description: 'How long to run (minutes, max 110)'
+        required: true
+        default: '90'
+
+permissions:
+  contents: write
+
+jobs:
+  live-scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 115
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r scraper/requirements.txt
+          playwright install --with-deps chromium
+
+      - name: 🔴 Live match loop (10-second updates)
+        env:
+          COMET_SESSION: ${{ secrets.COMET_SESSION }}
+          DURATION_MINUTES: ${{ github.event.inputs.duration_minutes }}
+        run: |
+          python scraper/scrape_live.py
+
+      - name: Final commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ || true
+          git diff --staged --quiet || git commit -m "chore: live match final update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push || true
