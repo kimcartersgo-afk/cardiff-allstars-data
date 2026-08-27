@@ -60,7 +60,20 @@
     }
 
     /* Table */
-    .table-wrap { overflow-x: auto; }
+    .table-wrap {
+      overflow-x: auto;
+      overflow-y: auto;
+      max-height: 70vh;   /* scrolls when many teams — expands naturally for small tables */
+      border-radius: 8px;
+      border: 1px solid #1e1e1e;
+    }
+    /* Sticky header so column labels stay visible when scrolling */
+    thead tr th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #1a1a1a;
+    }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -117,7 +130,11 @@
       text-align: right;
       margin-top: 0.6rem;
     }
-
+    .team-count {
+      font-size: 0.68rem;
+      color: #444;
+      margin-bottom: 0.4rem;
+    }
     .loading, .error {
       text-align: center;
       padding: 2rem;
@@ -175,6 +192,7 @@
     }).join("");
 
     return `
+      <div class="team-count">${data.table.length} teams in division</div>
       <div class="table-wrap">
         <table>
           <thead><tr>
