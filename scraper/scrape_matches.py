@@ -203,14 +203,17 @@ def scrape_matches_page(page, click_previous=False):
     return matches
 
 
-def scrape_goals(page, match_url, is_home):
-    """Visit a match detail page and return goalscorer list for our team only."""
+def scrape_match_details(page, match_url, is_home):
+    """Visit a match detail page and return (goals, minute)."""
     goals = []
+    minute = None
     if not match_url:
-        return goals
+        return goals, minute
     try:
         page.goto(match_url, wait_until="domcontentloaded", timeout=20000)
         page.wait_for_load_state("networkidle", timeout=8000)
+        
+        # 1. Scrape Goals
         for sel in [".match-event tr", ".event-row", ".ui-datatable-data tr", "table tr"]:
             rows = page.query_selector_all(sel)
             for row in rows:
@@ -222,15 +225,26 @@ def scrape_goals(page, match_url, is_home):
                 text = text.strip()
                 m = re.search(r"(\d{1,3})['\u2019+]?\s+(.{3,40})", text)
                 if m:
-                    minute = int(m.group(1))
+                    g_min = int(m.group(1))
                     player = re.sub(r"\s+", " ", m.group(2)).strip(" -•|:")
-                    if minute <= 120 and len(player) > 2:
-                        goals.append({"player": player, "minute": minute})
+                    if g_min <= 120 and len(player) > 2:
+                        goals.append({"player": player, "minute": g_min})
             if goals:
                 break
+                
+        # 2. Attempt to scrape live minute clock
+        for sel in [".match-minute", ".live-time", ".match-time", ".clock", ".status-live"]:
+            el = page.query_selector(sel)
+            if el:
+                clock_text = el.inner_text().strip()
+                m = re.search(r"(\d{1,3})['\u2019]?", clock_text)
+                if m:
+                    minute = int(m.group(1))
+                    break
+                    
     except Exception as e:
-        print(f"    Goals error: {e}", file=sys.stderr)
-    return goals
+        print(f"    Match details error: {e}", file=sys.stderr)
+    return goals, minute
 
 
 def clean(m):
@@ -305,7 +319,7 @@ def main():
                     # Fetch goalscorers
                     if lr.get("match_url"):
                         is_home = is_allstars(lr["home"])
-                        lr["goals"] = scrape_goals(page, lr["match_url"], is_home)
+                        lr["goals"], lr["minute"] = scrape_match_details(page, lr["match_url"], is_home)
                         # Return to matches page for next iteration
                         page.goto(MATCHES_URL, wait_until="domcontentloaded", timeout=20000)
                     else:
