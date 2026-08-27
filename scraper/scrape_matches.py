@@ -180,9 +180,14 @@ def scrape_next_matches(page):
         if not is_allstars(row.inner_text()):
             continue
         cells = row.query_selector_all("td")
+        cell_texts = [c.inner_text().strip() for c in cells]
+        print(f"  ROW CELLS: {cell_texts}")
         m = parse_match_row(cells)
         if m:
+            print(f"    → home='{m['home']}' away='{m['away']}' date='{m['date']}' time='{m['time']}' score={m['home_score']}:{m['away_score']}")
             matches.append(m)
+        else:
+            print(f"    → skipped (parse returned None)")
 
     live     = [m for m in matches if m["is_live"]]
     upcoming = [m for m in matches if not m["is_live"] and not m["has_score"]]
