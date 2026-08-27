@@ -111,7 +111,7 @@ def scrape_live_matches(page):
     return {"live": live_matches, "upcoming": next_matches}
 
 
-def scrape_goals(page, match_url):
+def scrape_goals(page, match_url, is_home):
     goals = []
     if not match_url:
         return goals
@@ -121,10 +121,16 @@ def scrape_goals(page, match_url):
         for sel in [".match-event tr", ".event-row", ".ui-datatable-data tr", "table tr"]:
             rows = page.query_selector_all(sel)
             for row in rows:
-                text = row.inner_text().strip()
+                cells = row.query_selector_all("td")
+                if len(cells) < 2:
+                    continue
+                # Home events are in the first column, Away events in the last column
+                text = cells[0].inner_text() if is_home else cells[len(cells)-1].inner_text()
+                text = text.strip()
                 m = re.search(r"(\d{1,3})['\u2019+]?\s+(.{3,40})", text)
                 if m:
-                    minute, player = int(m.group(1)), m.group(2).strip(" -•|:")
+                    minute = int(m.group(1))
+                    player = m.group(2).strip(" -•|:")
                     if minute <= 120 and len(player) > 2:
                         goals.append({"player": player, "minute": minute})
             if goals:
@@ -232,7 +238,8 @@ def main():
                     live_with_goals = None
                     if team_live:
                         lm = team_live[0]
-                        goals = scrape_goals(page, lm.get("match_url"))
+                        is_home = is_allstars(lm["home"])
+                        goals = scrape_goals(page, lm.get("match_url"), is_home)
                         live_with_goals = {**clean(lm), "goals": goals, "status": "live"}
                         print(f"  🔴 LIVE [{comp['name']}]: "
                               f"{lm['home']} {lm['home_score']}–{lm['away_score']} {lm['away']} "

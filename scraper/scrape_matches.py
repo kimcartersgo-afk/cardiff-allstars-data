@@ -203,8 +203,8 @@ def scrape_matches_page(page, click_previous=False):
     return matches
 
 
-def scrape_goals(page, match_url):
-    """Visit a match detail page and return goalscorer list."""
+def scrape_goals(page, match_url, is_home):
+    """Visit a match detail page and return goalscorer list for our team only."""
     goals = []
     if not match_url:
         return goals
@@ -214,7 +214,12 @@ def scrape_goals(page, match_url):
         for sel in [".match-event tr", ".event-row", ".ui-datatable-data tr", "table tr"]:
             rows = page.query_selector_all(sel)
             for row in rows:
-                text = row.inner_text().strip()
+                cells = row.query_selector_all("td")
+                if len(cells) < 2:
+                    continue
+                # Home events are in the first column, Away events in the last column
+                text = cells[0].inner_text() if is_home else cells[len(cells)-1].inner_text()
+                text = text.strip()
                 m = re.search(r"(\d{1,3})['\u2019+]?\s+(.{3,40})", text)
                 if m:
                     minute = int(m.group(1))
@@ -299,7 +304,8 @@ def main():
                     lr = team_results[-1]
                     # Fetch goalscorers
                     if lr.get("match_url"):
-                        lr["goals"] = scrape_goals(page, lr["match_url"])
+                        is_home = is_allstars(lr["home"])
+                        lr["goals"] = scrape_goals(page, lr["match_url"], is_home)
                         # Return to matches page for next iteration
                         page.goto(MATCHES_URL, wait_until="domcontentloaded", timeout=20000)
                     else:
