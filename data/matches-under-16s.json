@@ -1,8 +1,18 @@
 {
-  "updated": "2026-08-27T13:39:33Z",
+  "updated": "2026-08-27T13:46:13Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": null,
-  "next_match": null,
+  "next_match": {
+    "date": "05.09.2026",
+    "time": "10:00",
+    "home": "Llanrumney United Juniors FC U16 Red",
+    "away": "Cardiff Allstars FC U16",
+    "venue": "The Jamie Burley Group Stadium",
+    "competition": "Cardiff & District U16 Division B - 26/27",
+    "home_score": null,
+    "away_score": null,
+    "status": "SCHEDULED"
+  },
   "last_result": null
 }

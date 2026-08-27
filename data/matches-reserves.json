@@ -1,8 +1,18 @@
 {
-  "updated": "2026-08-27T13:39:33Z",
+  "updated": "2026-08-27T13:46:13Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": null,
-  "next_match": null,
+  "next_match": {
+    "date": "05.09.2026",
+    "time": "14:00",
+    "home": "Clwb Sparta FC Reserves",
+    "away": "Cardiff Allstars FC Reserves",
+    "venue": "Cardiff West Community HS Grass",
+    "competition": "Cardiff & District League - Div Two 26/27",
+    "home_score": null,
+    "away_score": null,
+    "status": "SCHEDULED"
+  },
   "last_result": null
 }
