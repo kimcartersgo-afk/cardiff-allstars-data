@@ -262,19 +262,32 @@
     return isOurTeam(team) ? "⚽" : "⚽";
   }
 
+  function parseDateString(dateStr, timeStr = "") {
+    if (!dateStr) return null;
+    let d = null;
+    if (dateStr.includes(".")) {
+      const parts = dateStr.split(".");
+      if (parts.length === 3) {
+        d = new Date(`${parts[2]}-${parts[1]}-${parts[0]}T${timeStr || "00:00"}:00`);
+      }
+    }
+    if (!d || isNaN(d)) d = new Date(dateStr);
+    return d;
+  }
+
   function formatDate(dateStr) {
     if (!dateStr) return "";
     try {
-      const d = new Date(dateStr);
+      const d = parseDateString(dateStr);
       if (!isNaN(d)) return d.toLocaleDateString("en-GB", { weekday:"short", day:"numeric", month:"short", year:"numeric" });
     } catch(e) {}
     return dateStr;
   }
 
-  function countdown(dateStr) {
+  function countdown(dateStr, timeStr = "") {
     if (!dateStr) return "";
     try {
-      const match = new Date(dateStr);
+      const match = parseDateString(dateStr, timeStr);
       const now = new Date();
       const diff = match - now;
       if (diff < 0) return "";
@@ -322,7 +335,7 @@
 
   function renderNextMatch(next) {
     if (!next) return `<div class="card"><div class="card-label">⏭ NEXT MATCH</div><div class="empty">No upcoming fixture found</div></div>`;
-    const cd = countdown(next.date);
+    const cd = countdown(next.date, next.time);
     return `
       <div class="card">
         <div class="card-label">⏭ NEXT MATCH</div>
