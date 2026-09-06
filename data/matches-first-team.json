@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T14:45:28Z",
+  "updated": "2026-09-06T14:48:14Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -14,5 +14,16 @@
     "away_score": null,
     "status": "SCHEDULED"
   },
-  "last_result": null
+  "last_result": {
+    "date": "14.02.2026",
+    "time": "14:00",
+    "home": "Cardiff Allstars FC",
+    "away": "Clwb Sparta FC",
+    "venue": "University Fields 3G - Cardiff",
+    "competition": "Cardiff & District League - Premier division",
+    "home_score": 3,
+    "away_score": 4,
+    "status": "PLAYED",
+    "goals": []
+  }
 }
