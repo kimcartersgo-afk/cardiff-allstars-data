@@ -329,7 +329,7 @@ def main():
                 # Last result = most recent completed match
                 last_result = None
                 if team_results:
-                    lr = team_results[-1]
+                    lr = team_results[0]
                     # Fetch goalscorers
                     if lr.get("match_url"):
                         is_home = is_allstars(lr["home"])
