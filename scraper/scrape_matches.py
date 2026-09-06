@@ -162,12 +162,8 @@ def scrape_matches_page(page, click_previous=False):
         try:
             prev_btn = page.query_selector("#menuform\\:myPreviousMatchesClubId a")
             if prev_btn:
-                # Wait for the PrimeFaces AJAX POST request to complete
-                with page.expect_response(lambda r: r.request.method == "POST", timeout=15000):
-                    prev_btn.click(force=True)
-                
-                # Give the DOM a moment to re-render the datatable
-                page.wait_for_timeout(2500)
+                prev_btn.click(force=True)
+                page.wait_for_timeout(5000)
 
                 # DEBUG DUMP
                 try:
