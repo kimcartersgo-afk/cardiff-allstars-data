@@ -1,11 +1,23 @@
 {
-  "updated": "2026-09-05T21:51:06Z",
+  "updated": "2026-09-06T14:26:30Z",
   "division": "Cardiff & District Under 16s",
   "team": "Cardiff Allstars Under 16s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459637",
   "table": [
     {
       "pos": 1,
+      "team": "Pentyrch Rangers U16",
+      "mp": 1,
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "gf": 9,
+      "ga": 4,
+      "gd": 5,
+      "pts": 3
+    },
+    {
+      "pos": 2,
       "team": "Ely Rangers FC U16",
       "mp": 1,
       "w": 1,
@@ -17,7 +29,7 @@
       "pts": 3
     },
     {
-      "pos": 2,
+      "pos": 3,
       "team": "Caerau Ely C FC U16 Red",
       "mp": 1,
       "w": 1,
@@ -29,7 +41,31 @@
       "pts": 3
     },
     {
-      "pos": 3,
+      "pos": 4,
+      "team": "Cardiff Allstars FC U16",
+      "mp": 1,
+      "w": 1,
+      "d": 0,
+      "l": 0,
+      "gf": 2,
+      "ga": 1,
+      "gd": 1,
+      "pts": 3
+    },
+    {
+      "pos": 5,
+      "team": "Llanishen FC U16",
+      "mp": 1,
+      "w": 0,
+      "d": 0,
+      "l": 1,
+      "gf": 4,
+      "ga": 9,
+      "gd": -5,
+      "pts": 0
+    },
+    {
+      "pos": 6,
       "team": "Tiger Bay FC U16s",
       "mp": 1,
       "w": 0,
@@ -41,7 +77,7 @@
       "pts": 0
     },
     {
-      "pos": 4,
+      "pos": 7,
       "team": "Canton Rangers FC U16 Gwyn",
       "mp": 1,
       "w": 0,
@@ -53,56 +89,20 @@
       "pts": 0
     },
     {
-      "pos": 5,
-      "team": "AFC Whitchurch U16 Blue",
-      "mp": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 0
-    },
-    {
-      "pos": 6,
-      "team": "Cardiff Allstars FC U16",
-      "mp": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 0
-    },
-    {
-      "pos": 7,
-      "team": "Llanishen FC U16",
-      "mp": 0,
-      "w": 0,
-      "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 0
-    },
-    {
       "pos": 8,
       "team": "Llanrumney United Juniors FC U16 Red",
-      "mp": 0,
+      "mp": 1,
       "w": 0,
       "d": 0,
-      "l": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
+      "l": 1,
+      "gf": 1,
+      "ga": 2,
+      "gd": -1,
       "pts": 0
     },
     {
       "pos": 9,
-      "team": "Pentyrch Rangers U16",
+      "team": "AFC Whitchurch U16 Blue",
       "mp": 0,
       "w": 0,
       "d": 0,
