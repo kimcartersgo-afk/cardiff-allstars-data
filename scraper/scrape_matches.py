@@ -201,9 +201,10 @@ def scrape_matches_page(page, click_previous=False):
 
     matches = []
     for row in rows:
-        if not is_allstars(row.inner_text()):
+        if not is_allstars(row.evaluate("(el) => el.textContent")):
             continue
-        texts = [c.inner_text().strip() for c in row.query_selector_all("td")]
+        cells = row.query_selector_all("td")
+        texts = [c.evaluate("(el) => { const clone = el.cloneNode(true); const title = clone.querySelector('.ui-column-title'); if(title) title.remove(); return clone.textContent.trim(); }") for c in cells]
         m = parse_row(texts)
         if m:
             matches.append(m)
