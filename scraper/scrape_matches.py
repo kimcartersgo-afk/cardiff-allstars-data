@@ -162,7 +162,8 @@ def scrape_matches_page(page, click_previous=False):
         try:
             prev_btn = page.query_selector("#menuform\\:myPreviousMatchesClubId a")
             if prev_btn:
-                prev_btn.click(force=True)
+                # Force the AJAX request via JS to bypass any UI visibility checks
+                page.evaluate("PrimeFaces.addSubmitParam('menuform',{'menuform:myPreviousMatchesClubId':'menuform:myPreviousMatchesClubId'}).submit('menuform');")
                 page.wait_for_timeout(5000)
 
                 # DEBUG DUMP
