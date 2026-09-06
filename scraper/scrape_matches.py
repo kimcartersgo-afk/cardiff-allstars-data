@@ -164,10 +164,17 @@ def scrape_matches_page(page, click_previous=False):
             if prev_btn:
                 # Wait for the PrimeFaces AJAX POST request to complete
                 with page.expect_response(lambda r: r.request.method == "POST", timeout=15000):
-                    prev_btn.click()
+                    prev_btn.click(force=True)
                 
                 # Give the DOM a moment to re-render the datatable
                 page.wait_for_timeout(2500)
+
+                # DEBUG DUMP
+                try:
+                    with open(os.path.join(BASE_DIR, "data", "debug-previous-matches.html"), "w", encoding="utf-8") as f:
+                        f.write(page.content())
+                except Exception:
+                    pass
             else:
                 print("  WARNING: Could not find 'My previous matches' button", file=sys.stderr)
                 return []
