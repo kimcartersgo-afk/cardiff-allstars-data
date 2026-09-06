@@ -363,6 +363,8 @@ def main():
             browser.close()
     finally:
         os.unlink(tmp.name)
+        sys.stdout = sys.__stdout__
+        sys.stderr = sys.__stderr__
         log_file.close()
 
     print("\nAll match data updated successfully.")
