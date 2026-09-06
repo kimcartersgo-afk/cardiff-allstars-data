@@ -274,8 +274,13 @@ def main():
 
     with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False, encoding="utf-8") as tmp:
         tmp.write(session_json)
-        session_path = tmp.name
-
+        BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    
+    # Setup logging to file so we can debug GitHub Actions
+    log_file = open(os.path.join(BASE_DIR, "data", "scrape.log"), "w", encoding="utf-8")
+    sys.stdout = log_file
+    sys.stderr = log_file
+    
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch(
@@ -283,7 +288,7 @@ def main():
                 args=["--no-sandbox", "--disable-dev-shm-usage"]
             )
             context = browser.new_context(
-                storage_state=session_path,
+                storage_state=tmp.name,
                 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                            "(KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
                 viewport={"width": 1280, "height": 800},
@@ -356,7 +361,8 @@ def main():
 
             browser.close()
     finally:
-        os.unlink(session_path)
+        os.unlink(tmp.name)
+        log_file.close()
 
     print("\nAll match data updated successfully.")
 
