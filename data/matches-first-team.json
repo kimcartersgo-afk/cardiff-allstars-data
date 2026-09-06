@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T15:26:50Z",
+  "updated": "2026-09-06T15:40:36Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -15,15 +15,15 @@
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "14.02.2026",
+    "date": "05.09.2026",
     "time": "14:00",
     "home": "Cardiff Allstars FC",
-    "away": "Clwb Sparta FC",
-    "venue": "University Fields 3G - Cardiff",
-    "competition": "Cardiff & District League - Premier division",
-    "home_score": 3,
-    "away_score": 4,
-    "status": "PLAYED",
+    "away": "Tongwynlais AFC Reserves",
+    "venue": "St Mellons",
+    "competition": "Cardiff & District League - Div One 26/27",
+    "home_score": 4,
+    "away_score": 1,
+    "status": "SCHEDULED",
     "goals": []
   }
 }

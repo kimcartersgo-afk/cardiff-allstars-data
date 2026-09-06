@@ -1,18 +1,18 @@
 {
-  "updated": "2026-09-06T15:26:50Z",
+  "updated": "2026-09-06T15:40:36Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": null,
   "next_match": null,
   "last_result": {
-    "date": "28.02.2026",
-    "time": "12:00",
-    "home": "Cardiff Allstars FC U16",
-    "away": "Llanishen FC U16",
-    "venue": "Llanishen High School 3G",
-    "competition": "Cardiff & District U15 Division C 25/26",
-    "home_score": 9,
-    "away_score": 1,
+    "date": "05.09.2026",
+    "time": "10:00",
+    "home": "Llanrumney United Juniors FC U16 Red",
+    "away": "Cardiff Allstars FC U16",
+    "venue": "The Jamie Burley Group Stadium",
+    "competition": "Cardiff & District U16 Division B - 26/27",
+    "home_score": 1,
+    "away_score": 2,
     "status": "PLAYED",
     "goals": []
   }

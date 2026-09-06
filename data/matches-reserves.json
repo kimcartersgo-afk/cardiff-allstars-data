@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T15:26:50Z",
+  "updated": "2026-09-06T15:40:36Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": null,
@@ -15,14 +15,14 @@
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "14.03.2026",
+    "date": "05.09.2026",
     "time": "14:00",
-    "home": "Cardiff Allstars FC Reserves",
-    "away": "Ely Rangers FC Reserves C&D",
-    "venue": "St Mellons",
-    "competition": "Cardiff & District League - Div Two",
+    "home": "Clwb Sparta FC Reserves",
+    "away": "Cardiff Allstars FC Reserves",
+    "venue": "Cardiff West Community HS Grass",
+    "competition": "Cardiff & District League - Div Two 26/27",
     "home_score": 7,
-    "away_score": 1,
+    "away_score": 2,
     "status": "PLAYED",
     "goals": []
   }
