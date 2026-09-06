@@ -1,0 +1,33 @@
+
+[Step 1] Scraping upcoming / live matches...
+  Totals: 0 live, 7 upcoming
+
+[Step 2] Scraping previous results...
+  WARNING: Could not click previous matches: ElementHandle.click: Element is not visible
+Call log:
+  - attempting click action
+    - scrolling into view if needed
+
+  Found 0 previous results
+
+[Step 3] Writing team files...
+  [Cardiff Allstars Under 9s]
+    Next:   none
+    Last:   none (no results yet this season)
+    Written → matches-under-9s.json
+  [Cardiff Allstars Under 12s]
+    Next:   Cardiff Allstars FC U12 vs Maindy Corries FC U12 White on 12.09.2026 @ 09:00 (Eastern Leisure Centre)
+    Last:   none (no results yet this season)
+    Written → matches-under-12s.json
+  [Cardiff Allstars Under 16s]
+    Next:   none
+    Last:   none (no results yet this season)
+    Written → matches-under-16s.json
+  [Cardiff Allstars FC]
+    Next:   Cardiff Allstars FC vs Llanrumney Athletic on 09.09.2026 @ 18:00 (St Mellons)
+    Last:   none (no results yet this season)
+    Written → matches-first-team.json
+  [Cardiff Allstars FC Reserves]
+    Next:   Llanrumney Athletic Reserves vs Cardiff Allstars FC Reserves on 09.09.2026 @ 18:00 (Eastern Leisure Centre)
+    Last:   none (no results yet this season)
+    Written → matches-reserves.json
