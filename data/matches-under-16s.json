@@ -1,9 +1,19 @@
 {
-  "updated": "2026-09-06T17:14:35Z",
+  "updated": "2026-09-06T19:23:59Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": null,
-  "next_match": null,
+  "next_match": {
+    "date": "19.09.2026",
+    "time": "10:45",
+    "home": "Cardiff Allstars FC U16",
+    "away": "Canton Rangers FC U16 Gwyn",
+    "venue": "St Mellons",
+    "competition": "Cardiff & District U16 Division B - 26/27",
+    "home_score": null,
+    "away_score": null,
+    "status": "SCHEDULED"
+  },
   "last_result": {
     "date": "05.09.2026",
     "time": "10:00",

@@ -1,6 +1,6 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 0 live, 7 upcoming
+  Totals: 0 live, 9 upcoming
 
 [Step 2] Scraping previous results...
   Found 39 previous results
@@ -15,7 +15,7 @@
     Last:   Cardiff Allstars FC U12 7–8 Cardiff Corinthians U12 Black (0 goals)
     Written → matches-under-12s.json
   [Cardiff Allstars Under 16s]
-    Next:   none
+    Next:   Cardiff Allstars FC U16 vs Canton Rangers FC U16 Gwyn on 19.09.2026 @ 10:45 (St Mellons)
     Last:   Llanrumney United Juniors FC U16 Red 1–2 Cardiff Allstars FC U16 (0 goals)
     Written → matches-under-16s.json
   [Cardiff Allstars FC]
