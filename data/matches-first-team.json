@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-09T21:49:21Z",
+  "updated": "2026-09-09T23:49:26Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -15,15 +15,15 @@
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "05.09.2026",
-    "time": "14:00",
+    "date": "09.09.2026",
+    "time": "18:00",
     "home": "Cardiff Allstars FC",
-    "away": "Tongwynlais AFC Reserves",
+    "away": "Llanrumney Athletic",
     "venue": "St Mellons",
     "competition": "Cardiff & District League - Div One 26/27",
-    "home_score": 4,
-    "away_score": 1,
-    "status": "SCHEDULED",
+    "home_score": 5,
+    "away_score": 3,
+    "status": "PLAYED",
     "goals": []
   }
 }
