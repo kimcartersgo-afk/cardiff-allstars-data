@@ -158,15 +158,27 @@ def scrape_match_details(page, match_url, is_home):
         raw_goals = page.evaluate(js_code, is_home)
         
         for g_text in raw_goals:
-            sm = re.search(r"(\d+)'", g_text)
-            if sm:
-                min_val = int(sm.group(1))
-                player = g_text.replace(sm.group(0), "").strip()
-                if min_val <= 120 and len(player) > 2:
-                    goals.append({
-                        "player": player,
-                        "minute": min_val,
-                    })
+            import re
+            minutes = re.findall(r"(\d+(?:\+\d+)?)'", g_text)
+            if minutes:
+                player = g_text
+                for m in minutes:
+                    player = player.replace(f"{m}'", "")
+                player = re.sub(r"[,+\s]+", " ", player).strip()
+                
+                if len(player) > 2:
+                    for min_str in minutes:
+                        if "+" in min_str:
+                            parts = min_str.split("+")
+                            min_val = int(parts[0]) + int(parts[1])
+                        else:
+                            min_val = int(min_str)
+                            
+                        if min_val <= 130:
+                            goals.append({
+                                "player": player,
+                                "minute": min_val,
+                            })
                 
         # 2. Scrape live minute clock
         for sel in ["#watchdisplay", ".match-minute", ".live-time", ".match-time", ".clock", ".status-live"]:
