@@ -1,21 +1,8 @@
 {
-  "updated": "2026-09-12T14:50:16Z",
+  "updated": "2026-09-12T14:50:54Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
-  "live": {
-    "date": "12.09.2026",
-    "time": "14:00",
-    "home": "Cardiff Allstars FC Reserves",
-    "away": "Grangetown Cath OB Reserves",
-    "our_team": "Cardiff Allstars FC Reserves",
-    "venue": "St Mellons",
-    "home_score": 0,
-    "away_score": 6,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "19.09.2026",
     "time": "14:00",
