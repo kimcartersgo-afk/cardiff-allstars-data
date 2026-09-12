@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T14:24:29Z",
+  "updated": "2026-09-12T14:25:38Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": {
@@ -7,21 +7,25 @@
     "time": "14:00",
     "home": "Cardiff Allstars FC Reserves",
     "away": "Grangetown Cath OB Reserves",
+    "our_team": "Cardiff Allstars FC Reserves",
     "venue": "St Mellons",
-    "competition": "Cardiff & District League - Div Two 26/27",
     "home_score": 0,
     "away_score": 4,
-    "status": "SCHEDULED"
+    "is_postponed": false,
+    "status": "live",
+    "goals": [],
+    "minute": null
   },
   "next_match": {
     "date": "19.09.2026",
     "time": "14:00",
     "home": "Cardiff Allstars FC Reserves",
     "away": "Llanrumney United District",
+    "our_team": "Cardiff Allstars FC Reserves",
     "venue": "St Mellons",
-    "competition": "Cardiff & District League - Div Two 26/27",
     "home_score": null,
     "away_score": null,
+    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
@@ -34,15 +38,6 @@
     "home_score": 4,
     "away_score": 2,
     "status": "PLAYED",
-    "goals": [
-      {
-        "player": "Jay Machachini",
-        "minute": 81
-      },
-      {
-        "player": "Jaden Wilkins",
-        "minute": 88
-      }
-    ]
+    "goals": []
   }
 }
