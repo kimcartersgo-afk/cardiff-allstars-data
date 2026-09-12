@@ -219,40 +219,49 @@ def scrape_match_details(page, match_url, is_home):
     if not match_url:
         return goals, minute
     try:
-        page.goto(match_url, wait_until="domcontentloaded", timeout=20000)
-        page.wait_for_load_state("networkidle", timeout=8000)
+        page.goto(match_url, wait_until="domcontentloaded", timeout=15000)
+        page.wait_for_load_state("networkidle", timeout=6000)
         
-        # 1. Scrape Goals
-        for sel in [".match-event tr", ".event-row", ".ui-datatable-data tr", "table tr"]:
-            rows = page.query_selector_all(sel)
-            for row in rows:
-                cells = row.query_selector_all("td")
-                if len(cells) < 2:
-                    continue
-                # Home events are in the first column, Away events in the last column
-                text = cells[0].inner_text() if is_home else cells[len(cells)-1].inner_text()
-                text = text.strip()
-                m = re.search(r"(\d{1,3})['\u2019+]?\s+(.{3,40})", text)
-                if m:
-                    g_min = int(m.group(1))
-                    player = re.sub(r"\s+", " ", m.group(2)).strip(" -•|:")
-                    if g_min <= 120 and len(player) > 2:
-                        goals.append({"player": player, "minute": g_min})
-            if goals:
-                break
-                
-        # 2. Attempt to scrape live minute clock
-        for sel in [".match-minute", ".live-time", ".match-time", ".clock", ".status-live"]:
-            el = page.query_selector(sel)
-            if el:
-                clock_text = el.inner_text().strip()
-                m = re.search(r"(\d{1,3})['\u2019]?", clock_text)
-                if m:
-                    minute = int(m.group(1))
-                    break
-                    
+        js_code = """
+        (isHome) => {
+            let res = [];
+            let comp_td = document.querySelector(".a-match-score-info");
+            if (!comp_td) return res;
+            let middle_div = comp_td.closest("table").parentElement;
+            if (!middle_div) return res;
+            
+            let home_div = middle_div.previousElementSibling;
+            let away_div = middle_div.nextElementSibling;
+            
+            let target_div = isHome ? home_div : away_div;
+            if (target_div) {
+                target_div.querySelectorAll("div").forEach(d => {
+                    let text = d.innerText.trim();
+                    if (text && text.includes("'") && !text.includes("\\n")) {
+                        res.push(text);
+                    }
+                });
+            }
+            return res;
+        }
+        """
+        raw_goals = page.evaluate(js_code, is_home)
+        
+        for g_text in raw_goals:
+            import re
+            sm = re.search(r"(\d+)'", g_text)
+            if sm:
+                min_val = int(sm.group(1))
+                player = g_text.replace(sm.group(0), "").strip()
+                if min_val <= 120 and len(player) > 2:
+                    goals.append({
+                        "player": player,
+                        "minute": min_val,
+                    })
+        
     except Exception as e:
-        print(f"    Match details error: {e}", file=sys.stderr)
+        print(f"  WARNING: Could not scrape details for {match_url}: {e}")
+        
     return goals, minute
 
 
