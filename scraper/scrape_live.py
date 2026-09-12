@@ -26,6 +26,9 @@ COMPETITIONS = [
     {"name": "Reserves",   "key": "reserves",   "team": "Cardiff Allstars FC Reserves",    "division": "Cardiff & District Div 2 26/27",         "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=107459589"},
 ]
 
+def is_allstars(text):
+    return "allstars" in text.lower()
+
 def parse_row(texts):
     """Parse using exact FAW Comet column indices."""
     if len(texts) < 13:
@@ -98,7 +101,7 @@ def scrape_live_matches(page):
             for row in rows:
                 if not is_allstars(row.inner_text()):
                     continue
-                m = parse_row(row.query_selector_all("td"))
+                m = parse_row([td.inner_text() for td in row.query_selector_all("td")])
                 if m:
                     if m["is_live"]:
                         live_matches.append(m)
