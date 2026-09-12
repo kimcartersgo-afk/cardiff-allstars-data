@@ -1,18 +1,17 @@
 {
-  "updated": "2026-09-12T08:29:23Z",
+  "updated": "2026-09-12T08:29:08Z",
   "team": "Cardiff Allstars Under 9s",
   "division": "SWWGL U9 Cardiff Division 26/27",
   "live": null,
   "next_match": {
-    "date": "12.09.2026",
-    "time": "14:00",
-    "home": "Cardiff Academicals FC",
-    "away": "Cardiff Allstars FC",
-    "our_team": "Cardiff Allstars FC",
-    "venue": "Llandaff - Cardiff Met Campus",
+    "date": "13.09.2026",
+    "time": "10:30",
+    "home": "Lisvane Panthers Girls U9 Orange",
+    "away": "Cardiff Allstars FC U9 Girls",
+    "venue": "Ocean Park Arena",
+    "competition": "SWWGL U9 CARDIFF DIVISION - 26 / 27",
     "home_score": null,
     "away_score": null,
-    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": null
