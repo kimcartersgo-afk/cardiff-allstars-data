@@ -364,6 +364,15 @@ def main():
                 team_upcoming = [m for m in upcoming     if is_team_match(m, team)]
                 team_results  = [m for m in results      if is_team_match(m, team)]
 
+                from datetime import datetime
+                def get_dt(m):
+                    try:
+                        return datetime.strptime(f"{m['date']} {m['time']}", "%d.%m.%Y %H:%M")
+                    except Exception:
+                        return datetime.min
+                team_upcoming = sorted(team_upcoming, key=get_dt)
+                team_results = sorted(team_results, key=get_dt, reverse=True)
+
                 # Next match = first upcoming for this team
                 next_match = team_upcoming[0] if team_upcoming else None
 

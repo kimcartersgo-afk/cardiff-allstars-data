@@ -1,6 +1,6 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 0 live, 8 upcoming
+  Totals: 2 live, 6 upcoming
 
 [Step 2] Scraping previous results...
   Found 39 previous results
@@ -12,17 +12,17 @@
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
     Next:   Clwb Cymric D12 Coch vs Cardiff Allstars FC U12 on 19.09.2026 @ 10:45 (Pontcanna Fields)
-    Last:   Cardiff Allstars FC U12 7–8 Cardiff Corinthians U12 Black (0 goals)
+    Last:   Cardiff Allstars FC U12 7–8 Cardiff Corinthians U12 Black (1 goals)
     Written → matches-under-12s.json
   [Cardiff Allstars Under 16s]
     Next:   Cardiff Allstars FC U16 vs Canton Rangers FC U16 Gwyn on 19.09.2026 @ 10:45 (St Mellons)
-    Last:   Llanrumney United Juniors FC U16 Red 1–2 Cardiff Allstars FC U16 (0 goals)
+    Last:   Llanrumney United Juniors FC U16 Red 1–2 Cardiff Allstars FC U16 (2 goals)
     Written → matches-under-16s.json
   [Cardiff Allstars FC]
-    Next:   Cardiff Academicals FC vs Cardiff Allstars FC on 12.09.2026 @ 14:00 (Llandaff - Cardiff Met Campus)
-    Last:   Cardiff Allstars FC 5–3 Llanrumney Athletic (0 goals)
+    Next:   Cardiff Allstars FC vs Llanrumney United Reserves on 03.10.2026 @ 14:00 (St Mellons)
+    Last:   Cardiff Allstars FC 5–3 Llanrumney Athletic (5 goals)
     Written → matches-first-team.json
   [Cardiff Allstars FC Reserves]
-    Next:   Cardiff Allstars FC Reserves vs Grangetown Cath OB Reserves on 12.09.2026 @ 14:00 (St Mellons)
-    Last:   Llanrumney Athletic Reserves 4–2 Cardiff Allstars FC Reserves (0 goals)
+    Next:   Cardiff Allstars FC Reserves vs Llanrumney United District on 19.09.2026 @ 14:00 (St Mellons)
+    Last:   Llanrumney Athletic Reserves 4–2 Cardiff Allstars FC Reserves (2 goals)
     Written → matches-reserves.json
