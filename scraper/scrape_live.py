@@ -302,7 +302,7 @@ def main():
                     compare_output = {k: v for k, v in output.items() if k != "updated"}
                     new_str = json.dumps(compare_output, sort_keys=True)
 
-                    if new_str != last_data.get(comp["key"], ""):
+                    if new_str != last_data.get(comp["key"], "") or (iteration % PUSH_EVERY == 0):
                         last_data[comp["key"]] = new_str
                         with open(path, "w", encoding="utf-8") as f:
                             json.dump(output, f, indent=2, ensure_ascii=False)
