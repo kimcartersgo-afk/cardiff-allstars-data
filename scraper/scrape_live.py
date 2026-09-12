@@ -71,7 +71,7 @@ def parse_row(texts):
             away_score = int(sm.group(2))
             has_score  = True
 
-    is_live      = status in ("LIVE", "IN PROGRESS", "PLAYING", "IN_PROGRESS")
+    is_live      = status in ("LIVE", "IN PROGRESS", "PLAYING", "IN_PROGRESS", "1H", "2H", "HT", "FT") or (has_score and status not in ("PLAYED", "SCHEDULED", "POSTPONED", "CANCELLED", "ABANDONED"))
     is_postponed = status in ("POSTPONED", "CANCELLED", "ABANDONED")
 
     if not home:
