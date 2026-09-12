@@ -281,7 +281,9 @@ def main():
                     }
 
                     path    = os.path.join(BASE_DIR, "data", f"matches-{comp['key']}.json")
-                    new_str = json.dumps(output, sort_keys=True)
+                    
+                    compare_output = {k: v for k, v in output.items() if k != "updated"}
+                    new_str = json.dumps(compare_output, sort_keys=True)
 
                     if new_str != last_data.get(comp["key"], ""):
                         last_data[comp["key"]] = new_str
