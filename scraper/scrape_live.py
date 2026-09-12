@@ -19,15 +19,23 @@ INTERVAL   = 10          # seconds between scrapes
 PUSH_EVERY = 6           # push to git every N scrapes even if unchanged (keep alive)
 
 COMPETITIONS = [
-    {"name": "Under 9s",   "key": "under-9s",   "team": "Cardiff Allstars Under 9s",       "division": "SWWGL U9 Cardiff Division 26/27",        "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=106365127"},
-    {"name": "Under 12s",  "key": "under-12s",  "team": "Cardiff Allstars Under 12s",      "division": "Cardiff & District U12 Division 26/27",  "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=108490756"},
-    {"name": "Under 16s",  "key": "under-16s",  "team": "Cardiff Allstars Under 16s",      "division": "Cardiff & District U16 Division 26/27",  "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=107459637"},
-    {"name": "First Team", "key": "first-team", "team": "Cardiff Allstars FC",             "division": "Cardiff & District Div 1 26/27",         "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=107459586"},
-    {"name": "Reserves",   "key": "reserves",   "team": "Cardiff Allstars FC Reserves",    "division": "Cardiff & District Div 2 26/27",         "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=107459589"},
+    {"name": "Under 9s",   "key": "under-9s",   "team": "Cardiff Allstars Under 9s",       "division": "SWWGL U9 Cardiff Division 26/27",        "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=106365127", "match_kw": "U9"},
+    {"name": "Under 12s",  "key": "under-12s",  "team": "Cardiff Allstars Under 12s",      "division": "Cardiff & District U12 Division 26/27",  "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=108490756", "match_kw": "U12"},
+    {"name": "Under 16s",  "key": "under-16s",  "team": "Cardiff Allstars Under 16s",      "division": "Cardiff & District U16 Division 26/27",  "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=107459637", "match_kw": "U16"},
+    {"name": "First Team", "key": "first-team", "team": "Cardiff Allstars FC",             "division": "Cardiff & District Div 1 26/27",         "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=107459586", "match_kw": "FIRST"},
+    {"name": "Reserves",   "key": "reserves",   "team": "Cardiff Allstars FC Reserves",    "division": "Cardiff & District Div 2 26/27",         "url": f"{BASE_URL}/resources/jsf/competition/index.xhtml?id=107459589", "match_kw": "Reserves"},
 ]
 
 def is_allstars(text):
     return "allstars" in text.lower()
+
+def is_team_match(match, team):
+    """Check if a parsed match belongs to a specific team."""
+    kw  = team["match_kw"]
+    our = match.get("our_team", "")
+    if kw == "FIRST":
+        return our == "Cardiff Allstars FC"
+    return kw.lower() in our.lower()
 
 def parse_row(texts):
     """Parse using exact FAW Comet column indices."""
@@ -249,8 +257,8 @@ def main():
 
                 changed = False
                 for comp in COMPETITIONS:
-                    team_live     = [m for m in live_all     if is_allstars(m["home"]) or is_allstars(m["away"])]
-                    team_upcoming = [m for m in upcoming_all if is_allstars(m["home"]) or is_allstars(m["away"])]
+                    team_live     = [m for m in live_all     if is_team_match(m, comp)]
+                    team_upcoming = [m for m in upcoming_all if is_team_match(m, comp)]
 
                     # Fetch goals for live match if there's one
                     live_with_goals = None
