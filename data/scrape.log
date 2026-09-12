@@ -3,7 +3,7 @@
   Totals: 2 live, 6 upcoming
 
 [Step 2] Scraping previous results...
-  Found 39 previous results
+  Found 40 previous results
 
 [Step 3] Writing team files...
   [Cardiff Allstars Under 9s]
@@ -12,7 +12,7 @@
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
     Next:   Clwb Cymric D12 Coch vs Cardiff Allstars FC U12 on 19.09.2026 @ 10:45 (Pontcanna Fields)
-    Last:   Cardiff Allstars FC U12 7–8 Cardiff Corinthians U12 Black (1 goals)
+    Last:   Cardiff Allstars FC U12 3–3 Maindy Corries FC U12 White (2 goals)
     Written → matches-under-12s.json
   [Cardiff Allstars Under 16s]
     Next:   Cardiff Allstars FC U16 vs Canton Rangers FC U16 Gwyn on 19.09.2026 @ 10:45 (St Mellons)

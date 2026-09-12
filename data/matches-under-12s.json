@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T14:24:34Z",
+  "updated": "2026-09-12T14:25:46Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
   "live": {
@@ -38,15 +38,24 @@
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "05.09.2026",
-    "time": "11:00",
+    "date": "12.09.2026",
+    "time": "08:45",
     "home": "Cardiff Allstars FC U12",
-    "away": "Cardiff Corinthians U12 Black",
-    "venue": "St Mellons",
+    "away": "Maindy Corries FC U12 White",
+    "venue": "Roath Recreation Ground",
     "competition": "Cardiff & District U12 Division  E - 26/27",
-    "home_score": 7,
-    "away_score": 8,
-    "status": "PLAYED",
-    "goals": []
+    "home_score": 3,
+    "away_score": 3,
+    "status": "SCHEDULED",
+    "goals": [
+      {
+        "player": "Joel Summers-Pesticcio",
+        "minute": 49
+      },
+      {
+        "player": "Wonderful Okunrotifa",
+        "minute": 51
+      }
+    ]
   }
 }
