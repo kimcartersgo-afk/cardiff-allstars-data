@@ -305,13 +305,29 @@
 
   function renderGoals(goals) {
     if (!goals || goals.length === 0) return "";
-    const rows = goals.map(g => `
+    
+    const grouped = {};
+    goals.forEach(g => {
+      const key = (g.player || "Unknown") + (g.team ? "-" + g.team : "");
+      if (!grouped[key]) {
+        grouped[key] = { player: g.player || "Unknown", team: g.team, minutes: [] };
+      }
+      if (g.minute) {
+        grouped[key].minutes.push(g.minute);
+      }
+    });
+
+    const rows = Object.values(grouped).map(g => {
+      // Sort minutes numerically
+      g.minutes.sort((a, b) => a - b);
+      const minsStr = g.minutes.map(m => `(${m}')`).join(" ");
+      return `
       <div class="goal-row">
         <span class="goal-icon">⚽</span>
-        <span class="goal-minute">${g.minute ? g.minute + "'" : ""}</span>
-        <span class="goal-player">${g.player || "Unknown"}</span>
+        <span class="goal-player">${g.player} <span style="color: #666; font-size: 0.72rem;">${minsStr}</span></span>
         ${g.team ? `<span class="goal-team-tag">${g.team}</span>` : ""}
-      </div>`).join("");
+      </div>`;
+    }).join("");
     return `<div class="goals-list">${rows}</div>`;
   }
 
