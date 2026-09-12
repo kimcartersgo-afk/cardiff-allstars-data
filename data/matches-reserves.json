@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T08:54:32Z",
+  "updated": "2026-09-12T08:54:42Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": null,
@@ -8,8 +8,8 @@
     "time": "14:00",
     "home": "Cardiff Allstars FC Reserves",
     "away": "Grangetown Cath OB Reserves",
+    "our_team": "Cardiff Allstars FC Reserves",
     "venue": "St Mellons",
-    "competition": "Cardiff & District League - Div Two 26/27",
     "home_score": null,
     "away_score": null,
     "status": "SCHEDULED"
