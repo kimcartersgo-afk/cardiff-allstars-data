@@ -121,7 +121,17 @@ def parse_row(texts):
 
     # Col 12: status
     status      = texts[12].upper().strip()
-    is_live      = status in ("LIVE", "IN PROGRESS", "PLAYING", "IN_PROGRESS", "1H", "2H", "HT", "FT") or (has_score and status not in ("PLAYED", "POSTPONED", "CANCELLED", "ABANDONED", ""))
+    is_live = status in ("LIVE", "IN PROGRESS", "PLAYING", "IN_PROGRESS", "1H", "2H", "HT", "FT") or (has_score and status not in ("PLAYED", "POSTPONED", "CANCELLED", "ABANDONED", ""))
+    
+    try:
+        from datetime import datetime
+        if len(texts) > 1 and texts[1]:
+            match_dt = datetime.strptime(texts[1].strip(), "%d.%m.%Y %H:%M")
+            if (datetime.now() - match_dt).total_seconds() > 4 * 3600:
+                if status not in ("LIVE", "IN PROGRESS", "PLAYING", "IN_PROGRESS", "1H", "2H", "HT"):
+                    is_live = False
+    except Exception:
+        pass
     is_postponed = status in ("POSTPONED", "CANCELLED", "ABANDONED")
 
     if not home:
