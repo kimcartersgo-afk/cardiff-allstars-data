@@ -352,6 +352,10 @@ def main():
             print("\n[Step 2] Scraping previous results...")
             previous_raw = scrape_matches_page(page, click_previous=True)
             results = [m for m in previous_raw if m["has_score"] and not m["is_live"]]
+            
+            # Catch finished matches from today that are still stuck as SCHEDULED in the next matches view
+            results.extend([m for m in upcoming_raw if m["has_score"] and not m["is_live"]])
+            
             print(f"  Found {len(results)} previous results")
 
             # ── Step 3: Write per-team JSON ──────────────────────────────────
@@ -364,12 +368,13 @@ def main():
                 team_upcoming = [m for m in upcoming     if is_team_match(m, team)]
                 team_results  = [m for m in results      if is_team_match(m, team)]
 
-                from datetime import datetime
                 def get_dt(m):
                     try:
-                        return datetime.strptime(f"{m['date']} {m['time']}", "%d.%m.%Y %H:%M")
+                        from datetime import datetime as dt
+                        return dt.strptime(f"{m['date']} {m['time']}", "%d.%m.%Y %H:%M")
                     except Exception:
-                        return datetime.min
+                        from datetime import datetime as dt
+                        return dt.min
                 team_upcoming = sorted(team_upcoming, key=get_dt)
                 team_results = sorted(team_results, key=get_dt, reverse=True)
 
