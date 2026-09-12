@@ -1,30 +1,8 @@
 {
-  "updated": "2026-09-12T14:38:34Z",
+  "updated": "2026-09-12T14:39:34Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
-  "live": {
-    "date": "12.09.2026",
-    "time": "08:45",
-    "home": "Cardiff Allstars FC U12",
-    "away": "Maindy Corries FC U12 White",
-    "our_team": "Cardiff Allstars FC U12",
-    "venue": "Roath Recreation Ground",
-    "home_score": 3,
-    "away_score": 3,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Joel Summers-Pesticcio",
-        "minute": 49
-      },
-      {
-        "player": "Wonderful Okunrotifa",
-        "minute": 51
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "19.09.2026",
     "time": "10:45",
