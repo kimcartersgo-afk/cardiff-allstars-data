@@ -395,11 +395,30 @@ def main():
                         lr["goals"] = []
                     last_result = lr
 
+                # Load existing data to preserve live goals if we don't scrape them here
+                old_data = {}
+                path = os.path.join(BASE_DIR, "data", f"matches-{team['key']}.json")
+                if os.path.exists(path):
+                    with open(path, "r", encoding="utf-8") as f:
+                        try:
+                            old_data = json.load(f)
+                        except Exception:
+                            pass
+                
+                live_out = clean(team_live[0]) if team_live else None
+                if live_out and old_data.get("live"):
+                    if "goals" in old_data["live"]:
+                        live_out["goals"] = old_data["live"]["goals"]
+                    if "minute" in old_data["live"]:
+                        live_out["minute"] = old_data["live"]["minute"]
+                    if old_data["live"].get("status") == "live":
+                        live_out["status"] = "live"
+
                 output = {
                     "updated":     now,
                     "team":        team["name"],
                     "division":    team["division"],
-                    "live":        clean(team_live[0]) if team_live else None,
+                    "live":        live_out,
                     "next_match":  clean(next_match),
                     "last_result": clean(last_result),
                 }
