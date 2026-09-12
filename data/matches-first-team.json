@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T13:37:21Z",
+  "updated": "2026-09-12T13:42:15Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": {
@@ -10,12 +10,12 @@
     "our_team": "Cardiff Allstars FC",
     "venue": "Llandaff - Cardiff Met Campus",
     "home_score": 0,
-    "away_score": 1,
+    "away_score": 2,
     "is_postponed": false,
     "status": "live",
     "goals": [
       {
-        "player": "Lathem Miller",
+        "player": "Lathem Miller , 35'",
         "minute": 6
       }
     ],
