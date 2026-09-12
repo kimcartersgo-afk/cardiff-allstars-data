@@ -1,9 +1,9 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 2 live, 6 upcoming
+  Totals: 1 live, 6 upcoming
 
 [Step 2] Scraping previous results...
-  Found 40 previous results
+  Found 41 previous results
 
 [Step 3] Writing team files...
   [Cardiff Allstars Under 9s]
@@ -24,5 +24,5 @@
     Written → matches-first-team.json
   [Cardiff Allstars FC Reserves]
     Next:   Cardiff Allstars FC Reserves vs Llanrumney United District on 19.09.2026 @ 14:00 (St Mellons)
-    Last:   Llanrumney Athletic Reserves 4–2 Cardiff Allstars FC Reserves (2 goals)
+    Last:   Cardiff Allstars FC Reserves 0–6 Grangetown Cath OB Reserves (0 goals)
     Written → matches-reserves.json
