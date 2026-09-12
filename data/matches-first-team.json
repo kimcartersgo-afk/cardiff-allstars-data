@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T04:54:43Z",
+  "updated": "2026-09-12T08:16:11Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -8,10 +8,11 @@
     "time": "14:00",
     "home": "Cardiff Academicals FC",
     "away": "Cardiff Allstars FC",
+    "our_team": "Cardiff Allstars FC",
     "venue": "Llandaff - Cardiff Met Campus",
-    "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
+    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
