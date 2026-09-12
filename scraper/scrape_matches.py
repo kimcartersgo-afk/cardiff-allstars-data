@@ -258,6 +258,17 @@ def scrape_match_details(page, match_url, is_home):
                         "player": player,
                         "minute": min_val,
                     })
+
+        # 2. Scrape live minute clock
+        for sel in ["#watchdisplay", ".match-minute", ".live-time", ".match-time", ".clock", ".status-live"]:
+            el = page.query_selector(sel)
+            if el:
+                clock_text = el.inner_text().strip()
+                import re
+                m = re.search(r"(\d{1,3})['\u2019]?", clock_text)
+                if m:
+                    minute = int(m.group(1))
+                    break
         
     except Exception as e:
         print(f"  WARNING: Could not scrape details for {match_url}: {e}")

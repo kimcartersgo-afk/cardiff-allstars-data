@@ -168,8 +168,8 @@ def scrape_match_details(page, match_url, is_home):
                         "minute": min_val,
                     })
                 
-        # 2. Attempt to scrape live minute clock
-        for sel in [".match-minute", ".live-time", ".match-time", ".clock", ".status-live"]:
+        # 2. Scrape live minute clock
+        for sel in ["#watchdisplay", ".match-minute", ".live-time", ".match-time", ".clock", ".status-live"]:
             el = page.query_selector(sel)
             if el:
                 clock_text = el.inner_text().strip()
