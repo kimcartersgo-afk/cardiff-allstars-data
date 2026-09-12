@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T14:21:33Z",
+  "updated": "2026-09-12T14:24:26Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": {
@@ -10,8 +10,40 @@
     "venue": "Llandaff - Cardiff Met Campus",
     "competition": "Cardiff & District League - Div One 26/27",
     "home_score": 0,
-    "away_score": 6,
-    "status": "SCHEDULED"
+    "away_score": 7,
+    "is_postponed": false,
+    "status": "live",
+    "goals": [
+      {
+        "player": "Lathem Miller",
+        "minute": 6
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 35
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 51
+      },
+      {
+        "player": "Mason Perry",
+        "minute": 48
+      },
+      {
+        "player": "Jay Gilbertson",
+        "minute": 62
+      },
+      {
+        "player": "Jay Gilbertson",
+        "minute": 63
+      },
+      {
+        "player": "Matthew James O'Donoghue",
+        "minute": 72
+      }
+    ],
+    "minute": null
   },
   "next_match": {
     "date": "03.10.2026",
