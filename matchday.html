@@ -403,8 +403,9 @@
       <div class="updated">Data updated: ${new Date(data.updated).toLocaleString("en-GB")}</div>`;
   }
 
-  async function loadTab(index, force = false) {
+  async function loadTab(index) {
     activeIndex = index;
+    refreshTimer = 60;
     document.querySelectorAll(".tab-btn").forEach((b, i) => b.classList.toggle("active", i === index));
     const comp = COMPETITIONS[index];
     const content = document.getElementById("content");
@@ -415,7 +416,7 @@
       const data = await r.json();
       content.innerHTML = renderData(data);
     } catch(e) {
-      content.innerHTML = `<div class="error">⚠ Could not load data.<br><small>${e.message}</small></div>`;
+      content.innerHTML = `<div class="error">❌ Could not load data.<br><small>${e.message}</small></div>`;
     }
   }
 
@@ -429,12 +430,8 @@
     tabBar.appendChild(btn);
   });
 
+  let refreshTimer = 60;
   loadTab(0);
-
-  // Adaptive refresh: 10s when live, 5 mins otherwise
-  let isLiveMode    = false;
-  let refreshTimer  = 300;
-  let currentData   = null;
 
   async function checkAndRefresh() {
     const comp = COMPETITIONS[activeIndex];
@@ -442,13 +439,7 @@
       const r = await fetch(`data/${comp.key}.json?t=${Date.now()}`);
       if (r.ok) {
         const d = await r.json();
-        currentData = d;
-        const wasLive = isLiveMode;
-        isLiveMode = !!d.live;
         document.getElementById('content').innerHTML = renderData(d);
-        if (isLiveMode !== wasLive) {
-          refreshTimer = isLiveMode ? 10 : 300;
-        }
       }
     } catch(e) {}
   }
@@ -456,13 +447,10 @@
   setInterval(() => {
     refreshTimer -= 1;
     if (refreshTimer <= 0) {
-      refreshTimer = isLiveMode ? 10 : 300;
+      refreshTimer = 60;
       checkAndRefresh();
     }
-    const label = isLiveMode
-      ? `🔴 LIVE — refreshing in ${refreshTimer}s`
-      : `Refreshes in ${Math.floor(refreshTimer/60)}:${String(refreshTimer%60).padStart(2,'0')}`;
-    document.getElementById('refresh-info').textContent = label;
+    document.getElementById('refresh-info').textContent = `Refreshes in 00:${String(refreshTimer).padStart(2,'0')}`;
   }, 1000);
 </script>
 </body>
