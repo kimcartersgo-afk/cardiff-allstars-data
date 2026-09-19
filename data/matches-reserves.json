@@ -1,21 +1,8 @@
 {
-  "updated": "2026-09-19T13:31:04Z",
+  "updated": "2026-09-19T13:31:22Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
-  "live": {
-    "date": "19.09.2026",
-    "time": "14:00",
-    "home": "Cardiff Allstars FC Reserves",
-    "away": "Llanrumney United District",
-    "our_team": "Cardiff Allstars FC Reserves",
-    "venue": "St Mellons",
-    "home_score": 0,
-    "away_score": 1,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "26.09.2026",
     "time": "14:00",
