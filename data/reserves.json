@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T22:10:28Z",
+  "updated": "2026-09-19T22:02:06Z",
   "division": "Cardiff & District Reserves",
   "team": "Cardiff Allstars FC Reserves",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459589",
@@ -42,26 +42,26 @@
     },
     {
       "pos": 4,
-      "team": "Grangetown Cath OB Reserves",
-      "mp": 2,
-      "w": 1,
+      "team": "Llanrumney Athletic Reserves",
+      "mp": 3,
+      "w": 2,
       "d": 0,
       "l": 1,
       "gf": 9,
-      "ga": 10,
-      "gd": -1,
-      "pts": 3
+      "ga": 8,
+      "gd": 1,
+      "pts": 6
     },
     {
       "pos": 5,
-      "team": "Llanrumney Athletic Reserves",
-      "mp": 2,
+      "team": "Grangetown Cath OB Reserves",
+      "mp": 3,
       "w": 1,
       "d": 0,
-      "l": 1,
-      "gf": 7,
-      "ga": 8,
-      "gd": -1,
+      "l": 2,
+      "gf": 9,
+      "ga": 12,
+      "gd": -3,
       "pts": 3
     },
     {

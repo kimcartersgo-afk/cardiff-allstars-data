@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T22:10:13Z",
+  "updated": "2026-09-19T22:01:51Z",
   "division": "Cardiff & District Under 12s",
   "team": "Cardiff Allstars Under 12s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=108490756",
@@ -7,29 +7,53 @@
     {
       "pos": 1,
       "team": "Pontprennau Pumas FC U12's",
-      "mp": 2,
-      "w": 2,
+      "mp": 3,
+      "w": 3,
       "d": 0,
       "l": 0,
-      "gf": 16,
-      "ga": 3,
-      "gd": 13,
-      "pts": 6
+      "gf": 19,
+      "ga": 5,
+      "gd": 14,
+      "pts": 9
     },
     {
       "pos": 2,
-      "team": "Cardiff Corinthians U12 Black",
-      "mp": 2,
+      "team": "Cardiff Allstars FC U12",
+      "mp": 3,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 1,
-      "gf": 9,
-      "ga": 15,
-      "gd": -6,
-      "pts": 3
+      "gf": 13,
+      "ga": 11,
+      "gd": 2,
+      "pts": 4
     },
     {
       "pos": 3,
+      "team": "Maindy Corries FC U12 White",
+      "mp": 2,
+      "w": 1,
+      "d": 1,
+      "l": 0,
+      "gf": 11,
+      "ga": 9,
+      "gd": 2,
+      "pts": 4
+    },
+    {
+      "pos": 4,
+      "team": "Cardiff Corinthians U12 Black",
+      "mp": 3,
+      "w": 1,
+      "d": 0,
+      "l": 2,
+      "gf": 15,
+      "ga": 23,
+      "gd": -8,
+      "pts": 3
+    },
+    {
+      "pos": 5,
       "team": "Gwaelod Rangers U12 Mixed Green",
       "mp": 1,
       "w": 1,
@@ -41,44 +65,20 @@
       "pts": 3
     },
     {
-      "pos": 4,
-      "team": "Cardiff Allstars FC U12",
+      "pos": 6,
+      "team": "AFC Rumney U12 White",
       "mp": 2,
       "w": 0,
       "d": 1,
       "l": 1,
-      "gf": 10,
-      "ga": 11,
+      "gf": 5,
+      "ga": 6,
       "gd": -1,
       "pts": 1
     },
     {
-      "pos": 5,
-      "team": "AFC Rumney U12 White",
-      "mp": 1,
-      "w": 0,
-      "d": 1,
-      "l": 0,
-      "gf": 3,
-      "ga": 3,
-      "gd": 0,
-      "pts": 1
-    },
-    {
-      "pos": 6,
-      "team": "Llanrumney United Juniors FC U12 Blue",
-      "mp": 1,
-      "w": 0,
-      "d": 1,
-      "l": 0,
-      "gf": 3,
-      "ga": 3,
-      "gd": 0,
-      "pts": 1
-    },
-    {
       "pos": 7,
-      "team": "Maindy Corries FC U12 White",
+      "team": "Llanrumney United Juniors FC U12 Blue",
       "mp": 1,
       "w": 0,
       "d": 1,
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "Clwb Cymric D12 Coch",
-      "mp": 1,
+      "mp": 2,
       "w": 0,
       "d": 0,
-      "l": 1,
+      "l": 2,
       "gf": 1,
-      "ga": 9,
-      "gd": -8,
+      "ga": 12,
+      "gd": -11,
       "pts": 0
     }
   ]

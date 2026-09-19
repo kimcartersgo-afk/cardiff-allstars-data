@@ -1,11 +1,23 @@
 {
-  "updated": "2026-09-18T22:10:18Z",
+  "updated": "2026-09-19T22:01:56Z",
   "division": "Cardiff & District Under 16s",
   "team": "Cardiff Allstars Under 16s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459637",
   "table": [
     {
       "pos": 1,
+      "team": "Pentyrch Rangers U16",
+      "mp": 2,
+      "w": 2,
+      "d": 0,
+      "l": 0,
+      "gf": 17,
+      "ga": 4,
+      "gd": 13,
+      "pts": 6
+    },
+    {
+      "pos": 2,
       "team": "Ely Rangers FC U16",
       "mp": 2,
       "w": 2,
@@ -17,7 +29,7 @@
       "pts": 6
     },
     {
-      "pos": 2,
+      "pos": 3,
       "team": "Caerau Ely C FC U16 Red",
       "mp": 2,
       "w": 1,
@@ -27,18 +39,6 @@
       "ga": 9,
       "gd": 2,
       "pts": 4
-    },
-    {
-      "pos": 3,
-      "team": "Pentyrch Rangers U16",
-      "mp": 1,
-      "w": 1,
-      "d": 0,
-      "l": 0,
-      "gf": 9,
-      "ga": 4,
-      "gd": 5,
-      "pts": 3
     },
     {
       "pos": 4,
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "AFC Whitchurch U16 Blue",
-      "mp": 1,
+      "mp": 2,
       "w": 0,
       "d": 0,
-      "l": 1,
+      "l": 2,
       "gf": 0,
-      "ga": 3,
-      "gd": -3,
+      "ga": 11,
+      "gd": -11,
       "pts": 0
     }
   ]
