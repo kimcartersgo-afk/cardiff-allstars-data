@@ -1,9 +1,20 @@
 {
-  "updated": "2026-09-19T11:49:09Z",
+  "updated": "2026-09-19T11:49:23Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
-  "next_match": null,
+  "next_match": {
+    "date": "26.09.2026",
+    "time": "14:00",
+    "home": "Nelson Cavaliers AFC",
+    "away": "Cardiff Allstars FC",
+    "our_team": "Cardiff Allstars FC",
+    "venue": "The Wern Park",
+    "home_score": null,
+    "away_score": null,
+    "is_postponed": false,
+    "status": "SCHEDULED"
+  },
   "last_result": {
     "date": "12.09.2026",
     "time": "14:00",

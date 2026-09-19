@@ -1,9 +1,20 @@
 {
-  "updated": "2026-09-19T11:49:09Z",
+  "updated": "2026-09-19T11:49:23Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": null,
-  "next_match": null,
+  "next_match": {
+    "date": "26.09.2026",
+    "time": "11:00",
+    "home": "Pentyrch Rangers U16",
+    "away": "Cardiff Allstars FC U16",
+    "our_team": "Cardiff Allstars FC U16",
+    "venue": "Pentyrch Rangers AFC",
+    "home_score": null,
+    "away_score": null,
+    "is_postponed": false,
+    "status": "SCHEDULED"
+  },
   "last_result": {
     "date": "05.09.2026",
     "time": "10:00",
