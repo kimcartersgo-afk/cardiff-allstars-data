@@ -1,19 +1,9 @@
 {
-  "updated": "2026-09-19T11:20:16Z",
+  "updated": "2026-09-19T11:49:09Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
-  "next_match": {
-    "date": "26.09.2026",
-    "time": "14:00",
-    "home": "Nelson Cavaliers AFC",
-    "away": "Cardiff Allstars FC",
-    "venue": "The Wern Park",
-    "competition": "Hugh James SWFA Senior Cup 26/27 - Round 2",
-    "home_score": null,
-    "away_score": null,
-    "status": "SCHEDULED"
-  },
+  "next_match": null,
   "last_result": {
     "date": "12.09.2026",
     "time": "14:00",
