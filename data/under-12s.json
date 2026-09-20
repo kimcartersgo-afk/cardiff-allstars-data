@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T22:01:51Z",
+  "updated": "2026-09-20T22:06:42Z",
   "division": "Cardiff & District Under 12s",
   "team": "Cardiff Allstars Under 12s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=108490756",
@@ -18,6 +18,18 @@
     },
     {
       "pos": 2,
+      "team": "Gwaelod Rangers U12 Mixed Green",
+      "mp": 2,
+      "w": 2,
+      "d": 0,
+      "l": 0,
+      "gf": 18,
+      "ga": 2,
+      "gd": 16,
+      "pts": 6
+    },
+    {
+      "pos": 3,
       "team": "Cardiff Allstars FC U12",
       "mp": 3,
       "w": 1,
@@ -29,7 +41,7 @@
       "pts": 4
     },
     {
-      "pos": 3,
+      "pos": 4,
       "team": "Maindy Corries FC U12 White",
       "mp": 2,
       "w": 1,
@@ -41,7 +53,7 @@
       "pts": 4
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Cardiff Corinthians U12 Black",
       "mp": 3,
       "w": 1,
@@ -50,18 +62,6 @@
       "gf": 15,
       "ga": 23,
       "gd": -8,
-      "pts": 3
-    },
-    {
-      "pos": 5,
-      "team": "Gwaelod Rangers U12 Mixed Green",
-      "mp": 1,
-      "w": 1,
-      "d": 0,
-      "l": 0,
-      "gf": 9,
-      "ga": 1,
-      "gd": 8,
       "pts": 3
     },
     {
@@ -79,13 +79,13 @@
     {
       "pos": 7,
       "team": "Llanrumney United Juniors FC U12 Blue",
-      "mp": 1,
+      "mp": 2,
       "w": 0,
       "d": 1,
-      "l": 0,
-      "gf": 3,
-      "ga": 3,
-      "gd": 0,
+      "l": 1,
+      "gf": 4,
+      "ga": 12,
+      "gd": -8,
       "pts": 1
     },
     {
