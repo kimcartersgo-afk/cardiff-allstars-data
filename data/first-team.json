@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T22:06:52Z",
+  "updated": "2026-09-21T22:57:55Z",
   "division": "Cardiff & District First Team",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459586",
@@ -78,18 +78,6 @@
     },
     {
       "pos": 7,
-      "team": "Pentyrch Rangers Development",
-      "mp": 3,
-      "w": 0,
-      "d": 1,
-      "l": 2,
-      "gf": 7,
-      "ga": 11,
-      "gd": -4,
-      "pts": 1
-    },
-    {
-      "pos": 8,
       "team": "Tongwynlais AFC Reserves",
       "mp": 4,
       "w": 0,
@@ -101,7 +89,7 @@
       "pts": 1
     },
     {
-      "pos": 9,
+      "pos": 8,
       "team": "Cardiff Academicals FC",
       "mp": 4,
       "w": 0,
@@ -111,6 +99,18 @@
       "ga": 15,
       "gd": -11,
       "pts": 0
+    },
+    {
+      "pos": 9,
+      "team": "Pentyrch Rangers Development(-3)",
+      "mp": 3,
+      "w": 0,
+      "d": 1,
+      "l": 2,
+      "gf": 7,
+      "ga": 11,
+      "gd": -4,
+      "pts": -2
     }
   ]
 }
