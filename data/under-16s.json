@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T22:37:47Z",
+  "updated": "2026-09-23T22:37:40Z",
   "division": "Cardiff & District Under 16s",
   "team": "Cardiff Allstars Under 16s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459637",
@@ -90,18 +90,6 @@
     },
     {
       "pos": 8,
-      "team": "Canton Rangers FC U16 Gwyn",
-      "mp": 2,
-      "w": 0,
-      "d": 0,
-      "l": 2,
-      "gf": 3,
-      "ga": 6,
-      "gd": -3,
-      "pts": 0
-    },
-    {
-      "pos": 9,
       "team": "AFC Whitchurch U16 Blue",
       "mp": 2,
       "w": 0,
@@ -111,6 +99,18 @@
       "ga": 11,
       "gd": -11,
       "pts": 0
+    },
+    {
+      "pos": 9,
+      "team": "Canton Rangers FC U16 Gwyn(-3)",
+      "mp": 2,
+      "w": 0,
+      "d": 0,
+      "l": 2,
+      "gf": 3,
+      "ga": 6,
+      "gd": -3,
+      "pts": -3
     }
   ]
 }

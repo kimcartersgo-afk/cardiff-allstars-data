@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22T22:37:56Z",
+  "updated": "2026-09-23T22:37:50Z",
   "division": "Cardiff & District Reserves",
   "team": "Cardiff Allstars FC Reserves",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459589",
@@ -78,7 +78,7 @@
     },
     {
       "pos": 7,
-      "team": "Canton Rangers FC Reserves",
+      "team": "Canton Rangers FC Reserves(-3)",
       "mp": 2,
       "w": 0,
       "d": 0,
@@ -86,7 +86,7 @@
       "gf": 1,
       "ga": 12,
       "gd": -11,
-      "pts": 0
+      "pts": -3
     }
   ]
 }
