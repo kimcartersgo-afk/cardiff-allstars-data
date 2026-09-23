@@ -1,6 +1,6 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 0 live, 8 upcoming
+  Totals: 0 live, 9 upcoming
 
 [Step 2] Scraping previous results...
   Found 39 previous results
@@ -11,7 +11,7 @@
     Last:   none (no results yet this season)
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
-    Next:   none
+    Next:   Pontprennau Pumas FC U12's vs Cardiff Allstars FC U12 on 03.10.2026 @ 09:00 (Pontprennau Community Centre)
     Last:   Clwb Cymric D12 Coch 0–3 Cardiff Allstars FC U12 (3 goals)
     Written → matches-under-12s.json
   [Cardiff Allstars Under 16s]
