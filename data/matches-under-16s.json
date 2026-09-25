@@ -1,38 +1,8 @@
 {
-  "updated": "2026-09-25T10:24:09Z",
+  "updated": "2026-09-25T15:25:22Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": null,
-  "next_match": {
-    "date": "26.09.2026",
-    "time": "11:00",
-    "home": "Pentyrch Rangers U16",
-    "away": "Cardiff Allstars FC U16",
-    "venue": "Pentyrch Rangers AFC",
-    "competition": "Cardiff & District U16 Division B - 26/27",
-    "home_score": null,
-    "away_score": null,
-    "status": "SCHEDULED"
-  },
-  "last_result": {
-    "date": "05.09.2026",
-    "time": "10:00",
-    "home": "Llanrumney United Juniors FC U16 Red",
-    "away": "Cardiff Allstars FC U16",
-    "venue": "The Jamie Burley Group Stadium",
-    "competition": "Cardiff & District U16 Division B - 26/27",
-    "home_score": 1,
-    "away_score": 2,
-    "status": "PLAYED",
-    "goals": [
-      {
-        "player": "Oliver Elliott",
-        "minute": 27
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 56
-      }
-    ]
-  }
+  "next_match": null,
+  "last_result": null
 }

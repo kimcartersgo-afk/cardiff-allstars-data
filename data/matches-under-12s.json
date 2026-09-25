@@ -1,42 +1,8 @@
 {
-  "updated": "2026-09-25T10:24:09Z",
+  "updated": "2026-09-25T15:25:22Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
   "live": null,
-  "next_match": {
-    "date": "03.10.2026",
-    "time": "09:00",
-    "home": "Pontprennau Pumas FC U12's",
-    "away": "Cardiff Allstars FC U12",
-    "venue": "Pontprennau Community Centre",
-    "competition": "Cardiff & District U12 Division  E - 26/27",
-    "home_score": null,
-    "away_score": null,
-    "status": "ENTERED"
-  },
-  "last_result": {
-    "date": "19.09.2026",
-    "time": "09:00",
-    "home": "Clwb Cymric D12 Coch",
-    "away": "Cardiff Allstars FC U12",
-    "venue": "Fitzalan High School 3G",
-    "competition": "Cardiff & District U12 Division  E - 26/27",
-    "home_score": 0,
-    "away_score": 3,
-    "status": "PLAYED",
-    "goals": [
-      {
-        "player": "Freddie Wood",
-        "minute": 48
-      },
-      {
-        "player": "Freddie Wood",
-        "minute": 62
-      },
-      {
-        "player": "Freddie Wood",
-        "minute": 67
-      }
-    ]
-  }
+  "next_match": null,
+  "last_result": null
 }
