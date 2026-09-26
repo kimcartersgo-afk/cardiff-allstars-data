@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T08:12:46Z",
+  "updated": "2026-09-26T22:18:39Z",
   "division": "Cardiff & District Under 12s",
   "team": "Cardiff Allstars Under 12s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=108490756",
@@ -42,6 +42,18 @@
     },
     {
       "pos": 4,
+      "team": "AFC Rumney U12 White",
+      "mp": 3,
+      "w": 1,
+      "d": 1,
+      "l": 1,
+      "gf": 12,
+      "ga": 6,
+      "gd": 6,
+      "pts": 4
+    },
+    {
+      "pos": 5,
       "team": "Maindy Corries FC U12 White",
       "mp": 2,
       "w": 1,
@@ -53,7 +65,7 @@
       "pts": 4
     },
     {
-      "pos": 5,
+      "pos": 6,
       "team": "Cardiff Corinthians U12 Black",
       "mp": 3,
       "w": 1,
@@ -63,18 +75,6 @@
       "ga": 23,
       "gd": -8,
       "pts": 3
-    },
-    {
-      "pos": 6,
-      "team": "AFC Rumney U12 White",
-      "mp": 2,
-      "w": 0,
-      "d": 1,
-      "l": 1,
-      "gf": 5,
-      "ga": 6,
-      "gd": -1,
-      "pts": 1
     },
     {
       "pos": 7,
@@ -91,13 +91,13 @@
     {
       "pos": 8,
       "team": "Radyr Rangers FC U12s Green",
-      "mp": 1,
+      "mp": 2,
       "w": 0,
       "d": 0,
-      "l": 1,
+      "l": 2,
       "gf": 2,
-      "ga": 8,
-      "gd": -6,
+      "ga": 15,
+      "gd": -13,
       "pts": 0
     },
     {

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T08:12:51Z",
+  "updated": "2026-09-26T22:18:44Z",
   "division": "Cardiff & District Under 16s",
   "team": "Cardiff Allstars Under 16s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459637",
@@ -19,13 +19,13 @@
     {
       "pos": 2,
       "team": "Pentyrch Rangers U16",
-      "mp": 2,
+      "mp": 3,
       "w": 2,
       "d": 0,
-      "l": 0,
-      "gf": 17,
-      "ga": 4,
-      "gd": 13,
+      "l": 1,
+      "gf": 20,
+      "ga": 9,
+      "gd": 11,
       "pts": 6
     },
     {
@@ -42,6 +42,30 @@
     },
     {
       "pos": 4,
+      "team": "Cardiff Allstars FC U16",
+      "mp": 2,
+      "w": 2,
+      "d": 0,
+      "l": 0,
+      "gf": 7,
+      "ga": 4,
+      "gd": 3,
+      "pts": 6
+    },
+    {
+      "pos": 5,
+      "team": "Llanishen FC U16",
+      "mp": 4,
+      "w": 1,
+      "d": 2,
+      "l": 1,
+      "gf": 15,
+      "ga": 18,
+      "gd": -3,
+      "pts": 5
+    },
+    {
+      "pos": 6,
       "team": "Llanrumney United Juniors FC U16 Red",
       "mp": 3,
       "w": 1,
@@ -51,30 +75,6 @@
       "ga": 5,
       "gd": 0,
       "pts": 4
-    },
-    {
-      "pos": 5,
-      "team": "Cardiff Allstars FC U16",
-      "mp": 1,
-      "w": 1,
-      "d": 0,
-      "l": 0,
-      "gf": 2,
-      "ga": 1,
-      "gd": 1,
-      "pts": 3
-    },
-    {
-      "pos": 6,
-      "team": "Llanishen FC U16",
-      "mp": 3,
-      "w": 0,
-      "d": 2,
-      "l": 1,
-      "gf": 13,
-      "ga": 18,
-      "gd": -5,
-      "pts": 2
     },
     {
       "pos": 7,
@@ -91,13 +91,13 @@
     {
       "pos": 8,
       "team": "AFC Whitchurch U16 Blue",
-      "mp": 2,
+      "mp": 3,
       "w": 0,
       "d": 0,
-      "l": 2,
+      "l": 3,
       "gf": 0,
-      "ga": 11,
-      "gd": -11,
+      "ga": 13,
+      "gd": -13,
       "pts": 0
     },
     {
