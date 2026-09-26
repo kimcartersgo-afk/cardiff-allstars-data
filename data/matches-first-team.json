@@ -1,8 +1,62 @@
 {
-  "updated": "2026-09-26T08:01:08Z",
+  "updated": "2026-09-26T08:11:05Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
-  "next_match": null,
-  "last_result": null
+  "next_match": {
+    "date": "26.09.2026",
+    "time": "14:00",
+    "home": "Nelson Cavaliers AFC",
+    "away": "Cardiff Allstars FC",
+    "venue": "The Wern Park",
+    "competition": "Hugh James SWFA Senior Cup 26/27 - Round 2",
+    "home_score": null,
+    "away_score": null,
+    "status": "SCHEDULED"
+  },
+  "last_result": {
+    "date": "12.09.2026",
+    "time": "14:00",
+    "home": "Cardiff Academicals FC",
+    "away": "Cardiff Allstars FC",
+    "venue": "Llandaff - Cardiff Met Campus",
+    "competition": "Cardiff & District League - Div One 26/27",
+    "home_score": 0,
+    "away_score": 8,
+    "status": "PLAYED",
+    "goals": [
+      {
+        "player": "Lathem Miller",
+        "minute": 6
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 35
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 51
+      },
+      {
+        "player": "Mason Perry",
+        "minute": 48
+      },
+      {
+        "player": "Jay Gilbertson",
+        "minute": 62
+      },
+      {
+        "player": "Jay Gilbertson",
+        "minute": 63
+      },
+      {
+        "player": "Matt O'Donoghue",
+        "minute": 72
+      },
+      {
+        "player": "Ben Holt",
+        "minute": 88
+      }
+    ]
+  }
 }

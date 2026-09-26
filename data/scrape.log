@@ -1,30 +1,28 @@
 
 [Step 1] Scraping upcoming / live matches...
-  ERROR: Session expired.
-  Totals: 0 live, 0 upcoming
+  Totals: 0 live, 11 upcoming
 
 [Step 2] Scraping previous results...
-  WARNING: Could not find 'My previous matches' button
-  Found 0 previous results
+  Found 39 previous results
 
 [Step 3] Writing team files...
   [Cardiff Allstars Under 9s]
-    Next:   none
+    Next:   Cardiff Allstars FC U9 Girls vs Thornhill AFC GU09 Girls Blue on 27.09.2026 @ 10:30 (Ocean Park Arena)
     Last:   none (no results yet this season)
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
-    Next:   none
-    Last:   none (no results yet this season)
+    Next:   Pontprennau Pumas FC U12's vs Cardiff Allstars FC U12 on 03.10.2026 @ 09:00 (Pontprennau Community Centre)
+    Last:   Clwb Cymric D12 Coch 0–3 Cardiff Allstars FC U12 (3 goals)
     Written → matches-under-12s.json
   [Cardiff Allstars Under 16s]
-    Next:   none
-    Last:   none (no results yet this season)
+    Next:   Pentyrch Rangers U16 vs Cardiff Allstars FC U16 on 26.09.2026 @ 11:00 (Pentyrch Rangers AFC)
+    Last:   Llanrumney United Juniors FC U16 Red 1–2 Cardiff Allstars FC U16 (2 goals)
     Written → matches-under-16s.json
   [Cardiff Allstars FC]
-    Next:   none
-    Last:   none (no results yet this season)
+    Next:   Nelson Cavaliers AFC vs Cardiff Allstars FC on 26.09.2026 @ 14:00 (The Wern Park)
+    Last:   Cardiff Academicals FC 0–8 Cardiff Allstars FC (8 goals)
     Written → matches-first-team.json
   [Cardiff Allstars FC Reserves]
-    Next:   none
-    Last:   none (no results yet this season)
+    Next:   Cardiff Allstars FC Reserves vs Grangetown Cath OB Reserves on 10.10.2026 @ 14:00 (St Mellons)
+    Last:   Cardiff Allstars FC Reserves 0–1 Llanrumney United District (0 goals)
     Written → matches-reserves.json
