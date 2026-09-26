@@ -191,7 +191,7 @@ def scrape_matches_page(page, click_previous=False):
 
     if "login" in page.url or "sso" in page.url:
         print("  ERROR: Session expired.", file=sys.stderr)
-        return []
+        sys.exit(1)
 
     # Wait for datatable rows
     rows = []

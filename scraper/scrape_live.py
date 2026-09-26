@@ -289,7 +289,7 @@ def main():
 
                 if result is None:
                     print("  Session expired — stopping.", file=sys.stderr)
-                    break
+                    sys.exit(1)
 
                 live_all     = result["live"]
                 upcoming_all = result["upcoming"]
@@ -298,6 +298,15 @@ def main():
                 for comp in COMPETITIONS:
                     team_live     = [m for m in live_all     if is_team_match(m, comp)]
                     team_upcoming = [m for m in upcoming_all if is_team_match(m, comp)]
+
+                    def get_dt(m):
+                        try:
+                            from datetime import datetime as dt
+                            return dt.strptime(f"{m['date']} {m['time']}", "%d.%m.%Y %H:%M")
+                        except Exception:
+                            from datetime import datetime as dt
+                            return dt.min
+                    team_upcoming = sorted(team_upcoming, key=get_dt)
 
                     # Fetch goals for live match if there's one
                     live_with_goals = None

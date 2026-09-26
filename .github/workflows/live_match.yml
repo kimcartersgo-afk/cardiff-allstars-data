@@ -9,8 +9,8 @@ name: 🔴 LIVE Match Mode (10-second updates)
 on:
   schedule:
     - cron: '0 7  * * 6'   # Slot 1: 08:00 BST
-    - cron: '0 10 * * 6'   # Slot 2: 11:00 BST
-    - cron: '0 13 * * 6'   # Slot 3: 14:00 BST
+    - cron: '45 9 * * 6'   # Slot 2: 11:00 BST
+    - cron: '45 12 * * 6'   # Slot 3: 14:00 BST
   workflow_dispatch:
     inputs:
       duration_minutes:
@@ -30,7 +30,7 @@ concurrency:
 jobs:
   live-scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 200   # hard cap slightly over 3 hours to allow cleanup
+    timeout-minutes: 210   # hard cap slightly over 3 hours to allow cleanup
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -55,7 +55,7 @@ jobs:
           COMET_SESSION: ${{ secrets.COMET_SESSION }}
           # Scheduled runs default to 175 mins (leaves 25 min buffer before timeout)
           # Manual runs use the input value, falling back to 90 mins
-          DURATION_MINUTES: ${{ github.event.inputs.duration_minutes || '175' }}
+          DURATION_MINUTES: ${{ github.event.inputs.duration_minutes || '195' }}
         run: python scraper/scrape_live.py
 
       - name: Final commit
