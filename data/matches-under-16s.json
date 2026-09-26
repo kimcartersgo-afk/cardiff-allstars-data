@@ -1,42 +1,8 @@
 {
-  "updated": "2026-09-26T13:09:44Z",
+  "updated": "2026-09-26T13:09:51Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
-  "live": {
-    "date": "26.09.2026",
-    "time": "11:00",
-    "home": "Pentyrch Rangers U16",
-    "away": "Cardiff Allstars FC U16",
-    "our_team": "Cardiff Allstars FC U16",
-    "venue": "Pentyrch Rangers AFC",
-    "home_score": 3,
-    "away_score": 5,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Ethan Carr",
-        "minute": 23
-      },
-      {
-        "player": "Oliver Elliott",
-        "minute": 41
-      },
-      {
-        "player": "Oliver Elliott",
-        "minute": 71
-      },
-      {
-        "player": "Oliver Elliott",
-        "minute": 80
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 63
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "03.10.2026",
     "time": "11:00",
