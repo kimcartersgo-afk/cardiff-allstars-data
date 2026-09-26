@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-26T15:46:01Z",
+  "updated": "2026-09-26T15:47:02Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": null,
@@ -8,42 +8,31 @@
     "time": "11:00",
     "home": "Cardiff Allstars FC U16",
     "away": "Llanrumney United Juniors FC U16 Red",
+    "our_team": "Cardiff Allstars FC U16",
     "venue": "St Mellons",
-    "competition": "Cardiff & District U16 Division B - 26/27",
     "home_score": null,
     "away_score": null,
+    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "26.09.2026",
-    "time": "11:00",
-    "home": "Pentyrch Rangers U16",
+    "date": "05.09.2026",
+    "time": "10:00",
+    "home": "Llanrumney United Juniors FC U16 Red",
     "away": "Cardiff Allstars FC U16",
-    "venue": "Pentyrch Rangers AFC",
+    "venue": "The Jamie Burley Group Stadium",
     "competition": "Cardiff & District U16 Division B - 26/27",
-    "home_score": 3,
-    "away_score": 5,
+    "home_score": 1,
+    "away_score": 2,
     "status": "PLAYED",
     "goals": [
       {
-        "player": "Ethan Carr",
-        "minute": 23
-      },
-      {
         "player": "Oliver Elliott",
-        "minute": 41
-      },
-      {
-        "player": "Oliver Elliott",
-        "minute": 71
-      },
-      {
-        "player": "Oliver Elliott",
-        "minute": 80
+        "minute": 27
       },
       {
         "player": "Kian Gilbertson",
-        "minute": 63
+        "minute": 56
       }
     ]
   }
