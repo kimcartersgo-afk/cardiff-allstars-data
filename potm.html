@@ -4,52 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cardiff Allstars FC - Player of the Month Vote</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:ital,wght@0,700;0,900;1,900&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       background: #0d0d0d;
       color: #fff;
+      /* Subtle dark striped background simulating a pitch */
+      background-image: repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255, 255, 255, 0.02) 40px, rgba(255, 255, 255, 0.02) 80px);
     }
 
     .widget {
       max-width: 720px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 1.5rem;
     }
 
     .header {
-      margin-bottom: 1.2rem;
+      margin-bottom: 2rem;
       text-align: center;
+      position: relative;
     }
+    
+    .header::after {
+      content: '⭐ ⭐ ⭐';
+      display: block;
+      color: #cf6f1c;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      letter-spacing: 0.5rem;
+    }
+
     .header-title {
-      font-size: 1.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
       font-weight: 900;
+      font-style: italic;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #ff6b00;
-    }
-    .header-sub {
-      font-size: 0.85rem;
-      color: #aaa;
-      margin-top: 4px;
+      color: #cf6f1c;
+      text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
     }
 
     /* Voting Form */
     .vote-form {
-      background: #1a1a1a;
-      border: 1px solid #333;
+      background: rgba(26, 26, 26, 0.95);
+      border: 2px solid #cf6f1c;
       border-radius: 12px;
-      padding: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     .player-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.5rem;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
     }
 
     .player-option {
@@ -60,44 +72,65 @@
       display: none;
     }
 
+    /* Sporty Player Cards */
     .player-card {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 1.5rem 1rem;
-      background: #222;
+      background: linear-gradient(135deg, #222 0%, #111 100%);
       border: 2px solid #333;
-      border-radius: 8px;
+      border-radius: 12px;
       cursor: pointer;
       transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .player-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 4px;
+      background: #cf6f1c;
+      transform: scaleX(0);
+      transition: transform 0.2s ease;
     }
 
     .player-card:hover {
       border-color: #555;
+      transform: translateY(-2px);
     }
 
     .player-option input[type="radio"]:checked + .player-card {
-      border-color: #ff6b00;
-      background: rgba(255, 107, 0, 0.1);
+      border-color: #cf6f1c;
+      background: linear-gradient(135deg, rgba(207, 111, 28, 0.15) 0%, #111 100%);
+      box-shadow: 0 4px 15px rgba(207, 111, 28, 0.2);
+    }
+    
+    .player-option input[type="radio"]:checked + .player-card::before {
+      transform: scaleX(1);
     }
     
     .player-option input[type="radio"]:checked + .player-card .player-name {
-      color: #ff6b00;
+      color: #cf6f1c;
     }
 
     .player-avatar {
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
-      background: #333;
+      background: #cf6f1c;
       margin-bottom: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2rem;
-      font-weight: 700;
-      color: #555;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #fff;
       overflow: hidden;
+      border: 3px solid #111;
+      box-shadow: 0 0 0 2px #cf6f1c;
     }
     
     .player-avatar img {
@@ -107,17 +140,21 @@
     }
 
     .player-name {
+      font-family: 'Poppins', sans-serif;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.1rem;
       margin-bottom: 0.25rem;
       text-align: center;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
     }
 
     .player-pos {
       font-size: 0.75rem;
-      color: #888;
+      color: #aaa;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      font-weight: 600;
     }
 
     .form-group {
@@ -126,67 +163,80 @@
 
     .form-group label {
       display: block;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: #ccc;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
     }
 
     .form-control {
       width: 100%;
-      padding: 0.75rem 1rem;
-      background: #0d0d0d;
-      border: 1px solid #333;
-      border-radius: 6px;
+      padding: 0.9rem 1.2rem;
+      background: #111;
+      border: 1px solid #444;
+      border-radius: 8px;
       color: #fff;
       font-family: inherit;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
 
     .form-control:focus {
       outline: none;
-      border-color: #ff6b00;
+      border-color: #cf6f1c;
+      background: #1a1a1a;
     }
 
     .btn-submit {
       width: 100%;
-      padding: 1rem;
-      background: #ff6b00;
+      padding: 1.2rem;
+      background: #cf6f1c;
       color: #fff;
       border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: 700;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 900;
+      font-style: italic;
       cursor: pointer;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      transition: background 0.2s;
+      transition: all 0.2s;
     }
 
     .btn-submit:hover {
-      background: #e66000;
+      background: #b15d16;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(207, 111, 28, 0.4);
     }
 
     .success-msg {
       display: none;
       background: rgba(76, 175, 80, 0.1);
-      border: 1px solid #4caf50;
+      border: 2px solid #4caf50;
       color: #4caf50;
-      padding: 1rem;
-      border-radius: 6px;
+      padding: 1.5rem;
+      border-radius: 8px;
       text-align: center;
-      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
     .status-msg {
       display: none;
-      background: rgba(255, 107, 0, 0.1);
-      border: 1px solid #ff6b00;
-      color: #ff6b00;
-      padding: 1rem;
-      border-radius: 6px;
+      background: rgba(207, 111, 28, 0.1);
+      border: 2px solid #cf6f1c;
+      color: #cf6f1c;
+      padding: 1.5rem;
+      border-radius: 8px;
       text-align: center;
-      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
     }
   </style>
 </head>
@@ -195,14 +245,13 @@
 
   <div class="header">
     <div class="header-title">Cardiff Allstars Player Of The Month</div>
-    <div class="header-sub">Vote for this month's outstanding performer</div>
   </div>
 
   <!-- Replace the action URL with your form handler (e.g. Formspree, Netlify forms, or your backend) -->
   <form id="potm-form" class="vote-form" action="https://formspree.io/f/mrpbjkba" method="POST">
     
     <div class="form-group">
-      <label>Select your Player of the Month:</label>
+      <label>🏆 Select your Player of the Month:</label>
       <div class="player-list">
         
         <!-- Jess -->
