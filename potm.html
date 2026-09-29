@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardiff Allstars FC - Player of the Month Vote</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+    }
+
+    .widget {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .header {
+      margin-bottom: 1.2rem;
+      text-align: center;
+    }
+    .header-title {
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #ff6b00;
+    }
+    .header-sub {
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-top: 4px;
+    }
+
+    /* Voting Form */
+    .vote-form {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .player-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .player-option {
+      position: relative;
+    }
+
+    .player-option input[type="radio"] {
+      display: none;
+    }
+
+    .player-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 1rem;
+      background: #222;
+      border: 2px solid #333;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .player-card:hover {
+      border-color: #555;
+    }
+
+    .player-option input[type="radio"]:checked + .player-card {
+      border-color: #ff6b00;
+      background: rgba(255, 107, 0, 0.1);
+    }
+    
+    .player-option input[type="radio"]:checked + .player-card .player-name {
+      color: #ff6b00;
+    }
+
+    .player-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #333;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #555;
+      overflow: hidden;
+    }
+    
+    .player-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .player-name {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+      text-align: center;
+    }
+
+    .player-pos {
+      font-size: 0.75rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #ccc;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: #0d0d0d;
+      border: 1px solid #333;
+      border-radius: 6px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: #ff6b00;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 1rem;
+      background: #ff6b00;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s;
+    }
+
+    .btn-submit:hover {
+      background: #e66000;
+    }
+
+    .success-msg {
+      display: none;
+      background: rgba(76, 175, 80, 0.1);
+      border: 1px solid #4caf50;
+      color: #4caf50;
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .status-msg {
+      display: none;
+      background: rgba(255, 107, 0, 0.1);
+      border: 1px solid #ff6b00;
+      color: #ff6b00;
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+<div class="widget">
+
+  <div class="header">
+    <div class="header-title">Player of the Month</div>
+    <div class="header-sub">Vote for this month's outstanding performer</div>
+  </div>
+
+  <!-- Replace the action URL with your form handler (e.g. Formspree, Netlify forms, or your backend) -->
+  <form id="potm-form" class="vote-form" action="https://formspree.io/f/mrpbjkba" method="POST">
+    
+    <div class="form-group">
+      <label>Select your Player of the Month:</label>
+      <div class="player-list">
+        
+        <!-- Jess -->
+        <label class="player-option">
+          <input type="radio" name="player" value="Jess (Under 9s)" required>
+          <div class="player-card">
+            <div class="player-avatar">J</div>
+            <div class="player-name">Jess</div>
+            <div class="player-pos">Under 9's</div>
+          </div>
+        </label>
+
+        <!-- Jayden Martin -->
+        <label class="player-option">
+          <input type="radio" name="player" value="Jayden Martin (Under 12s)">
+          <div class="player-card">
+            <div class="player-avatar">JM</div>
+            <div class="player-name">Jayden Martin</div>
+            <div class="player-pos">Under 12's</div>
+          </div>
+        </label>
+
+        <!-- Oliver Elliott -->
+        <label class="player-option">
+          <input type="radio" name="player" value="Oliver Elliott (Under 16s)">
+          <div class="player-card">
+            <div class="player-avatar">OE</div>
+            <div class="player-name">Oliver Elliott</div>
+            <div class="player-pos">Under 16's</div>
+          </div>
+        </label>
+
+        <!-- Cam St John -->
+        <label class="player-option">
+          <input type="radio" name="player" value="Cam St John (First Team)">
+          <div class="player-card">
+            <div class="player-avatar">CS</div>
+            <div class="player-name">Cam St John</div>
+            <div class="player-pos">First Team</div>
+          </div>
+        </label>
+
+        <!-- Korey Lynch -->
+        <label class="player-option">
+          <input type="radio" name="player" value="Korey Lynch (Reserves)">
+          <div class="player-card">
+            <div class="player-avatar">KL</div>
+            <div class="player-name">Korey Lynch</div>
+            <div class="player-pos">Reserves</div>
+          </div>
+        </label>
+
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="voter-name">Your Name (Optional)</label>
+      <input type="text" id="voter-name" name="voter_name" class="form-control" placeholder="Enter your name">
+    </div>
+
+    <button type="submit" class="btn-submit">Submit Vote</button>
+  </form>
+
+  <div id="success-msg" class="success-msg">
+    Thank you! Your vote has been recorded.
+  </div>
+
+  <div id="status-msg" class="status-msg"></div>
+
+</div>
+
+<script>
+  const form = document.getElementById('potm-form');
+  const successMsg = document.getElementById('success-msg');
+  const statusMsg = document.getElementById('status-msg');
+  const submitBtn = form.querySelector('.btn-submit');
+  const HAS_VOTED_KEY = 'cardiff_allstars_potm_voted';
+
+  // Check timing (Opens 7th at 00:01, Closes 15th at 23:59)
+  const now = new Date();
+  const date = now.getDate();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  
+  const isBeforeOpen = (date < 7) || (date === 7 && hours === 0 && minutes === 0);
+  const isAfterClose = (date > 15);
+
+  if (isBeforeOpen) {
+    form.style.display = 'none';
+    statusMsg.textContent = 'Voting will open on the 7th of the month at 00:01.';
+    statusMsg.style.display = 'block';
+  } else if (isAfterClose) {
+    form.style.display = 'none';
+    statusMsg.textContent = 'Voting has closed for this month.';
+    statusMsg.style.display = 'block';
+  } else if (localStorage.getItem(HAS_VOTED_KEY)) {
+    // Check if they already voted
+    form.style.display = 'none';
+    statusMsg.textContent = 'You have already voted this month!';
+    statusMsg.style.display = 'block';
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting...';
+
+    const data = new FormData(form);
+    
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        localStorage.setItem(HAS_VOTED_KEY, 'true');
+        form.style.display = 'none';
+        successMsg.textContent = 'Thank you! Your vote has been recorded.';
+        successMsg.style.display = 'block';
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit Vote';
+        alert("Oops! There was a problem submitting your vote.");
+      }
+    })
+    .catch(error => {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit Vote';
+      alert("Oops! There was a problem submitting your vote.");
+    });
+  });
+</script>
+</body>
+</html>
