@@ -194,7 +194,7 @@
 <div class="widget">
 
   <div class="header">
-    <div class="header-title">Player of the Month</div>
+    <div class="header-title">Cardiff Allstars Player Of The Month</div>
     <div class="header-sub">Vote for this month's outstanding performer</div>
   </div>
 
@@ -292,11 +292,11 @@
 
   if (isBeforeOpen) {
     form.style.display = 'none';
-    statusMsg.textContent = 'Voting will open on the 7th of the month at 00:01.';
+    statusMsg.textContent = 'The Vote for this month has not opened yet. Please come back again on the 7th.';
     statusMsg.style.display = 'block';
   } else if (isAfterClose) {
     form.style.display = 'none';
-    statusMsg.textContent = 'Voting has closed for this month.';
+    statusMsg.textContent = 'Voting for this month has closed. Results will be announced shortly.';
     statusMsg.style.display = 'block';
   } else if (localStorage.getItem(HAS_VOTED_KEY)) {
     // Check if they already voted
