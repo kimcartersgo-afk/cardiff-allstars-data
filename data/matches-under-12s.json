@@ -1,19 +1,22 @@
 {
-  "updated": "2026-10-03T04:08:53Z",
+  "updated": "2026-10-03T08:10:00Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
-  "live": null,
-  "next_match": {
+  "live": {
     "date": "03.10.2026",
     "time": "09:00",
     "home": "Pontprennau Pumas FC U12's",
     "away": "Cardiff Allstars FC U12",
+    "our_team": "Cardiff Allstars FC U12",
     "venue": "Pontprennau Community Centre",
-    "competition": "Cardiff & District U12 Division  E - 26/27",
-    "home_score": null,
-    "away_score": null,
-    "status": "SCHEDULED"
+    "home_score": 0,
+    "away_score": 0,
+    "is_postponed": false,
+    "status": "live",
+    "goals": [],
+    "minute": null
   },
+  "next_match": null,
   "last_result": {
     "date": "19.09.2026",
     "time": "09:00",

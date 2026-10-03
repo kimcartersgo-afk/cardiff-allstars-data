@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T04:08:53Z",
+  "updated": "2026-10-03T08:10:00Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -8,10 +8,11 @@
     "time": "14:00",
     "home": "Cardiff Allstars FC",
     "away": "Llanrumney United Reserves",
+    "our_team": "Cardiff Allstars FC",
     "venue": "St Mellons",
-    "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
+    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
