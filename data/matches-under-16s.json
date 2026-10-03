@@ -1,34 +1,8 @@
 {
-  "updated": "2026-10-03T14:59:54Z",
+  "updated": "2026-10-03T15:00:02Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
-  "live": {
-    "date": "03.10.2026",
-    "time": "11:00",
-    "home": "Cardiff Allstars FC U16",
-    "away": "Llanrumney United Juniors FC U16 Red",
-    "our_team": "Cardiff Allstars FC U16",
-    "venue": "St Mellons",
-    "home_score": 3,
-    "away_score": 1,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Jenson Lewis",
-        "minute": 32
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 65
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 70
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "10.10.2026",
     "time": "10:30",
