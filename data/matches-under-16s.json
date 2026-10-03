@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T11:11:36Z",
+  "updated": "2026-10-03T11:12:46Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": {
@@ -9,7 +9,7 @@
     "away": "Llanrumney United Juniors FC U16 Red",
     "our_team": "Cardiff Allstars FC U16",
     "venue": "St Mellons",
-    "home_score": 2,
+    "home_score": 3,
     "away_score": 1,
     "is_postponed": false,
     "status": "live",
@@ -21,6 +21,10 @@
       {
         "player": "Kian Gilbertson",
         "minute": 65
+      },
+      {
+        "player": "Kian Gilbertson",
+        "minute": 70
       }
     ],
     "minute": null
