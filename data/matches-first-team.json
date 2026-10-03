@@ -1,15 +1,28 @@
 {
-  "updated": "2026-10-03T13:00:24Z",
+  "updated": "2026-10-03T13:00:46Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
-  "live": null,
-  "next_match": {
+  "live": {
     "date": "03.10.2026",
     "time": "14:00",
     "home": "Cardiff Allstars FC",
     "away": "Llanrumney United Reserves",
     "our_team": "Cardiff Allstars FC",
     "venue": "St Mellons",
+    "home_score": 0,
+    "away_score": 0,
+    "is_postponed": false,
+    "status": "live",
+    "goals": [],
+    "minute": null
+  },
+  "next_match": {
+    "date": "10.10.2026",
+    "time": "14:00",
+    "home": "Clwb Cymric Ail Dim",
+    "away": "Cardiff Allstars FC",
+    "our_team": "Cardiff Allstars FC",
+    "venue": "Pontcanna Fields",
     "home_score": null,
     "away_score": null,
     "is_postponed": false,
