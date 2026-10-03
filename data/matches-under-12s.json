@@ -1,30 +1,8 @@
 {
-  "updated": "2026-10-03T12:59:24Z",
+  "updated": "2026-10-03T13:00:02Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
-  "live": {
-    "date": "03.10.2026",
-    "time": "09:00",
-    "home": "Pontprennau Pumas FC U12's",
-    "away": "Cardiff Allstars FC U12",
-    "our_team": "Cardiff Allstars FC U12",
-    "venue": "Pontprennau Community Centre",
-    "home_score": 3,
-    "away_score": 2,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Wonderful Okunrotifa",
-        "minute": 60
-      },
-      {
-        "player": "Wonderful Okunrotifa",
-        "minute": 65
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": null,
   "last_result": {
     "date": "19.09.2026",
