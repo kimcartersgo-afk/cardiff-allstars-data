@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T15:09:03Z",
+  "updated": "2026-10-03T15:09:17Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": {
@@ -13,7 +13,16 @@
     "away_score": 4,
     "is_postponed": false,
     "status": "live",
-    "goals": [],
+    "goals": [
+      {
+        "player": "Ryan Mears",
+        "minute": 39
+      },
+      {
+        "player": "Chezney",
+        "minute": 80
+      }
+    ],
     "minute": null
   },
   "next_match": {
