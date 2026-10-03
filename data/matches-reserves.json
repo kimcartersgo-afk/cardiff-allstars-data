@@ -1,30 +1,8 @@
 {
-  "updated": "2026-10-03T20:01:12Z",
+  "updated": "2026-10-03T21:58:36Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": null,
-  "next_match": {
-    "date": "10.10.2026",
-    "time": "14:00",
-    "home": "Cardiff Allstars FC Reserves",
-    "away": "Grangetown Cath OB Reserves",
-    "our_team": "Cardiff Allstars FC Reserves",
-    "venue": "St Mellons",
-    "home_score": null,
-    "away_score": null,
-    "is_postponed": false,
-    "status": "SCHEDULED"
-  },
-  "last_result": {
-    "date": "19.09.2026",
-    "time": "14:00",
-    "home": "Cardiff Allstars FC Reserves",
-    "away": "Llanrumney United District",
-    "venue": "St Mellons",
-    "competition": "Cardiff & District League - Div Two 26/27",
-    "home_score": 0,
-    "away_score": 1,
-    "status": "ABANDONED",
-    "goals": []
-  }
+  "next_match": null,
+  "last_result": null
 }
