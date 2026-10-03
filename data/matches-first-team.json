@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T14:29:06Z",
+  "updated": "2026-10-03T14:29:56Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": {
@@ -17,6 +17,10 @@
       {
         "player": "Ryan Mears",
         "minute": 39
+      },
+      {
+        "player": "Chezney",
+        "minute": 80
       }
     ],
     "minute": null
