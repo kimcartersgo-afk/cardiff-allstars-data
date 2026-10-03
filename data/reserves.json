@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03T11:53:28Z",
+  "updated": "2026-10-03T22:36:33Z",
   "division": "Cardiff & District Reserves",
   "team": "Cardiff Allstars FC Reserves",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459589",
@@ -7,62 +7,62 @@
     {
       "pos": 1,
       "team": "Clwb Sparta FC Reserves",
-      "mp": 3,
+      "mp": 4,
       "w": 3,
-      "d": 0,
+      "d": 1,
       "l": 0,
-      "gf": 16,
-      "ga": 6,
+      "gf": 19,
+      "ga": 9,
       "gd": 10,
-      "pts": 9
+      "pts": 10
     },
     {
       "pos": 2,
       "team": "Llanrumney United District",
-      "mp": 3,
-      "w": 2,
+      "mp": 4,
+      "w": 3,
       "d": 0,
       "l": 1,
-      "gf": 17,
-      "ga": 11,
-      "gd": 6,
-      "pts": 6
+      "gf": 25,
+      "ga": 12,
+      "gd": 13,
+      "pts": 9
     },
     {
       "pos": 3,
-      "team": "Ely Rangers FC Reserves C&D",
-      "mp": 3,
-      "w": 2,
+      "team": "Llanrumney Athletic Reserves",
+      "mp": 4,
+      "w": 3,
       "d": 0,
       "l": 1,
-      "gf": 15,
-      "ga": 5,
-      "gd": 10,
-      "pts": 6
+      "gf": 14,
+      "ga": 8,
+      "gd": 6,
+      "pts": 9
     },
     {
       "pos": 4,
-      "team": "Llanrumney Athletic Reserves",
-      "mp": 3,
+      "team": "Ely Rangers FC Reserves C&D",
+      "mp": 4,
       "w": 2,
       "d": 0,
-      "l": 1,
-      "gf": 9,
-      "ga": 8,
-      "gd": 1,
+      "l": 2,
+      "gf": 16,
+      "ga": 13,
+      "gd": 3,
       "pts": 6
     },
     {
       "pos": 5,
       "team": "Grangetown Cath OB Reserves",
-      "mp": 3,
+      "mp": 4,
       "w": 1,
-      "d": 0,
+      "d": 1,
       "l": 2,
-      "gf": 9,
-      "ga": 12,
+      "gf": 12,
+      "ga": 15,
       "gd": -3,
-      "pts": 3
+      "pts": 4
     },
     {
       "pos": 6,
@@ -79,13 +79,13 @@
     {
       "pos": 7,
       "team": "Canton Rangers FC Reserves(-3)",
-      "mp": 2,
+      "mp": 3,
       "w": 0,
       "d": 0,
-      "l": 2,
+      "l": 3,
       "gf": 1,
-      "ga": 12,
-      "gd": -11,
+      "ga": 17,
+      "gd": -16,
       "pts": -3
     }
   ]
