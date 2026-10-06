@@ -1,6 +1,6 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 0 live, 7 upcoming
+  Totals: 0 live, 8 upcoming
 
 [Step 2] Scraping previous results...
   Found 39 previous results
@@ -11,7 +11,7 @@
     Last:   none (no results yet this season)
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
-    Next:   none
+    Next:   Cardiff Allstars FC U12 vs Radyr Rangers FC U12s Green on 10.10.2026 @ 09:00 (Moundfield)
     Last:   Pontprennau Pumas FC U12's 3–2 Cardiff Allstars FC U12 (2 goals)
     Written → matches-under-12s.json
   [Cardiff Allstars Under 16s]

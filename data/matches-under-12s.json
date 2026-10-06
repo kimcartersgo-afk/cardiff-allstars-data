@@ -1,9 +1,19 @@
 {
-  "updated": "2026-10-06T14:22:08Z",
+  "updated": "2026-10-06T19:48:19Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
   "live": null,
-  "next_match": null,
+  "next_match": {
+    "date": "10.10.2026",
+    "time": "09:00",
+    "home": "Cardiff Allstars FC U12",
+    "away": "Radyr Rangers FC U12s Green",
+    "venue": "Moundfield",
+    "competition": "Cardiff & District U12 Division  E - 26/27",
+    "home_score": null,
+    "away_score": null,
+    "status": "SCHEDULED"
+  },
   "last_result": {
     "date": "03.10.2026",
     "time": "09:00",
