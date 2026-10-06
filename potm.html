@@ -346,9 +346,8 @@
   const hours = now.getHours();
   const minutes = now.getMinutes();
   
-  // Temporarily overridden for preview!
-  const isBeforeOpen = false;
-  const isAfterClose = false;
+  const isBeforeOpen = (date < 7) || (date === 7 && hours === 0 && minutes === 0);
+  const isAfterClose = (date > 15);
 
   if (isBeforeOpen) {
     form.style.display = 'none';
