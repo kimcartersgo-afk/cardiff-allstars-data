@@ -1,38 +1,8 @@
 {
-  "updated": "2026-10-10T15:59:04Z",
+  "updated": "2026-10-10T15:59:52Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
-  "live": {
-    "date": "10.10.2026",
-    "time": "14:00",
-    "home": "Clwb Cymric Ail Dim",
-    "away": "Cardiff Allstars FC",
-    "our_team": "Cardiff Allstars FC",
-    "venue": "Cardiff International Sports Stadium 3G",
-    "home_score": 1,
-    "away_score": 4,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Jay Gilbertson",
-        "minute": 8
-      },
-      {
-        "player": "Jay Gilbertson",
-        "minute": 95
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 9
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 82
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "10.10.2026",
     "time": "14:00",
