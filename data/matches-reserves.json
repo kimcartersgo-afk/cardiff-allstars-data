@@ -1,26 +1,8 @@
 {
-  "updated": "2026-10-10T17:59:14Z",
+  "updated": "2026-10-10T18:00:01Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
-  "live": {
-    "date": "10.10.2026",
-    "time": "14:00",
-    "home": "Cardiff Allstars FC Reserves",
-    "away": "Grangetown Cath OB Reserves",
-    "our_team": "Cardiff Allstars FC Reserves",
-    "venue": "St Mellons",
-    "home_score": 1,
-    "away_score": 1,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Carl Boardman",
-        "minute": 50
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "17.10.2026",
     "time": "14:00",
