@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T09:13:04Z",
+  "updated": "2026-10-10T09:13:14Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
   "live": {
@@ -9,7 +9,7 @@
     "away": "Radyr Rangers FC U12s Green",
     "our_team": "Cardiff Allstars FC U12",
     "venue": "Moundfield",
-    "home_score": 6,
+    "home_score": 7,
     "away_score": 2,
     "is_postponed": false,
     "status": "live",
@@ -37,6 +37,10 @@
       {
         "player": "Nico Wayne Darmanin",
         "minute": 45
+      },
+      {
+        "player": "Nico Wayne Darmanin",
+        "minute": 68
       }
     ],
     "minute": null
