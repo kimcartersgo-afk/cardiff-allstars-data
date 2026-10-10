@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T10:29:06Z",
+  "updated": "2026-10-10T10:29:16Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": {
@@ -9,7 +9,7 @@
     "away": "Tiger Bay FC U16s",
     "our_team": "Cardiff Allstars FC U16",
     "venue": "St Mellons",
-    "home_score": 2,
+    "home_score": 3,
     "away_score": 2,
     "is_postponed": false,
     "status": "live",
@@ -17,6 +17,10 @@
       {
         "player": "Oliver Elliott",
         "minute": 9
+      },
+      {
+        "player": "Oliver Elliott",
+        "minute": 53
       },
       {
         "player": "Martin Kayongo",
