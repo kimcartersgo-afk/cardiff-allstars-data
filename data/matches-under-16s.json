@@ -1,11 +1,24 @@
 {
-  "updated": "2026-10-10T09:30:06Z",
+  "updated": "2026-10-10T09:30:26Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
-  "live": null,
-  "next_match": {
+  "live": {
     "date": "10.10.2026",
     "time": "10:30",
+    "home": "Cardiff Allstars FC U16",
+    "away": "Tiger Bay FC U16s",
+    "our_team": "Cardiff Allstars FC U16",
+    "venue": "St Mellons",
+    "home_score": 0,
+    "away_score": 0,
+    "is_postponed": false,
+    "status": "live",
+    "goals": [],
+    "minute": null
+  },
+  "next_match": {
+    "date": "17.10.2026",
+    "time": "11:00",
     "home": "Cardiff Allstars FC U16",
     "away": "Tiger Bay FC U16s",
     "our_team": "Cardiff Allstars FC U16",
