@@ -1,11 +1,23 @@
 {
-  "updated": "2026-10-13T01:46:02Z",
+  "updated": "2026-10-13T23:33:40Z",
   "division": "Cardiff & District First Team",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459586",
   "table": [
     {
       "pos": 1,
+      "team": "Llanrumney United Reserves",
+      "mp": 6,
+      "w": 4,
+      "d": 1,
+      "l": 1,
+      "gf": 28,
+      "ga": 9,
+      "gd": 19,
+      "pts": 13
+    },
+    {
+      "pos": 2,
       "team": "Clwb Cymric Ail Dim",
       "mp": 6,
       "w": 4,
@@ -17,19 +29,19 @@
       "pts": 13
     },
     {
-      "pos": 2,
+      "pos": 3,
       "team": "Cardiff Allstars FC",
-      "mp": 4,
+      "mp": 5,
       "w": 4,
       "d": 0,
-      "l": 0,
-      "gf": 21,
-      "ga": 5,
-      "gd": 16,
+      "l": 1,
+      "gf": 23,
+      "ga": 9,
+      "gd": 14,
       "pts": 12
     },
     {
-      "pos": 3,
+      "pos": 4,
       "team": "Llanrumney Athletic",
       "mp": 6,
       "w": 3,
@@ -41,7 +53,7 @@
       "pts": 11
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Splott Albion Mens 2nd",
       "mp": 5,
       "w": 3,
@@ -51,18 +63,6 @@
       "ga": 10,
       "gd": 8,
       "pts": 11
-    },
-    {
-      "pos": 5,
-      "team": "Llanrumney United Reserves",
-      "mp": 4,
-      "w": 2,
-      "d": 1,
-      "l": 1,
-      "gf": 16,
-      "ga": 7,
-      "gd": 9,
-      "pts": 7
     },
     {
       "pos": 6,
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "Pentyrch Rangers Development(-3)",
-      "mp": 5,
+      "mp": 6,
       "w": 0,
       "d": 2,
-      "l": 3,
+      "l": 4,
       "gf": 9,
-      "ga": 18,
-      "gd": -9,
+      "ga": 26,
+      "gd": -17,
       "pts": -1
     }
   ]
