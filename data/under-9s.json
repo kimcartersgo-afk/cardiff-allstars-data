@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T23:22:15Z",
+  "updated": "2026-10-13T01:45:47Z",
   "division": "Cardiff & District Under 9s",
   "team": "Cardiff Allstars Under 9s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=106365127",
@@ -198,7 +198,7 @@
     },
     {
       "pos": 17,
-      "team": "Inter Penarth U9 Girls",
+      "team": "Inter Penarth U9 Girls Black",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -210,7 +210,7 @@
     },
     {
       "pos": 18,
-      "team": "Lisvane Panthers Girls U9 Pink",
+      "team": "Inter Penarth U9 Girls Green",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -222,7 +222,7 @@
     },
     {
       "pos": 19,
-      "team": "Lisvane Panthers Girls U9s Blacks",
+      "team": "Lisvane Panthers Girls U9 Pink",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -234,7 +234,7 @@
     },
     {
       "pos": 20,
-      "team": "Llantwit Major Town FC Girls U9 Blues",
+      "team": "Lisvane Panthers Girls U9s Blacks",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -246,7 +246,7 @@
     },
     {
       "pos": 21,
-      "team": "Llantwit Major Town FC Girls U9 Yellows",
+      "team": "Llantwit Major Town FC Girls U9 Blues",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -258,7 +258,7 @@
     },
     {
       "pos": 22,
-      "team": "North Cardiff Cosmos FC Girls BLUE (u9)",
+      "team": "Llantwit Major Town FC Girls U9 Yellows",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -270,7 +270,7 @@
     },
     {
       "pos": 23,
-      "team": "North Cardiff Cosmos FC Girls RED (u9)",
+      "team": "North Cardiff Cosmos FC Girls BLUE (u9)",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -282,7 +282,7 @@
     },
     {
       "pos": 24,
-      "team": "North Cardiff Cosmos FC Girls WHITE (u9)",
+      "team": "North Cardiff Cosmos FC Girls RED (u9)",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -294,7 +294,7 @@
     },
     {
       "pos": 25,
-      "team": "Radyr Rangers FC Girls U9 Black",
+      "team": "North Cardiff Cosmos FC Girls WHITE (u9)",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -306,7 +306,7 @@
     },
     {
       "pos": 26,
-      "team": "Radyr Rangers FC Girls U9 Green",
+      "team": "Radyr Rangers FC Girls U9 Black",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -318,7 +318,7 @@
     },
     {
       "pos": 27,
-      "team": "Radyr Rangers FC Girls U9's White",
+      "team": "Radyr Rangers FC Girls U9 Green",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -330,7 +330,7 @@
     },
     {
       "pos": 28,
-      "team": "Rhiwbina FC Girls U9 Red",
+      "team": "Radyr Rangers FC Girls U9's White",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -342,7 +342,7 @@
     },
     {
       "pos": 29,
-      "team": "Rhiwbina FC U9 Girls Blue",
+      "team": "Rhiwbina FC Girls U9 Red",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -354,7 +354,7 @@
     },
     {
       "pos": 30,
-      "team": "Thornhill AFC GU09 Girls Blue",
+      "team": "Rhiwbina FC U9 Girls Blue",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -366,7 +366,7 @@
     },
     {
       "pos": 31,
-      "team": "Thornhill AFC GU09 Girls Pink",
+      "team": "Thornhill AFC GU09 Girls Blue",
       "mp": 0,
       "w": 0,
       "d": 0,
@@ -378,6 +378,18 @@
     },
     {
       "pos": 32,
+      "team": "Thornhill AFC GU09 Girls Pink",
+      "mp": 0,
+      "w": 0,
+      "d": 0,
+      "l": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 33,
       "team": "Thornhill AFC GU09 Girls Yellow",
       "mp": 0,
       "w": 0,
