@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T19:00:42Z",
+  "updated": "2026-10-17T19:01:03Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
   "live": null,
@@ -8,51 +8,34 @@
     "time": "11:00",
     "home": "Llanrumney United Juniors FC U12 Blue",
     "away": "Cardiff Allstars FC U12",
-    "our_team": "Cardiff Allstars FC U12",
     "venue": "The Jamie Burley Group Stadium",
+    "competition": "Cardiff & District U12 Division  E - 26/27",
     "home_score": null,
     "away_score": null,
-    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "10.10.2026",
+    "date": "17.10.2026",
     "time": "09:00",
-    "home": "Cardiff Allstars FC U12",
-    "away": "Radyr Rangers FC U12s Green",
-    "venue": "Moundfield",
+    "home": "AFC Rumney U12 White",
+    "away": "Cardiff Allstars FC U12",
+    "venue": "St Mellons",
     "competition": "Cardiff & District U12 Division  E - 26/27",
-    "home_score": 7,
-    "away_score": 2,
+    "home_score": 4,
+    "away_score": 3,
     "status": "PLAYED",
     "goals": [
       {
-        "player": "Harrison James Robert Oakley",
-        "minute": 7
+        "player": "Nico Wayne Darmanin",
+        "minute": 12
       },
       {
-        "player": "Jermaine Maunder",
-        "minute": 11
-      },
-      {
-        "player": "Jermaine Maunder",
-        "minute": 32
-      },
-      {
-        "player": "Elliott Cheshire",
-        "minute": 27
+        "player": "Nico Wayne Darmanin",
+        "minute": 23
       },
       {
         "player": "Wonderful Okunrotifa",
-        "minute": 32
-      },
-      {
-        "player": "Nico Wayne Darmanin",
-        "minute": 45
-      },
-      {
-        "player": "Nico Wayne Darmanin",
-        "minute": 68
+        "minute": 31
       }
     ]
   }
