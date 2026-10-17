@@ -1,6 +1,6 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 0 live, 14 upcoming
+  Totals: 1 live, 13 upcoming
 
 [Step 2] Scraping previous results...
   Found 38 previous results
@@ -11,7 +11,7 @@
     Last:   none (no results yet this season)
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
-    Next:   AFC Rumney U12 White vs Cardiff Allstars FC U12 on 17.10.2026 @ 09:00 (St Mellons)
+    Next:   Llanrumney United Juniors FC U12 Blue vs Cardiff Allstars FC U12 on 24.10.2026 @ 11:00 (The Jamie Burley Group Stadium)
     Last:   Cardiff Allstars FC U12 7–2 Radyr Rangers FC U12s Green (7 goals)
     Written → matches-under-12s.json
   [Cardiff Allstars Under 16s]

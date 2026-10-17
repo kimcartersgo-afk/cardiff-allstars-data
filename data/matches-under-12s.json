@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T09:35:04Z",
+  "updated": "2026-10-17T09:34:53Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
   "live": {
@@ -7,11 +7,10 @@
     "time": "09:00",
     "home": "AFC Rumney U12 White",
     "away": "Cardiff Allstars FC U12",
-    "our_team": "Cardiff Allstars FC U12",
     "venue": "St Mellons",
+    "competition": "Cardiff & District U12 Division  E - 26/27",
     "home_score": 4,
     "away_score": 3,
-    "is_postponed": false,
     "status": "live",
     "goals": [
       {
@@ -34,11 +33,10 @@
     "time": "11:00",
     "home": "Llanrumney United Juniors FC U12 Blue",
     "away": "Cardiff Allstars FC U12",
-    "our_team": "Cardiff Allstars FC U12",
     "venue": "The Jamie Burley Group Stadium",
+    "competition": "Cardiff & District U12 Division  E - 26/27",
     "home_score": null,
     "away_score": null,
-    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
