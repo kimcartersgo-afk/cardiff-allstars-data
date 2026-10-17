@@ -1,9 +1,9 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 2 live, 10 upcoming
+  Totals: 0 live, 11 upcoming
 
 [Step 2] Scraping previous results...
-  Found 41 previous results
+  Found 42 previous results
 
 [Step 3] Writing team files...
   [Cardiff Allstars Under 9s]
@@ -19,10 +19,10 @@
     Last:   Cardiff Allstars FC U16 2–2 Tiger Bay FC U16s (2 goals)
     Written → matches-under-16s.json
   [Cardiff Allstars FC]
-    Next:   Cardiff Allstars FC vs Splott Albion Mens 2nd on 24.10.2026 @ 14:00 (St Mellons)
+    Next:   Bryntirion Athletic FC vs Cardiff Allstars FC on 17.10.2026 @ 14:00 (Bryntirion Park)
     Last:   Clwb Cymric Ail Dim 1–4 Cardiff Allstars FC (4 goals)
     Written → matches-first-team.json
   [Cardiff Allstars FC Reserves]
     Next:   Canton Rangers FC Reserves vs Cardiff Allstars FC Reserves on 24.10.2026 @ 14:00 (Pontcanna Fields)
-    Last:   Llanrumney United District 0–0 Cardiff Allstars FC Reserves (0 goals)
+    Last:   Cardiff Allstars FC Reserves 2–4 Llanrumney United District (2 goals)
     Written → matches-reserves.json

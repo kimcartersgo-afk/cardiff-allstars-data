@@ -8,11 +8,10 @@
     "time": "14:00",
     "home": "Bryntirion Athletic FC",
     "away": "Cardiff Allstars FC",
-    "our_team": "Cardiff Allstars FC",
     "venue": "Bryntirion Park",
+    "competition": "Hugh James SWFA Senior Cup 26/27 - Round 3",
     "home_score": null,
     "away_score": null,
-    "is_postponed": false,
     "status": "PLAYED"
   },
   "last_result": {
