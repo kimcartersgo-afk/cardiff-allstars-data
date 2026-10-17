@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T12:50:34Z",
+  "updated": "2026-10-17T12:50:53Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": {
@@ -17,16 +17,16 @@
     "minute": null
   },
   "next_match": {
-    "date": "17.10.2026",
+    "date": "24.10.2026",
     "time": "14:00",
-    "home": "Llanrumney United District",
+    "home": "Canton Rangers FC Reserves",
     "away": "Cardiff Allstars FC Reserves",
     "our_team": "Cardiff Allstars FC Reserves",
-    "venue": "The Jamie Burley Group Stadium",
+    "venue": "Pontcanna Fields",
     "home_score": null,
     "away_score": null,
-    "is_postponed": true,
-    "status": "POSTPONED"
+    "is_postponed": false,
+    "status": "SCHEDULED"
   },
   "last_result": {
     "date": "19.09.2026",
