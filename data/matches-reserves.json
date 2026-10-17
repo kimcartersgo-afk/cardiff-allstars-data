@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T16:36:42Z",
+  "updated": "2026-10-17T16:37:42Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": null,
@@ -8,31 +8,23 @@
     "time": "14:00",
     "home": "Canton Rangers FC Reserves",
     "away": "Cardiff Allstars FC Reserves",
+    "our_team": "Cardiff Allstars FC Reserves",
     "venue": "Pontcanna Fields",
-    "competition": "Cardiff & District League - Div Two 26/27",
     "home_score": null,
     "away_score": null,
+    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "17.10.2026",
+    "date": "19.09.2026",
     "time": "14:00",
     "home": "Cardiff Allstars FC Reserves",
     "away": "Llanrumney United District",
     "venue": "St Mellons",
     "competition": "Cardiff & District League - Div Two 26/27",
-    "home_score": 2,
-    "away_score": 4,
-    "status": "PLAYED",
-    "goals": [
-      {
-        "player": "Jay Machachini",
-        "minute": 15
-      },
-      {
-        "player": "Jay Machachini",
-        "minute": 46
-      }
-    ]
+    "home_score": 0,
+    "away_score": 1,
+    "status": "ABANDONED",
+    "goals": []
   }
 }
