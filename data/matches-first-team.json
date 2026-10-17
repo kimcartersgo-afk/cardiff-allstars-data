@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T15:57:22Z",
+  "updated": "2026-10-17T15:57:52Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -13,7 +13,7 @@
     "home_score": null,
     "away_score": null,
     "is_postponed": false,
-    "status": "SCHEDULED"
+    "status": "PLAYED"
   },
   "last_result": {
     "date": "10.10.2026",
