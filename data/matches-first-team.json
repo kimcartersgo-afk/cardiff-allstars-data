@@ -1,37 +1,15 @@
 {
-  "updated": "2026-10-17T15:46:54Z",
+  "updated": "2026-10-17T15:47:02Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
-  "live": {
+  "live": null,
+  "next_match": {
     "date": "17.10.2026",
     "time": "14:00",
     "home": "Bryntirion Athletic FC",
     "away": "Cardiff Allstars FC",
     "our_team": "Cardiff Allstars FC",
     "venue": "Bryntirion Park",
-    "home_score": 2,
-    "away_score": 2,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Matt Oliver",
-        "minute": 31
-      },
-      {
-        "player": "Jay Gilbertson",
-        "minute": 34
-      }
-    ],
-    "minute": null
-  },
-  "next_match": {
-    "date": "24.10.2026",
-    "time": "14:00",
-    "home": "Cardiff Allstars FC",
-    "away": "Splott Albion Mens 2nd",
-    "our_team": "Cardiff Allstars FC",
-    "venue": "St Mellons",
     "home_score": null,
     "away_score": null,
     "is_postponed": false,
