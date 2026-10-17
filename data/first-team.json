@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T22:24:22Z",
+  "updated": "2026-10-17T21:56:45Z",
   "division": "Cardiff & District First Team",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459586",
@@ -7,29 +7,41 @@
     {
       "pos": 1,
       "team": "Llanrumney United Reserves",
-      "mp": 6,
-      "w": 4,
+      "mp": 7,
+      "w": 5,
       "d": 1,
       "l": 1,
-      "gf": 28,
-      "ga": 9,
-      "gd": 19,
-      "pts": 13
+      "gf": 32,
+      "ga": 10,
+      "gd": 22,
+      "pts": 16
     },
     {
       "pos": 2,
-      "team": "Clwb Cymric Ail Dim",
+      "team": "Splott Albion Mens 2nd",
       "mp": 6,
       "w": 4,
-      "d": 1,
-      "l": 1,
-      "gf": 13,
+      "d": 2,
+      "l": 0,
+      "gf": 19,
       "ga": 10,
-      "gd": 3,
-      "pts": 13
+      "gd": 9,
+      "pts": 14
     },
     {
       "pos": 3,
+      "team": "Clwb Cymric Ail Dim",
+      "mp": 7,
+      "w": 4,
+      "d": 1,
+      "l": 2,
+      "gf": 13,
+      "ga": 11,
+      "gd": 2,
+      "pts": 13
+    },
+    {
+      "pos": 4,
       "team": "Cardiff Allstars FC",
       "mp": 5,
       "w": 4,
@@ -41,7 +53,7 @@
       "pts": 12
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Llanrumney Athletic",
       "mp": 6,
       "w": 3,
@@ -53,28 +65,16 @@
       "pts": 11
     },
     {
-      "pos": 5,
-      "team": "Splott Albion Mens 2nd",
-      "mp": 5,
-      "w": 3,
-      "d": 2,
-      "l": 0,
-      "gf": 18,
-      "ga": 10,
-      "gd": 8,
-      "pts": 11
-    },
-    {
       "pos": 6,
       "team": "Grange Albion FC Reserves",
-      "mp": 6,
-      "w": 2,
+      "mp": 7,
+      "w": 3,
       "d": 0,
       "l": 4,
-      "gf": 10,
-      "ga": 23,
-      "gd": -13,
-      "pts": 6
+      "gf": 13,
+      "ga": 25,
+      "gd": -12,
+      "pts": 9
     },
     {
       "pos": 7,
@@ -91,25 +91,25 @@
     {
       "pos": 8,
       "team": "Tongwynlais AFC Reserves",
-      "mp": 6,
+      "mp": 7,
       "w": 0,
       "d": 2,
-      "l": 4,
-      "gf": 8,
-      "ga": 22,
-      "gd": -14,
+      "l": 5,
+      "gf": 10,
+      "ga": 25,
+      "gd": -15,
       "pts": 2
     },
     {
       "pos": 9,
       "team": "Pentyrch Rangers Development(-3)",
-      "mp": 6,
+      "mp": 7,
       "w": 0,
       "d": 2,
-      "l": 4,
-      "gf": 9,
-      "ga": 26,
-      "gd": -17,
+      "l": 5,
+      "gf": 10,
+      "ga": 30,
+      "gd": -20,
       "pts": -1
     }
   ]
