@@ -1,15 +1,28 @@
 {
-  "updated": "2026-10-17T13:02:51Z",
+  "updated": "2026-10-17T13:03:04Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
-  "live": null,
-  "next_match": {
+  "live": {
     "date": "17.10.2026",
     "time": "14:00",
     "home": "Bryntirion Athletic FC",
     "away": "Cardiff Allstars FC",
     "our_team": "Cardiff Allstars FC",
     "venue": "Bryntirion Park",
+    "home_score": 0,
+    "away_score": 0,
+    "is_postponed": false,
+    "status": "live",
+    "goals": [],
+    "minute": null
+  },
+  "next_match": {
+    "date": "24.10.2026",
+    "time": "14:00",
+    "home": "Cardiff Allstars FC",
+    "away": "Splott Albion Mens 2nd",
+    "our_team": "Cardiff Allstars FC",
+    "venue": "St Mellons",
     "home_score": null,
     "away_score": null,
     "is_postponed": false,
