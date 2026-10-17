@@ -1,34 +1,8 @@
 {
-  "updated": "2026-10-17T12:01:53Z",
+  "updated": "2026-10-17T12:02:52Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
-  "live": {
-    "date": "17.10.2026",
-    "time": "09:00",
-    "home": "AFC Rumney U12 White",
-    "away": "Cardiff Allstars FC U12",
-    "our_team": "Cardiff Allstars FC U12",
-    "venue": "St Mellons",
-    "home_score": 4,
-    "away_score": 3,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Nico Wayne Darmanin",
-        "minute": 12
-      },
-      {
-        "player": "Nico Wayne Darmanin",
-        "minute": 23
-      },
-      {
-        "player": "Wonderful Okunrotifa",
-        "minute": 31
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "24.10.2026",
     "time": "11:00",
