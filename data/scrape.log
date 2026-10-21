@@ -1,13 +1,13 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 0 live, 11 upcoming
+  Totals: 0 live, 10 upcoming
 
 [Step 2] Scraping previous results...
   Found 37 previous results
 
 [Step 3] Writing team files...
   [Cardiff Allstars Under 9s]
-    Next:   Cardiff Allstars FC U9 Girls vs Lisvane Panthers Girls U9 Pink on 18.10.2026 @ 10:30 (Ocean Park Arena)
+    Next:   none
     Last:   none (no results yet this season)
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
