@@ -349,13 +349,9 @@
   const isBeforeOpen = (date < 7) || (date === 7 && hours === 0 && minutes === 0);
   const isAfterClose = (date > 15);
 
-  if (isBeforeOpen) {
+  if (isBeforeOpen || isAfterClose) {
     form.style.display = 'none';
-    statusMsg.textContent = 'The Vote for this month has not opened yet. Please come back again on the 7th.';
-    statusMsg.style.display = 'block';
-  } else if (isAfterClose) {
-    form.style.display = 'none';
-    statusMsg.textContent = 'Voting for this month has closed. Results will be announced shortly.';
+    statusMsg.innerHTML = "Votes are in for September, the winner is Oliver Elliott for the Under 16's!<br>Check back on the 7th November for Octobers Nominees.";
     statusMsg.style.display = 'block';
   } else if (localStorage.getItem(HAS_VOTED_KEY)) {
     // Check if they already voted
