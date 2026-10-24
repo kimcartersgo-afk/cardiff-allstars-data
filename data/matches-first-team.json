@@ -1,19 +1,18 @@
 {
-  "updated": "2026-10-24T14:43:42Z",
+  "updated": "2026-10-24T14:44:12Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
   "next_match": {
-    "date": "24.10.2026",
+    "date": "31.10.2026",
     "time": "14:00",
-    "home": "Cardiff Allstars FC",
-    "away": "Splott Albion Mens 2nd",
-    "our_team": "Cardiff Allstars FC",
-    "venue": "St Mellons",
+    "home": "Llanrumney Athletic",
+    "away": "Cardiff Allstars FC",
+    "venue": "Eastern Leisure Centre",
+    "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
-    "is_postponed": true,
-    "status": "POSTPONED"
+    "status": "SCHEDULED"
   },
   "last_result": {
     "date": "10.10.2026",
