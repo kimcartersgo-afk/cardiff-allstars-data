@@ -1,18 +1,19 @@
 {
-  "updated": "2026-10-24T11:23:45Z",
+  "updated": "2026-10-24T11:52:07Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": null,
   "next_match": {
-    "date": "31.10.2026",
+    "date": "24.10.2026",
     "time": "14:00",
-    "home": "Cardiff Allstars FC Reserves",
-    "away": "Canton Rangers FC Reserves",
-    "venue": "St Mellons",
-    "competition": "Cardiff & District League - Div Two 26/27",
+    "home": "Canton Rangers FC Reserves",
+    "away": "Cardiff Allstars FC Reserves",
+    "our_team": "Cardiff Allstars FC Reserves",
+    "venue": "Pontcanna Fields",
     "home_score": null,
     "away_score": null,
-    "status": "SCHEDULED"
+    "is_postponed": true,
+    "status": "POSTPONED"
   },
   "last_result": {
     "date": "17.10.2026",
