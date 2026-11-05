@@ -257,8 +257,8 @@
     <div class="header-title">Cardiff Allstars September Player Of The Month</div>
   </div>
 
-  <!-- Replace the action URL with your form handler (e.g. Formspree, Netlify forms, or your backend) -->
-  <form id="potm-form" class="vote-form" action="https://formspree.io/f/mrpbjkba" method="POST">
+  <!-- Google Forms Backend (Unlimited free responses) -->
+  <form id="potm-form" class="vote-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfVf3CugzpmDTI3QG1WNX-9yvGCXgsj1Wu68vyTSBQiRyAPig/formResponse" method="POST">
     
     <div class="form-group">
       <label>🏆 Select your Player of the Month:</label>
@@ -266,7 +266,7 @@
         
         <!-- Isla Rose -->
         <label class="player-option">
-          <input type="radio" name="player" value="Isla Rose (Under 9s)" required>
+          <input type="radio" name="entry.2018381042" value="Isla Rose (Under 9s)" required>
           <div class="player-card">
             <div class="player-avatar"><img src="images/potm/2026-10/isla_rose.jpg" alt="Isla Rose"></div>
             <div class="player-name">Isla Rose</div>
@@ -276,7 +276,7 @@
 
         <!-- Jayden Martin -->
         <label class="player-option">
-          <input type="radio" name="player" value="Jayden Martin (Under 12s)">
+          <input type="radio" name="entry.2018381042" value="Jayden Martin (Under 12s)">
           <div class="player-card">
             <div class="player-avatar"><img src="images/potm/2026-10/jayden_martin.jpg" alt="Jayden Martin"></div>
             <div class="player-name">Jayden Martin</div>
@@ -286,7 +286,7 @@
 
         <!-- Oliver Elliott -->
         <label class="player-option">
-          <input type="radio" name="player" value="Oliver Elliott (Under 16s)">
+          <input type="radio" name="entry.2018381042" value="Oliver Elliott (Under 16s)">
           <div class="player-card">
             <div class="player-avatar"><img src="images/potm/2026-10/oliver_elliott.jpg" alt="Oliver Elliott"></div>
             <div class="player-name">Oliver Elliott</div>
@@ -296,7 +296,7 @@
 
         <!-- Lathem Miller -->
         <label class="player-option">
-          <input type="radio" name="player" value="Lathem Miller (First Team)">
+          <input type="radio" name="entry.2018381042" value="Lathem Miller (First Team)">
           <div class="player-card">
             <div class="player-avatar"><img src="images/potm/2026-10/lathem_miller.jpg" alt="Lathem Miller"></div>
             <div class="player-name">Lathem Miller</div>
@@ -306,7 +306,7 @@
 
         <!-- Korey Lynch -->
         <label class="player-option">
-          <input type="radio" name="player" value="Korey Lynch (Reserves)">
+          <input type="radio" name="entry.2018381042" value="Korey Lynch (Reserves)">
           <div class="player-card">
             <div class="player-avatar"><img src="images/potm/2026-10/korey_lynch.jpg" alt="Korey Lynch"></div>
             <div class="player-name">Korey Lynch</div>
@@ -319,7 +319,7 @@
 
     <div class="form-group">
       <label for="voter-name">Your Name (Optional)</label>
-      <input type="text" id="voter-name" name="voter_name" class="form-control" placeholder="Enter your name">
+      <input type="text" id="voter-name" class="form-control" placeholder="Enter your name">
     </div>
 
     <button type="submit" class="btn-submit">Submit Vote</button>
@@ -338,10 +338,10 @@
   const successMsg = document.getElementById('success-msg');
   const statusMsg = document.getElementById('status-msg');
   const submitBtn = form.querySelector('.btn-submit');
-  const HAS_VOTED_KEY = 'cardiff_allstars_potm_voted_october_2026';
 
   // Check timing (Opens 7th at 00:01, Closes 15th at 23:59)
   const now = new Date();
+  const HAS_VOTED_KEY = 'cardiff_allstars_potm_voted_' + now.getFullYear() + '_' + (now.getMonth() + 1);
   const date = now.getDate();
   const hours = now.getHours();
   const minutes = now.getMinutes();
@@ -366,26 +366,21 @@
     submitBtn.disabled = true;
     submitBtn.textContent = 'Submitting...';
 
-    const data = new FormData(form);
+    const data = new URLSearchParams(new FormData(form));
     
     fetch(form.action, {
       method: 'POST',
-      body: data,
+      mode: 'no-cors',
       headers: {
-        'Accept': 'application/json'
-      }
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: data.toString()
     })
-    .then(response => {
-      if (response.ok) {
-        localStorage.setItem(HAS_VOTED_KEY, 'true');
-        form.style.display = 'none';
-        successMsg.textContent = 'Thank you! Your vote has been recorded.';
-        successMsg.style.display = 'block';
-      } else {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit Vote';
-        alert("Oops! There was a problem submitting your vote.");
-      }
+    .then(() => {
+      localStorage.setItem(HAS_VOTED_KEY, 'true');
+      form.style.display = 'none';
+      successMsg.textContent = 'Thank you! Your vote has been recorded.';
+      successMsg.style.display = 'block';
     })
     .catch(error => {
       submitBtn.disabled = false;
