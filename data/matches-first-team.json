@@ -1,45 +1,49 @@
 {
-  "updated": "2026-10-26T06:50:35Z",
+  "updated": "2026-11-05T12:20:29Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
   "next_match": {
-    "date": "31.10.2026",
+    "date": "07.11.2026",
     "time": "14:00",
-    "home": "Llanrumney Athletic",
-    "away": "Cardiff Allstars FC",
-    "venue": "Eastern Leisure Centre",
+    "home": "Cardiff Allstars FC",
+    "away": "Grange Albion FC Reserves",
+    "venue": "St Mellons",
     "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "10.10.2026",
+    "date": "31.10.2026",
     "time": "14:00",
-    "home": "Clwb Cymric Ail Dim",
+    "home": "Llanrumney Athletic",
     "away": "Cardiff Allstars FC",
-    "venue": "Cardiff International Sports Stadium 3G",
+    "venue": "Eastern Leisure Centre",
     "competition": "Cardiff & District League - Div One 26/27",
-    "home_score": 1,
-    "away_score": 4,
+    "home_score": 3,
+    "away_score": 5,
     "status": "PLAYED",
     "goals": [
       {
-        "player": "Jay Gilbertson",
+        "player": "Ryan Mears",
         "minute": 8
       },
       {
-        "player": "Jay Gilbertson",
-        "minute": 95
+        "player": "Ryan Mears",
+        "minute": 54
+      },
+      {
+        "player": "Zach Stephens",
+        "minute": 14
       },
       {
         "player": "Lathem Miller",
-        "minute": 9
+        "minute": 56
       },
       {
         "player": "Lathem Miller",
-        "minute": 82
+        "minute": 83
       }
     ]
   }
