@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T20:23:52Z",
+  "updated": "2026-11-07T20:24:25Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -8,43 +8,62 @@
     "time": "14:00",
     "home": "Pentyrch Rangers Development",
     "away": "Cardiff Allstars FC",
-    "our_team": "Cardiff Allstars FC",
     "venue": "Pentyrch Rangers AFC",
+    "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
-    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "31.10.2026",
+    "date": "07.11.2026",
     "time": "14:00",
-    "home": "Llanrumney Athletic",
-    "away": "Cardiff Allstars FC",
-    "venue": "Eastern Leisure Centre",
+    "home": "Cardiff Allstars FC",
+    "away": "Grange Albion FC Reserves",
+    "venue": "St Mellons",
     "competition": "Cardiff & District League - Div One 26/27",
-    "home_score": 3,
-    "away_score": 5,
+    "home_score": 10,
+    "away_score": 2,
     "status": "PLAYED",
     "goals": [
       {
-        "player": "Ryan Mears",
-        "minute": 8
+        "player": "Lathem Miller",
+        "minute": 20
       },
       {
-        "player": "Ryan Mears",
-        "minute": 54
+        "player": "Lathem Miller",
+        "minute": 44
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 74
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 76
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 82
+      },
+      {
+        "player": "Jay Gilbertson",
+        "minute": 25
       },
       {
         "player": "Zach Stephens",
-        "minute": 14
+        "minute": 47
       },
       {
-        "player": "Lathem Miller",
-        "minute": 56
+        "player": "Zach Stephens",
+        "minute": 61
       },
       {
-        "player": "Lathem Miller",
-        "minute": 83
+        "player": "Harley Davis",
+        "minute": 58
+      },
+      {
+        "player": "Chezney",
+        "minute": 73
       }
     ]
   }
