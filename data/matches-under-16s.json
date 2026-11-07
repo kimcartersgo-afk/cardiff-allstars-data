@@ -1,46 +1,8 @@
 {
-  "updated": "2026-11-07T14:29:44Z",
+  "updated": "2026-11-07T14:30:02Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
-  "live": {
-    "date": "07.11.2026",
-    "time": "10:30",
-    "home": "Cardiff Cosmopolitan FC BOYS U16 BLUE",
-    "away": "Cardiff Allstars FC U16",
-    "our_team": "Cardiff Allstars FC U16",
-    "venue": "Pontcanna Fields",
-    "home_score": 2,
-    "away_score": 5,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Oliver Elliott 2",
-        "minute": 8
-      },
-      {
-        "player": "Oliver Elliott 2",
-        "minute": 28
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 16
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 53
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 84
-      },
-      {
-        "player": "Ethan Carr",
-        "minute": 56
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "14.11.2026",
     "time": "11:00",
