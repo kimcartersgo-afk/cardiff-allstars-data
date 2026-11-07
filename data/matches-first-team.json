@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T20:24:52Z",
+  "updated": "2026-11-07T20:25:52Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -8,62 +8,43 @@
     "time": "14:00",
     "home": "Pentyrch Rangers Development",
     "away": "Cardiff Allstars FC",
+    "our_team": "Cardiff Allstars FC",
     "venue": "Pentyrch Rangers AFC",
-    "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
+    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "07.11.2026",
+    "date": "31.10.2026",
     "time": "14:00",
-    "home": "Cardiff Allstars FC",
-    "away": "Grange Albion FC Reserves",
-    "venue": "St Mellons",
+    "home": "Llanrumney Athletic",
+    "away": "Cardiff Allstars FC",
+    "venue": "Eastern Leisure Centre",
     "competition": "Cardiff & District League - Div One 26/27",
-    "home_score": 10,
-    "away_score": 2,
+    "home_score": 3,
+    "away_score": 5,
     "status": "PLAYED",
     "goals": [
       {
-        "player": "Lathem Miller",
-        "minute": 20
+        "player": "Ryan Mears",
+        "minute": 8
       },
       {
-        "player": "Lathem Miller",
-        "minute": 44
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 74
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 76
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 82
-      },
-      {
-        "player": "Jay Gilbertson",
-        "minute": 25
+        "player": "Ryan Mears",
+        "minute": 54
       },
       {
         "player": "Zach Stephens",
-        "minute": 47
+        "minute": 14
       },
       {
-        "player": "Zach Stephens",
-        "minute": 61
+        "player": "Lathem Miller",
+        "minute": 56
       },
       {
-        "player": "Harley Davis",
-        "minute": 58
-      },
-      {
-        "player": "Chezney",
-        "minute": 73
+        "player": "Lathem Miller",
+        "minute": 83
       }
     ]
   }
