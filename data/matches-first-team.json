@@ -1,62 +1,8 @@
 {
-  "updated": "2026-11-07T15:50:44Z",
+  "updated": "2026-11-07T15:51:22Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
-  "live": {
-    "date": "07.11.2026",
-    "time": "14:00",
-    "home": "Cardiff Allstars FC",
-    "away": "Grange Albion FC Reserves",
-    "our_team": "Cardiff Allstars FC",
-    "venue": "St Mellons",
-    "home_score": 10,
-    "away_score": 2,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Lathem Miller",
-        "minute": 20
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 44
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 74
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 76
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 82
-      },
-      {
-        "player": "Jay Gilbertson",
-        "minute": 25
-      },
-      {
-        "player": "Zach Stephens",
-        "minute": 47
-      },
-      {
-        "player": "Zach Stephens",
-        "minute": 61
-      },
-      {
-        "player": "Harley Davis",
-        "minute": 58
-      },
-      {
-        "player": "Chezney",
-        "minute": 73
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "14.11.2026",
     "time": "14:00",
