@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T15:06:44Z",
+  "updated": "2026-11-07T15:07:24Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": {
@@ -9,7 +9,7 @@
     "away": "Grange Albion FC Reserves",
     "our_team": "Cardiff Allstars FC",
     "venue": "St Mellons",
-    "home_score": 4,
+    "home_score": 5,
     "away_score": 1,
     "is_postponed": false,
     "status": "live",
@@ -29,6 +29,10 @@
       {
         "player": "Zach Stephens",
         "minute": 47
+      },
+      {
+        "player": "Harley Davis",
+        "minute": 58
       }
     ],
     "minute": null
