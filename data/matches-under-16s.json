@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T11:31:04Z",
+  "updated": "2026-11-07T11:31:33Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": {
@@ -10,7 +10,7 @@
     "our_team": "Cardiff Allstars FC U16",
     "venue": "Pontcanna Fields",
     "home_score": 1,
-    "away_score": 4,
+    "away_score": 5,
     "is_postponed": false,
     "status": "live",
     "goals": [
@@ -29,6 +29,10 @@
       {
         "player": "Kian Gilbertson",
         "minute": 53
+      },
+      {
+        "player": "Ethan Carr",
+        "minute": 56
       }
     ],
     "minute": null
