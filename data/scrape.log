@@ -1,28 +1,30 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 0 live, 10 upcoming
+  WARNING: No rows found
+  Totals: 0 live, 0 upcoming
 
 [Step 2] Scraping previous results...
-  Found 37 previous results
+  WARNING: Could not click previous matches: Page.query_selector: Execution context was destroyed, most likely because of a navigation
+  Found 0 previous results
 
 [Step 3] Writing team files...
   [Cardiff Allstars Under 9s]
-    Next:   Cardiff Allstars FC U9 Girls vs Lisvane Panthers Girls U9s Blacks on 08.11.2026 @ 10:30 (Ocean Park Arena)
+    Next:   none
     Last:   none (no results yet this season)
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
-    Next:   Llanrumney United Juniors FC U12 Blue vs Cardiff Allstars FC U12 on 14.11.2026 @ 11:00 (The Jamie Burley Group Stadium)
-    Last:   Cardiff Allstars FC U12 2–7 Gwaelod Rangers U12 Mixed Green (2 goals)
+    Next:   none
+    Last:   none (no results yet this season)
     Written → matches-under-12s.json
   [Cardiff Allstars Under 16s]
-    Next:   Cardiff Allstars FC U16 vs Canton Rangers FC U16 Gwyn on 14.11.2026 @ 11:00 (St Mellons)
-    Last:   Cardiff Cosmopolitan FC BOYS U16 BLUE 3–6 Cardiff Allstars FC U16 (6 goals)
+    Next:   none
+    Last:   none (no results yet this season)
     Written → matches-under-16s.json
   [Cardiff Allstars FC]
-    Next:   Pentyrch Rangers Development vs Cardiff Allstars FC on 14.11.2026 @ 14:00 (Pentyrch Rangers AFC)
-    Last:   Cardiff Allstars FC 10–2 Grange Albion FC Reserves (10 goals)
+    Next:   none
+    Last:   none (no results yet this season)
     Written → matches-first-team.json
   [Cardiff Allstars FC Reserves]
-    Next:   Grangetown Cath OB Reserves vs Cardiff Allstars FC Reserves on 14.11.2026 @ 14:00 (The Marl)
-    Last:   Cardiff Allstars FC Reserves 1–5 Canton Rangers FC Reserves (1 goals)
+    Next:   none
+    Last:   none (no results yet this season)
     Written → matches-reserves.json
