@@ -254,7 +254,7 @@
 
   <div class="header">
     <img src="https://cardiffallstarsfc.com/wp-content/uploads/go-x/u/05dd8123-06b9-43b8-ba93-02586a6650ec/image.png" alt="Cardiff Allstars FC Badge" class="club-badge">
-    <div class="header-title">Cardiff Allstars September Player Of The Month</div>
+    <div class="header-title">Cardiff Allstars October Player Of The Month</div>
   </div>
 
   <!-- Google Forms Backend (Unlimited free responses) -->
@@ -264,52 +264,52 @@
       <label>🏆 Select your Player of the Month:</label>
       <div class="player-list">
         
-        <!-- Isla Rose -->
+        <!-- Abigail -->
         <label class="player-option">
-          <input type="radio" name="entry.2018381042" value="Isla Rose (Under 9s)" required>
+          <input type="radio" name="entry.2018381042" value="Abigail (Under 9s)" required>
           <div class="player-card">
-            <div class="player-avatar"><img src="images/potm/2026-10/isla_rose.jpg" alt="Isla Rose"></div>
-            <div class="player-name">Isla Rose</div>
+            <div class="player-avatar"><img src="images/potm/2026-11/abigail.jpg" alt="Abigail"></div>
+            <div class="player-name">Abigail</div>
             <div class="player-pos">Under 9's</div>
           </div>
         </label>
 
-        <!-- Jayden Martin -->
+        <!-- Caiden Sinclair -->
         <label class="player-option">
-          <input type="radio" name="entry.2018381042" value="Jayden Martin (Under 12s)">
+          <input type="radio" name="entry.2018381042" value="Caiden Sinclair (Under 12s)">
           <div class="player-card">
-            <div class="player-avatar"><img src="images/potm/2026-10/jayden_martin.jpg" alt="Jayden Martin"></div>
-            <div class="player-name">Jayden Martin</div>
+            <div class="player-avatar"><img src="images/potm/2026-11/caiden_sinclair.jpg" alt="Caiden Sinclair"></div>
+            <div class="player-name">Caiden Sinclair</div>
             <div class="player-pos">Under 12's</div>
           </div>
         </label>
 
-        <!-- Oliver Elliott -->
+        <!-- Kian Gilbertson -->
         <label class="player-option">
-          <input type="radio" name="entry.2018381042" value="Oliver Elliott (Under 16s)">
+          <input type="radio" name="entry.2018381042" value="Kian Gilbertson (Under 16s)">
           <div class="player-card">
-            <div class="player-avatar"><img src="images/potm/2026-10/oliver_elliott.jpg" alt="Oliver Elliott"></div>
-            <div class="player-name">Oliver Elliott</div>
+            <div class="player-avatar"><img src="images/potm/2026-11/kian_gilbertson.jpg" alt="Kian Gilbertson"></div>
+            <div class="player-name">Kian Gilbertson</div>
             <div class="player-pos">Under 16's</div>
           </div>
         </label>
 
-        <!-- Lathem Miller -->
+        <!-- Zach Stephens -->
         <label class="player-option">
-          <input type="radio" name="entry.2018381042" value="Lathem Miller (First Team)">
+          <input type="radio" name="entry.2018381042" value="Zach Stephens (First Team)">
           <div class="player-card">
-            <div class="player-avatar"><img src="images/potm/2026-10/lathem_miller.jpg" alt="Lathem Miller"></div>
-            <div class="player-name">Lathem Miller</div>
+            <div class="player-avatar"><img src="images/potm/2026-11/zach_stephens.jpg" alt="Zach Stephens"></div>
+            <div class="player-name">Zach Stephens</div>
             <div class="player-pos">First Team</div>
           </div>
         </label>
 
-        <!-- Korey Lynch -->
+        <!-- Jay Machachini -->
         <label class="player-option">
-          <input type="radio" name="entry.2018381042" value="Korey Lynch (Reserves)">
+          <input type="radio" name="entry.2018381042" value="Jay Machachini (Reserves)">
           <div class="player-card">
-            <div class="player-avatar"><img src="images/potm/2026-10/korey_lynch.jpg" alt="Korey Lynch"></div>
-            <div class="player-name">Korey Lynch</div>
+            <div class="player-avatar"><img src="images/potm/2026-11/jay_machachini.jpg" alt="Jay Machachini"></div>
+            <div class="player-name">Jay Machachini</div>
             <div class="player-pos">Reserves</div>
           </div>
         </label>
@@ -349,9 +349,13 @@
   const isBeforeOpen = (date < 7) || (date === 7 && hours === 0 && minutes === 0);
   const isAfterClose = (date > 15);
 
-  if (isBeforeOpen || isAfterClose) {
+  if (isBeforeOpen) {
     form.style.display = 'none';
-    statusMsg.innerHTML = "Votes are in for September, the winner is Oliver Elliott for the Under 16's!<br>Check back on the 7th November for Octobers Nominees.";
+    statusMsg.textContent = 'The Vote for this month has not opened yet. Please come back again on the 7th.';
+    statusMsg.style.display = 'block';
+  } else if (isAfterClose) {
+    form.style.display = 'none';
+    statusMsg.textContent = 'Voting for this month has closed. Results will be announced shortly.';
     statusMsg.style.display = 'block';
   } else if (localStorage.getItem(HAS_VOTED_KEY)) {
     // Check if they already voted
