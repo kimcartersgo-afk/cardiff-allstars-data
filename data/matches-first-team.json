@@ -1,8 +1,70 @@
 {
-  "updated": "2026-11-10T22:28:17Z",
+  "updated": "2026-11-11T02:08:05Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
-  "next_match": null,
-  "last_result": null
+  "next_match": {
+    "date": "14.11.2026",
+    "time": "14:00",
+    "home": "Pentyrch Rangers Development",
+    "away": "Cardiff Allstars FC",
+    "venue": "Pentyrch Rangers AFC",
+    "competition": "Cardiff & District League - Div One 26/27",
+    "home_score": null,
+    "away_score": null,
+    "status": "SCHEDULED"
+  },
+  "last_result": {
+    "date": "07.11.2026",
+    "time": "14:00",
+    "home": "Cardiff Allstars FC",
+    "away": "Grange Albion FC Reserves",
+    "venue": "St Mellons",
+    "competition": "Cardiff & District League - Div One 26/27",
+    "home_score": 10,
+    "away_score": 2,
+    "status": "PLAYED",
+    "goals": [
+      {
+        "player": "Lathem Miller",
+        "minute": 20
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 44
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 74
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 76
+      },
+      {
+        "player": "Lathem Miller",
+        "minute": 82
+      },
+      {
+        "player": "Jay Gilbertson",
+        "minute": 25
+      },
+      {
+        "player": "Zach Stephens",
+        "minute": 47
+      },
+      {
+        "player": "Zach Stephens",
+        "minute": 61
+      },
+      {
+        "player": "Harley Davis",
+        "minute": 58
+      },
+      {
+        "player": "Chezney",
+        "minute": 73
+      }
+    ]
+  }
 }
