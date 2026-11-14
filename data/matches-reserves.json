@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T21:46:22Z",
+  "updated": "2026-11-14T22:53:36Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": null,
@@ -8,27 +8,26 @@
     "time": "14:00",
     "home": "Ely Rangers FC Reserves C&D",
     "away": "Cardiff Allstars FC Reserves",
-    "our_team": "Cardiff Allstars FC Reserves",
     "venue": "Trelai Park",
+    "competition": "Cardiff & District League - Div Two 26/27",
     "home_score": null,
     "away_score": null,
-    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "31.10.2026",
+    "date": "14.11.2026",
     "time": "14:00",
-    "home": "Cardiff Allstars FC Reserves",
-    "away": "Canton Rangers FC Reserves",
-    "venue": "St Mellons",
+    "home": "Grangetown Cath OB Reserves",
+    "away": "Cardiff Allstars FC Reserves",
+    "venue": "The Marl",
     "competition": "Cardiff & District League - Div Two 26/27",
-    "home_score": 1,
-    "away_score": 5,
+    "home_score": 4,
+    "away_score": 1,
     "status": "PLAYED",
     "goals": [
       {
         "player": "Jaden Wilkins",
-        "minute": 36
+        "minute": 57
       }
     ]
   }
