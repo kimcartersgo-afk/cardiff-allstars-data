@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T00:36:42Z",
+  "updated": "2026-11-14T23:34:41Z",
   "division": "Cardiff & District Under 16s",
   "team": "Cardiff Allstars Under 16s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459637",
@@ -7,29 +7,41 @@
     {
       "pos": 1,
       "team": "Caerau Ely C FC U16 Red",
-      "mp": 5,
+      "mp": 6,
       "w": 4,
-      "d": 1,
+      "d": 2,
       "l": 0,
-      "gf": 24,
-      "ga": 16,
+      "gf": 30,
+      "ga": 22,
       "gd": 8,
-      "pts": 13
+      "pts": 14
     },
     {
       "pos": 2,
       "team": "Llanishen FC U16",
-      "mp": 6,
-      "w": 3,
+      "mp": 7,
+      "w": 4,
       "d": 2,
       "l": 1,
-      "gf": 23,
-      "ga": 24,
-      "gd": -1,
-      "pts": 11
+      "gf": 26,
+      "ga": 26,
+      "gd": 0,
+      "pts": 14
     },
     {
       "pos": 3,
+      "team": "Cardiff Allstars FC U16",
+      "mp": 5,
+      "w": 4,
+      "d": 1,
+      "l": 0,
+      "gf": 13,
+      "ga": 7,
+      "gd": 6,
+      "pts": 13
+    },
+    {
+      "pos": 4,
       "team": "Tiger Bay FC U16s",
       "mp": 6,
       "w": 3,
@@ -41,19 +53,19 @@
       "pts": 10
     },
     {
-      "pos": 4,
-      "team": "Cardiff Allstars FC U16",
-      "mp": 4,
-      "w": 3,
-      "d": 1,
-      "l": 0,
-      "gf": 12,
-      "ga": 7,
-      "gd": 5,
-      "pts": 10
+      "pos": 5,
+      "team": "Llanrumney United Juniors FC U16 Red",
+      "mp": 8,
+      "w": 1,
+      "d": 4,
+      "l": 3,
+      "gf": 23,
+      "ga": 26,
+      "gd": -3,
+      "pts": 7
     },
     {
-      "pos": 5,
+      "pos": 6,
       "team": "Pentyrch Rangers U16",
       "mp": 5,
       "w": 2,
@@ -65,27 +77,15 @@
       "pts": 7
     },
     {
-      "pos": 6,
-      "team": "Llanrumney United Juniors FC U16 Red",
-      "mp": 7,
-      "w": 1,
-      "d": 3,
-      "l": 3,
-      "gf": 17,
-      "ga": 20,
-      "gd": -3,
-      "pts": 6
-    },
-    {
       "pos": 7,
       "team": "Ely Rangers FC U16",
-      "mp": 4,
+      "mp": 5,
       "w": 2,
       "d": 0,
-      "l": 2,
-      "gf": 14,
-      "ga": 9,
-      "gd": 5,
+      "l": 3,
+      "gf": 16,
+      "ga": 12,
+      "gd": 4,
       "pts": 6
     },
     {
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "Canton Rangers FC U16 Gwyn(-6)",
-      "mp": 4,
+      "mp": 5,
       "w": 1,
       "d": 0,
-      "l": 3,
+      "l": 4,
       "gf": 7,
-      "ga": 10,
-      "gd": -3,
+      "ga": 11,
+      "gd": -4,
       "pts": -3
     }
   ]

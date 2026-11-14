@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T00:36:47Z",
+  "updated": "2026-11-14T23:34:46Z",
   "division": "Cardiff & District First Team",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459586",
@@ -7,37 +7,37 @@
     {
       "pos": 1,
       "team": "Cardiff Allstars FC",
-      "mp": 7,
-      "w": 6,
+      "mp": 8,
+      "w": 7,
       "d": 0,
       "l": 1,
-      "gf": 38,
-      "ga": 14,
-      "gd": 24,
-      "pts": 18
+      "gf": 45,
+      "ga": 15,
+      "gd": 30,
+      "pts": 21
     },
     {
       "pos": 2,
       "team": "Llanrumney United Reserves",
-      "mp": 8,
-      "w": 5,
+      "mp": 9,
+      "w": 6,
       "d": 2,
       "l": 1,
-      "gf": 33,
-      "ga": 11,
-      "gd": 22,
-      "pts": 17
+      "gf": 42,
+      "ga": 13,
+      "gd": 29,
+      "pts": 20
     },
     {
       "pos": 3,
       "team": "Splott Albion Mens 2nd",
-      "mp": 8,
+      "mp": 9,
       "w": 5,
       "d": 2,
-      "l": 1,
-      "gf": 26,
-      "ga": 13,
-      "gd": 13,
+      "l": 2,
+      "gf": 29,
+      "ga": 17,
+      "gd": 12,
       "pts": 17
     },
     {
@@ -67,14 +67,14 @@
     {
       "pos": 6,
       "team": "Cardiff Academicals FC",
-      "mp": 8,
-      "w": 3,
+      "mp": 9,
+      "w": 4,
       "d": 0,
       "l": 5,
-      "gf": 18,
-      "ga": 22,
-      "gd": -4,
-      "pts": 9
+      "gf": 22,
+      "ga": 25,
+      "gd": -3,
+      "pts": 12
     },
     {
       "pos": 7,
@@ -91,25 +91,25 @@
     {
       "pos": 8,
       "team": "Tongwynlais AFC Reserves",
-      "mp": 9,
+      "mp": 10,
       "w": 0,
       "d": 2,
-      "l": 7,
-      "gf": 12,
-      "ga": 34,
-      "gd": -22,
+      "l": 8,
+      "gf": 14,
+      "ga": 43,
+      "gd": -29,
       "pts": 2
     },
     {
       "pos": 9,
       "team": "Pentyrch Rangers Development(-3)",
-      "mp": 9,
+      "mp": 10,
       "w": 0,
       "d": 2,
-      "l": 7,
-      "gf": 11,
-      "ga": 41,
-      "gd": -30,
+      "l": 8,
+      "gf": 12,
+      "ga": 48,
+      "gd": -36,
       "pts": -1
     }
   ]
