@@ -1,50 +1,8 @@
 {
-  "updated": "2026-11-14T16:14:23Z",
+  "updated": "2026-11-14T16:15:11Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
-  "live": {
-    "date": "14.11.2026",
-    "time": "14:00",
-    "home": "Pentyrch Rangers Development",
-    "away": "Cardiff Allstars FC",
-    "our_team": "Cardiff Allstars FC",
-    "venue": "Pentyrch Rangers AFC",
-    "home_score": 1,
-    "away_score": 7,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Lathem Miller",
-        "minute": 5
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 17
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 19
-      },
-      {
-        "player": "Ryan Mears",
-        "minute": 36
-      },
-      {
-        "player": "Ryan Mears",
-        "minute": 52
-      },
-      {
-        "player": "Ryan Mears",
-        "minute": 67
-      },
-      {
-        "player": "Chezney",
-        "minute": 66
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "21.11.2026",
     "time": "14:00",
