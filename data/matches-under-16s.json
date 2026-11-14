@@ -1,61 +1,33 @@
 {
-  "updated": "2026-11-14T12:54:25Z",
+  "updated": "2026-11-14T13:56:15Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
-  "live": {
+  "live": null,
+  "next_match": {
+    "date": "28.11.2026",
+    "time": "12:00",
+    "home": "Llanishen FC U16",
+    "away": "Cardiff Allstars FC U16",
+    "venue": "Llanishen High School 3G",
+    "competition": "Cardiff & District U16 Division B - 26/27",
+    "home_score": null,
+    "away_score": null,
+    "status": "SCHEDULED"
+  },
+  "last_result": {
     "date": "14.11.2026",
     "time": "11:00",
     "home": "Cardiff Allstars FC U16",
     "away": "Canton Rangers FC U16 Gwyn",
-    "our_team": "Cardiff Allstars FC U16",
     "venue": "St Mellons",
+    "competition": "Cardiff & District U16 Division B - 26/27",
     "home_score": 1,
     "away_score": 0,
-    "is_postponed": false,
-    "status": "live",
+    "status": "PLAYED",
     "goals": [
       {
         "player": "Ethan Carr",
         "minute": 2
-      }
-    ],
-    "minute": null
-  },
-  "next_match": null,
-  "last_result": {
-    "date": "07.11.2026",
-    "time": "10:30",
-    "home": "Cardiff Cosmopolitan FC BOYS U16 BLUE",
-    "away": "Cardiff Allstars FC U16",
-    "venue": "Pontcanna Fields",
-    "competition": "Cardiff & District U16 Cup - 26/27",
-    "home_score": 3,
-    "away_score": 6,
-    "status": "PLAYED",
-    "goals": [
-      {
-        "player": "Oliver Elliott 2",
-        "minute": 8
-      },
-      {
-        "player": "Oliver Elliott 2",
-        "minute": 28
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 16
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 53
-      },
-      {
-        "player": "Kian Gilbertson",
-        "minute": 80
-      },
-      {
-        "player": "Ethan Carr",
-        "minute": 56
       }
     ]
   }
