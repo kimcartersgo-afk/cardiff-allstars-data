@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T13:56:15Z",
+  "updated": "2026-11-14T13:58:04Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -8,10 +8,11 @@
     "time": "14:00",
     "home": "Pentyrch Rangers Development",
     "away": "Cardiff Allstars FC",
+    "our_team": "Cardiff Allstars FC",
     "venue": "Pentyrch Rangers AFC",
-    "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
+    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
