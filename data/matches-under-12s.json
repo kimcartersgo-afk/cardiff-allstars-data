@@ -1,8 +1,21 @@
 {
-  "updated": "2026-11-14T11:08:06Z",
+  "updated": "2026-11-14T11:08:14Z",
   "team": "Cardiff Allstars Under 12s",
   "division": "Cardiff & District U12 Division 26/27",
-  "live": null,
+  "live": {
+    "date": "14.11.2026",
+    "time": "11:00",
+    "home": "Llanrumney United Juniors FC U12 Blue",
+    "away": "Cardiff Allstars FC U12",
+    "our_team": "Cardiff Allstars FC U12",
+    "venue": "The Jamie Burley Group Stadium",
+    "home_score": 0,
+    "away_score": 0,
+    "is_postponed": false,
+    "status": "live",
+    "goals": [],
+    "minute": null
+  },
   "next_match": null,
   "last_result": {
     "date": "31.10.2026",
