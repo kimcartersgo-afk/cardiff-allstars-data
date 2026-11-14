@@ -1,20 +1,9 @@
 {
-  "updated": "2026-11-14T20:10:42Z",
+  "updated": "2026-11-14T20:11:46Z",
   "team": "Cardiff Allstars FC Reserves",
   "division": "Cardiff & District Div 2 26/27",
   "live": null,
-  "next_match": {
-    "date": "21.11.2026",
-    "time": "14:00",
-    "home": "Ely Rangers FC Reserves C&D",
-    "away": "Cardiff Allstars FC Reserves",
-    "our_team": "Cardiff Allstars FC Reserves",
-    "venue": "Trelai Park",
-    "home_score": null,
-    "away_score": null,
-    "is_postponed": false,
-    "status": "SCHEDULED"
-  },
+  "next_match": null,
   "last_result": {
     "date": "31.10.2026",
     "time": "14:00",
