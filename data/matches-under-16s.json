@@ -1,9 +1,20 @@
 {
-  "updated": "2026-11-14T20:11:46Z",
+  "updated": "2026-11-14T20:11:53Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
   "live": null,
-  "next_match": null,
+  "next_match": {
+    "date": "28.11.2026",
+    "time": "12:00",
+    "home": "Llanishen FC U16",
+    "away": "Cardiff Allstars FC U16",
+    "our_team": "Cardiff Allstars FC U16",
+    "venue": "Llanishen High School 3G",
+    "home_score": null,
+    "away_score": null,
+    "is_postponed": false,
+    "status": "SCHEDULED"
+  },
   "last_result": {
     "date": "14.11.2026",
     "time": "11:00",
