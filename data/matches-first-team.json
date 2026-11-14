@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:34:54Z",
+  "updated": "2026-11-14T14:35:24Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": {
@@ -10,7 +10,7 @@
     "our_team": "Cardiff Allstars FC",
     "venue": "Pentyrch Rangers AFC",
     "home_score": 1,
-    "away_score": 3,
+    "away_score": 4,
     "is_postponed": false,
     "status": "live",
     "goals": [
@@ -25,6 +25,10 @@
       {
         "player": "Lathem Miller",
         "minute": 19
+      },
+      {
+        "player": "Ryan Mears",
+        "minute": 36
       }
     ],
     "minute": null
