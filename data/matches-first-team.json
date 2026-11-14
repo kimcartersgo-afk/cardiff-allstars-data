@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T18:57:42Z",
+  "updated": "2026-11-14T18:57:50Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -8,63 +8,50 @@
     "time": "14:00",
     "home": "Cardiff Allstars FC",
     "away": "Cardiff Academicals FC",
-    "our_team": "Cardiff Allstars FC",
     "venue": "St Mellons",
+    "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
-    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "07.11.2026",
+    "date": "14.11.2026",
     "time": "14:00",
-    "home": "Cardiff Allstars FC",
-    "away": "Grange Albion FC Reserves",
-    "venue": "St Mellons",
+    "home": "Pentyrch Rangers Development",
+    "away": "Cardiff Allstars FC",
+    "venue": "Pentyrch Rangers AFC",
     "competition": "Cardiff & District League - Div One 26/27",
-    "home_score": 10,
-    "away_score": 2,
+    "home_score": 1,
+    "away_score": 7,
     "status": "PLAYED",
     "goals": [
       {
         "player": "Lathem Miller",
-        "minute": 20
+        "minute": 5
       },
       {
         "player": "Lathem Miller",
-        "minute": 44
+        "minute": 17
       },
       {
         "player": "Lathem Miller",
-        "minute": 74
+        "minute": 19
       },
       {
-        "player": "Lathem Miller",
-        "minute": 76
+        "player": "Ryan Mears",
+        "minute": 36
       },
       {
-        "player": "Lathem Miller",
-        "minute": 82
+        "player": "Ryan Mears",
+        "minute": 52
       },
       {
-        "player": "Jay Gilbertson",
-        "minute": 25
-      },
-      {
-        "player": "Zach Stephens",
-        "minute": 47
-      },
-      {
-        "player": "Zach Stephens",
-        "minute": 61
-      },
-      {
-        "player": "Harley Davis",
-        "minute": 58
+        "player": "Ryan Mears",
+        "minute": 67
       },
       {
         "player": "Chezney",
-        "minute": 73
+        "minute": 66
       }
     ]
   }
