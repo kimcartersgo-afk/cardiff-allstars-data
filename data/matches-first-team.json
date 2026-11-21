@@ -1,38 +1,8 @@
 {
-  "updated": "2026-11-21T16:00:13Z",
+  "updated": "2026-11-21T16:00:31Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
-  "live": {
-    "date": "21.11.2026",
-    "time": "14:00",
-    "home": "Cardiff Allstars FC",
-    "away": "Cardiff Academicals FC",
-    "our_team": "Cardiff Allstars FC",
-    "venue": "Cardiff University Sports Fields",
-    "home_score": 4,
-    "away_score": 0,
-    "is_postponed": false,
-    "status": "live",
-    "goals": [
-      {
-        "player": "Matt Oliver",
-        "minute": 24
-      },
-      {
-        "player": "Jay Gilbertson",
-        "minute": 50
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 50
-      },
-      {
-        "player": "Chezney",
-        "minute": 60
-      }
-    ],
-    "minute": null
-  },
+  "live": null,
   "next_match": {
     "date": "28.11.2026",
     "time": "14:00",
