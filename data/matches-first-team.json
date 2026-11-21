@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T19:55:32Z",
+  "updated": "2026-11-21T19:55:19Z",
   "team": "Cardiff Allstars FC",
   "division": "Cardiff & District Div 1 26/27",
   "live": null,
@@ -8,51 +8,38 @@
     "time": "14:00",
     "home": "Grange Albion FC Reserves",
     "away": "Cardiff Allstars FC",
-    "our_team": "Cardiff Allstars FC",
     "venue": "Coronation Park",
+    "competition": "Cardiff & District League - Div One 26/27",
     "home_score": null,
     "away_score": null,
-    "is_postponed": false,
     "status": "SCHEDULED"
   },
   "last_result": {
-    "date": "14.11.2026",
+    "date": "21.11.2026",
     "time": "14:00",
-    "home": "Pentyrch Rangers Development",
-    "away": "Cardiff Allstars FC",
-    "venue": "Pentyrch Rangers AFC",
+    "home": "Cardiff Allstars FC",
+    "away": "Cardiff Academicals FC",
+    "venue": "Cardiff University Sports Fields",
     "competition": "Cardiff & District League - Div One 26/27",
-    "home_score": 1,
-    "away_score": 7,
+    "home_score": 4,
+    "away_score": 0,
     "status": "PLAYED",
     "goals": [
       {
-        "player": "Lathem Miller",
-        "minute": 5
+        "player": "Matt Oliver",
+        "minute": 24
+      },
+      {
+        "player": "Jay Gilbertson",
+        "minute": 50
       },
       {
         "player": "Lathem Miller",
-        "minute": 17
-      },
-      {
-        "player": "Lathem Miller",
-        "minute": 19
-      },
-      {
-        "player": "Ryan Mears",
-        "minute": 36
-      },
-      {
-        "player": "Ryan Mears",
-        "minute": 52
-      },
-      {
-        "player": "Ryan Mears",
-        "minute": 67
+        "minute": 50
       },
       {
         "player": "Chezney",
-        "minute": 66
+        "minute": 60
       }
     ]
   }
