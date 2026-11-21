@@ -1,15 +1,28 @@
 {
-  "updated": "2026-11-21T12:04:11Z",
+  "updated": "2026-11-21T12:04:54Z",
   "team": "Cardiff Allstars Under 16s",
   "division": "Cardiff & District U16 Division 26/27",
-  "live": null,
-  "next_match": {
+  "live": {
     "date": "21.11.2026",
     "time": "12:00",
     "home": "Cardiff Allstars FC U16",
     "away": "Pentyrch Rangers U16",
     "our_team": "Cardiff Allstars FC U16",
     "venue": "University Fields 3G - Cardiff",
+    "home_score": 0,
+    "away_score": 0,
+    "is_postponed": false,
+    "status": "live",
+    "goals": [],
+    "minute": null
+  },
+  "next_match": {
+    "date": "28.11.2026",
+    "time": "12:00",
+    "home": "Llanishen FC U16",
+    "away": "Cardiff Allstars FC U16",
+    "our_team": "Cardiff Allstars FC U16",
+    "venue": "Llanishen High School 3G",
     "home_score": null,
     "away_score": null,
     "is_postponed": false,
