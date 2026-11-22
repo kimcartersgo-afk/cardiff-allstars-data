@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T01:01:14Z",
+  "updated": "2026-11-22T00:01:01Z",
   "division": "Cardiff & District First Team",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459586",
@@ -7,14 +7,14 @@
     {
       "pos": 1,
       "team": "Cardiff Allstars FC",
-      "mp": 8,
-      "w": 7,
+      "mp": 9,
+      "w": 8,
       "d": 0,
       "l": 1,
-      "gf": 45,
+      "gf": 49,
       "ga": 15,
-      "gd": 30,
-      "pts": 21
+      "gd": 34,
+      "pts": 24
     },
     {
       "pos": 2,
@@ -31,14 +31,14 @@
     {
       "pos": 3,
       "team": "Splott Albion Mens 2nd",
-      "mp": 9,
-      "w": 5,
+      "mp": 10,
+      "w": 6,
       "d": 2,
       "l": 2,
-      "gf": 29,
-      "ga": 17,
-      "gd": 12,
-      "pts": 17
+      "gf": 32,
+      "ga": 18,
+      "gd": 14,
+      "pts": 20
     },
     {
       "pos": 4,
@@ -67,13 +67,13 @@
     {
       "pos": 6,
       "team": "Cardiff Academicals FC",
-      "mp": 9,
+      "mp": 10,
       "w": 4,
       "d": 0,
-      "l": 5,
+      "l": 6,
       "gf": 22,
-      "ga": 25,
-      "gd": -3,
+      "ga": 29,
+      "gd": -7,
       "pts": 12
     },
     {
@@ -103,13 +103,13 @@
     {
       "pos": 9,
       "team": "Pentyrch Rangers Development(-3)",
-      "mp": 10,
+      "mp": 11,
       "w": 0,
       "d": 2,
-      "l": 8,
-      "gf": 12,
-      "ga": 48,
-      "gd": -36,
+      "l": 9,
+      "gf": 13,
+      "ga": 51,
+      "gd": -38,
       "pts": -1
     }
   ]
