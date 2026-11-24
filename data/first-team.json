@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T00:34:28Z",
+  "updated": "2026-11-24T04:33:17Z",
   "division": "Cardiff & District First Team",
   "team": "Cardiff Allstars FC",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=107459586",
@@ -35,9 +35,9 @@
       "w": 6,
       "d": 2,
       "l": 2,
-      "gf": 32,
+      "gf": 33,
       "ga": 18,
-      "gd": 14,
+      "gd": 15,
       "pts": 20
     },
     {
@@ -108,8 +108,8 @@
       "d": 2,
       "l": 9,
       "gf": 13,
-      "ga": 51,
-      "gd": -38,
+      "ga": 52,
+      "gd": -39,
       "pts": -1
     }
   ]
