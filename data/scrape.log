@@ -3,11 +3,11 @@
   Totals: 0 live, 8 upcoming
 
 [Step 2] Scraping previous results...
-  Found 37 previous results
+  Found 38 previous results
 
 [Step 3] Writing team files...
   [Cardiff Allstars Under 9s]
-    Next:   none
+    Next:   Cardiff Allstars FC U9 Girls vs Cogan Coronation - U8 Girls Whites on 29.11.2026 @ 10:30 (Ocean Park Arena)
     Last:   none (no results yet this season)
     Written → matches-under-9s.json
   [Cardiff Allstars Under 12s]
@@ -19,7 +19,7 @@
     Last:   Cardiff Allstars FC U16 3–2 Pentyrch Rangers U16 (3 goals)
     Written → matches-under-16s.json
   [Cardiff Allstars FC]
-    Next:   Grange Albion FC Reserves vs Cardiff Allstars FC on 28.11.2026 @ 14:00 (Coronation Park)
+    Next:   Splott Albion Mens 2nd vs Cardiff Allstars FC on 12.12.2026 @ 14:00 (Splott Park)
     Last:   Cardiff Allstars FC 4–0 Cardiff Academicals FC (4 goals)
     Written → matches-first-team.json
   [Cardiff Allstars FC Reserves]
