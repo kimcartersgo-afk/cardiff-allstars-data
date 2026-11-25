@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T04:33:06Z",
+  "updated": "2026-11-25T03:17:42Z",
   "division": "Cardiff & District Under 12s",
   "team": "Cardiff Allstars Under 12s",
   "source": "https://comet.faw.cymru/resources/jsf/competition/index.xhtml?id=108490756",
@@ -54,6 +54,18 @@
     },
     {
       "pos": 5,
+      "team": "Cardiff Corinthians U12 Black",
+      "mp": 7,
+      "w": 4,
+      "d": 0,
+      "l": 3,
+      "gf": 34,
+      "ga": 33,
+      "gd": 1,
+      "pts": 12
+    },
+    {
+      "pos": 6,
       "team": "Cardiff Allstars FC U12",
       "mp": 8,
       "w": 3,
@@ -65,51 +77,39 @@
       "pts": 10
     },
     {
-      "pos": 6,
-      "team": "Cardiff Corinthians U12 Black",
-      "mp": 6,
-      "w": 3,
-      "d": 0,
-      "l": 3,
-      "gf": 31,
-      "ga": 33,
-      "gd": -2,
-      "pts": 9
-    },
-    {
       "pos": 7,
       "team": "Radyr Rangers FC U12s Green",
-      "mp": 7,
-      "w": 2,
+      "mp": 8,
+      "w": 3,
       "d": 0,
       "l": 5,
-      "gf": 20,
+      "gf": 23,
       "ga": 39,
-      "gd": -19,
-      "pts": 6
+      "gd": -16,
+      "pts": 9
     },
     {
       "pos": 8,
       "team": "Clwb Cymric D12 Coch",
-      "mp": 6,
-      "w": 0,
+      "mp": 7,
+      "w": 1,
       "d": 0,
       "l": 6,
-      "gf": 4,
+      "gf": 7,
       "ga": 47,
-      "gd": -43,
-      "pts": 0
+      "gd": -40,
+      "pts": 3
     },
     {
       "pos": 9,
       "team": "Llanrumney United Juniors FC U12 Blue(-3)",
-      "mp": 5,
+      "mp": 8,
       "w": 0,
       "d": 2,
-      "l": 3,
+      "l": 6,
       "gf": 11,
-      "ga": 33,
-      "gd": -22,
+      "ga": 42,
+      "gd": -31,
       "pts": -1
     }
   ]
