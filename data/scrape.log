@@ -1,6 +1,6 @@
 
 [Step 1] Scraping upcoming / live matches...
-  Totals: 0 live, 8 upcoming
+  Totals: 0 live, 7 upcoming
 
 [Step 2] Scraping previous results...
   Found 38 previous results
@@ -23,6 +23,6 @@
     Last:   Cardiff Allstars FC 4–0 Cardiff Academicals FC (4 goals)
     Written → matches-first-team.json
   [Cardiff Allstars FC Reserves]
-    Next:   Cardiff Allstars FC Reserves vs Llanrumney Athletic Reserves on 28.11.2026 @ 14:00 (St Mellons)
+    Next:   Canton Rangers FC Reserves vs Cardiff Allstars FC Reserves on 05.12.2026 @ 14:00 (Trelai Park)
     Last:   Grangetown Cath OB Reserves 4–1 Cardiff Allstars FC Reserves (1 goals)
     Written → matches-reserves.json
